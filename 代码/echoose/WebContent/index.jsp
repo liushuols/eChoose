@@ -193,7 +193,7 @@ $(function(){
       <!--客户见证-->
       <div class="ly_rbar ly_fr">
         <div class="ly_news_bar">
-          <h2><a class="ly_more" href="#">查看更多</a><span>案例展示</span> <em>CASE SHOW</em> </h2>
+          <h2><a class="ly_more" href="#">查看更多</a><span>用户说</span> <em>USER SAY</em> </h2>
           <div class="lyg_blank15"></div>
           <div class="ly_content">
             <div class="ly_item">
