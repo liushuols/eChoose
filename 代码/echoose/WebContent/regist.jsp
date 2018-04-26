@@ -19,11 +19,11 @@
 		.css1{background-color:#0080ff;color:white;}
 		.submit .btn{background-color:#0080ff;height:50px;width:100%;font-size:20px;color:white;font-weight:bold;}
 		.css3 input{height:15px;}
-		.css3{text-align:left;height:15px;float:left;margin-top:20px;}
-		.css4{text-align:left;float:left;}
+		.css3{text-align:left;height:15px;margin-top:30px;}
+		.css4{text-align:left;}
 		h3{font-size:30px;font-weight:bold;}
 		.css5{height:70px;float:left;}
-		
+		.zcityGroup .zcityItem .zcityItem-main .cityContainer{height:100px;}
 	</style>
 </head>
 <body>
@@ -53,13 +53,13 @@
 							<div class="cl1"></div>
 						</div>
 						<div class="vali">
-							<input type="password" name="" value="" placeholder="请填写长度为6-20个字符的密码">
+							<input type="password" name="" value="" placeholder="请填写长度至少为8个字符的密码">
 						</div>
 						<div class="vali">
 							<input type="password" name="" value="" placeholder="请再次输入密码" id="password">
 						</div>
 						<div class="vali">
-							<input type="text" name="" value="" placeholder="请输入邮箱,邮箱格式,123@163.com">
+							<input type="text" name="" value="" placeholder="请输入邮箱">
 						</div>
 						
 						<div clsss="css5">
@@ -87,17 +87,17 @@
 							
 						<div class="css3">
 							请选择所学文理科：
-							<input type="radio" class="css2" name="major" value="wenke">&nbsp;文科&emsp;
-							<input type="radio" class="css2" name="major" value="like">&nbsp;理科
+							<input type="radio" name="major" value="文科">&nbsp;文科&emsp;
+							<input type="radio" name="major" value="理科">&nbsp;理科
 						</div>
 						
 						<div class="css4">
 							请选择心仪专业：
 							<select name="select1">  
 							  <option>--请选择--</option>  
-							  <option value="option1">计算机</option>  
-							  <option value="option2">数学</option>  
-							  <option value="option3">医学</option>  
+							  <option value="计算机">计算机</option>  
+							  <option value="数学">数学</option>  
+							  <option value="医学">医学</option>  
 							</select>  
 						</div>
 						<div class="submit">

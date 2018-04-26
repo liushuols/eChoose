@@ -39,13 +39,13 @@
                         <span class="error hide"><em></em><i class="icon-warn" style="margin-left: 5px"></i></span>
                     </p>
                 <p class="p-input pos" id="pwd">
-                        <label for="passport">输入密码</label>
+                        <label for="passport">输入新密码</label>
                         <input type="password" style="display: none"/>
                         <input type="password" id="passport">
                         <span class="tel-warn pwd-err hide"><em></em><i class="icon-warn" style="margin-left: 5px"></i></span>
                     </p>
                     <p class="p-input pos" id="confirmpwd">
-                        <label for="passport2">确认密码</label>
+                        <label for="passport2">确认新密码</label>
                         <input type="password" style="position:absolute;top:-998px"/>
                         <input type="password" id="passport2">
                         <span class="tel-warn confirmpwd-err hide"><em></em><i class="icon-warn" style="margin-left: 5px"></i></span>
