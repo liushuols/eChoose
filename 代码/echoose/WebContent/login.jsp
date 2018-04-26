@@ -21,13 +21,10 @@
     <div class="wpn">
         <div class="form-data pos">
             <div class="css1"><h1>易选择网登录</h1></div>
-            <div class="change-login">
-                <p class="account_number on">手机号登录</p>
-                <p class="message">邮箱登录</p>
-            </div>
+            
             <div class="form1">
                 <p class="p-input pos">
-                    <label for="num">请输入手机号</label>
+                    <label for="num">请输入手机号/邮箱/用户名</label>
                     <input type="text" id="num">
                     <span class="tel-warn num-err hide"><em>账号或密码错误，请重新输入</em><i class="icon-warn"></i></span>
                 </p>
@@ -58,8 +55,8 @@
                 </p>
             </div>
             <div class="r-forget cl">
-                <a href="./reg.html" class="z">账号注册</a>
-                <a href="./getpass.html" class="y">忘记密码</a>
+                <a href="regist.jsp" class="z">账号注册</a>
+                <a href="getPassword.jsp" class="y">忘记密码</a>
             </div>
             <button class="lang-btn off log-btn">登录</button>
             <div class="third-party">

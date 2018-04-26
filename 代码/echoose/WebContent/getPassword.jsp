@@ -4,7 +4,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>密码找回</title>
+    <title>密码重置</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="Keywords" content="网站关键词">
     <meta name="Description" content="网站介绍">
@@ -20,14 +20,14 @@
 <div class="wrap">
     <div class="wpn">
         <div class="form-data pos">
-            <div class="css1"><h1>找回密码</h1></div>
+            <div class="css1"><h1>重置密码</h1></div>
             <div class="change-login">
                 <p class="account_number on">手机号找回</p>
-                <p class="message">邮箱找回</p>
+                
             </div>
             <div class="form1">
                <p class="p-input pos">
-                        <label for="tel">手机号</label>
+                        <label for="tel">请输入手机号</label>
                         <input type="number" id="tel" autocomplete="off">
                         <span class="tel-warn tel-err hide"><em></em><i class="icon-warn"></i></span>
                     </p>
@@ -38,13 +38,13 @@
                         <span class="time hide"><em>120</em>s</span>
                         <span class="error hide"><em></em><i class="icon-warn" style="margin-left: 5px"></i></span>
                     </p>
-                <p class="p-input pos hide" id="pwd">
+                <p class="p-input pos" id="pwd">
                         <label for="passport">输入密码</label>
                         <input type="password" style="display: none"/>
                         <input type="password" id="passport">
                         <span class="tel-warn pwd-err hide"><em></em><i class="icon-warn" style="margin-left: 5px"></i></span>
                     </p>
-                    <p class="p-input pos hide" id="confirmpwd">
+                    <p class="p-input pos" id="confirmpwd">
                         <label for="passport2">确认密码</label>
                         <input type="password" style="position:absolute;top:-998px"/>
                         <input type="password" id="passport2">
@@ -52,22 +52,9 @@
                     </p>
               
             </div>
-            <div class="form2 hide">
-                <p class="p-input pos">
-                    <label for="num2">请输入邮箱</label>
-                    <input type="number" id="num2">
-                    <span class="tel-warn num2-err hide"><em>账号或密码错误</em><i class="icon-warn"></i></span>
-                </p>
-                <p class="p-input pos" id="sendcode">
-                        <label for="veri-code">输入邮箱</label>
-                        <input type="number" id="veri-code">
-                        <a href="javascript:;" class="send">发送邮件</a>
-                        <span class="time hide"><em>120</em>s</span>
-                        <span class="error hide"><em></em><i class="icon-warn" style="margin-left: 5px"></i></span>
-                    </p>
-            </div>
+            
 
-                <button class="lang-btn">找回密码</button>
+                <button class="lang-btn">重置密码</button>
                 <div class="third-party">
                     <a href="#" class="log-qq icon-qq-round"></a>
                     <a href="#" class="log-qq icon-weixin"></a>
