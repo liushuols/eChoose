@@ -2,14 +2,18 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+	<%
+		String path = request.getContextPath();
+		String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+	%>
 <head>
 	<meta charset="utf-8">
 	<title>注册</title>
 	<link type="text/css" rel="stylesheet" href="css/registter.css">
 	<link rel="stylesheet" type="text/css" href="css/zcity.css">
-	<link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/iconfont.css">
-    <link rel="stylesheet" href="./css/reg.css">
+	<link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/reg.css">
 	
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript" src="js/vali.min.js"></script>

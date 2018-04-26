@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="./css/reg.css">
     <style type="text/css">
     	.css1{padding-left:150px;margin-bottom:10px;;padding-top:-40px;}
+    	.form-data .lang-btn.off{
+			    background-color: #0080ff;
+			    color:#e5e5e5;
+}
     </style>
 </head>
 <body>
@@ -42,18 +46,7 @@
                     <!-- <a href="javascript:;">换一换</a> -->
                 </p>
             </div>
-            <div class="form2 hide">
-                <p class="p-input pos">
-                    <label for="num2">请输入邮箱</label>
-                    <input type="number" id="num2">
-                    <span class="tel-warn num2-err hide"><em>账号或密码错误</em><i class="icon-warn"></i></span>
-                </p>
-                <p class="p-input pos">
-                    <label for="veri-code">请输入密码</label>
-                    <input type="number" id="veri-code">
-                    
-                </p>
-            </div>
+           
             <div class="r-forget cl">
                 <a href="regist.jsp" class="z">账号注册</a>
                 <a href="getPassword.jsp" class="y">忘记密码</a>
