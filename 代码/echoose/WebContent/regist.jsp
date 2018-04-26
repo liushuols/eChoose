@@ -67,7 +67,7 @@
 						    <thead>
 						        <tr>
 						      
-						            <th class="td-04"><h6 class="title">请选择所在省市</h6></th>
+						            <th class="td-04"><h6 class="title">请选择所在省市：</h6></th>
 						            
 						        </tr>
 						    </thead>
