@@ -20,15 +20,15 @@
 	<script type="text/javascript" src="js/vali.min.js"></script>
 	
 	<style type="text/css">
-		#register{height:780px;}
+		#register{height:650px;}
 		.vali input{width:100%;height:40px;}
 		.css1{background-color:#0080ff;color:white;}
 		.submit .btn{background-color:#0080ff;height:50px;width:100%;font-size:20px;color:white;font-weight:bold;float:left;}
 		.css3 input{height:15px;}
 		.css3{text-align:left;height:15px;margin-top:30px;}
-		.css4{text-align:left;float:left;width:350px;height:70px;}
+		.css4{text-align:left;width:350px;height:70px;}
 		h3{font-size:30px;font-weight:bold;}
-		.css5{float:left;}
+		.css5{float:left;height:70px;}
 	</style>
 </head>
 <body>
@@ -71,32 +71,15 @@
 							<select name="select1">
 								<option>--请选择--</option>
 								<option value="计算机">计算机</option>
-								<option value="计算机">数学</option>
-								<option value="计算机">医学</option>
-								
+								<option value="数学">数学</option>
+								<option value="医学">医学</option>
+								<option value="文史类">文史类</option>
+								<option value="美术">美术</option>
+								<option value="音乐">音乐</option>
+								<option value="体育">体育</option>
 							</select>
 						</div>
 					
-						<div clsss="css5">
-							<table class="demoTable">
-							    <thead>
-							        <tr>
-							            <th class="td-04"><h6 class="title">请选择所在城市：</h6></th>
-							        </tr>
-							    </thead>
-							    <tbody>
-							        <tr>
-							            <td class="td-04">
-							                <!--zcityGroup start-->
-							                <div class="zcityGroup" city-range="{'level_start':1,'level_end':3}"></div>
-							                <!--zcityGroup end-->
-							            </td>
-							        </tr>
-							    </tbody>
-							</table>
-						</div>
-						
-						
 						<div class="submit">
 							<input type="submit" class="btn" value="立即注册">
 						</div>
