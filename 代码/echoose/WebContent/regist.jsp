@@ -21,13 +21,15 @@
 	<style type="text/css">
 		.vali input{width:100%;height:40px;}
 		.css1{background-color:#0080ff;color:white;}
-		.submit .btn{background-color:#0080ff;height:50px;width:100%;font-size:20px;color:white;font-weight:bold;}
+		.submit .btn{background-color:#0080ff;height:50px;width:100%;font-size:20px;color:white;font-weight:bold;margin-top:50px;}
 		.css3 input{height:15px;}
 		.css3{text-align:left;height:15px;margin-top:30px;}
 		.css4{text-align:left;}
 		h3{font-size:30px;font-weight:bold;}
 		.css5{height:70px;float:left;}
-		.zcityGroup .zcityItem .zcityItem-main .cityContainer{height:100px;}
+		.demoTable .td-04{height:30px;}
+		.zcityGroup .zcityItem .zcityItem-main .cityContainer{height:120px;border:1px solid #eee;}
+		.zcityGroup .zcityItem .zcityItem-main .citylist .cityitem{padding:0 10px;display:block;height:32px;line-height:32px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-align:left;}
 	</style>
 </head>
 <body>
@@ -65,36 +67,28 @@
 						<div class="vali">
 							<input type="text" name="" value="" placeholder="请输入邮箱">
 						</div>
-						
 						<div clsss="css5">
 							<table class="demoTable">
-						    <thead>
-						        <tr>
-						      
-						            <th class="td-04"><h6 class="title">请选择所在省市：</h6></th>
-						            
-						        </tr>
-						    </thead>
-						    <tbody>
-						        <tr>
-						            
-						            <td class="td-04">
-						                <!--zcityGroup start-->
-						                <div class="zcityGroup" city-range="{'level_start':1,'level_end':3}"></div>
-						                <!--zcityGroup end-->
-						            </td>
-						            
-						        </tr>
-						    </tbody>
-						</table>
+							    <thead>
+							        <tr>
+							      
+							            <th class="td-04"><h6 class="title">请选择所在省市</h6></th>
+							            
+							        </tr>
+							    </thead>
+							    <tbody>
+							        <tr>
+							            
+							            <td class="td-04">
+							                <!--zcityGroup start-->
+							                <div class="zcityGroup" city-range="{'level_start':1,'level_end':3}"></div>
+							                <!--zcityGroup end-->
+							            </td>
+							            
+							        </tr>
+							    </tbody>
+							</table>
 						</div>
-							
-						<div class="css3">
-							请选择所学文理科：
-							<input type="radio" name="major" value="文科">&nbsp;文科&emsp;
-							<input type="radio" name="major" value="理科">&nbsp;理科
-						</div>
-						
 						<div class="css4">
 							请选择心仪专业：
 							<select name="select1">  
