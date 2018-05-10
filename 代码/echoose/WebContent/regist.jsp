@@ -71,7 +71,7 @@
 							<select name="select1">
 								<option>--请选择--</option>
 								<option value="计算机">计算机</option>
-								<option value="数学">数学</option>
+								<option value="数学类">数学类</option>
 								<option value="医学">医学</option>
 								<option value="文史类">文史类</option>
 								<option value="美术">美术</option>
