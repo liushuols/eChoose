@@ -26,7 +26,7 @@
 		.submit .btn{background-color:#0080ff;height:50px;width:100%;font-size:20px;color:white;font-weight:bold;float:left;}
 		.css3 input{height:15px;}
 		.css3{text-align:left;height:15px;margin-top:30px;}
-		.css4{text-align:left;float:left;width:350px;height:70px;}
+		.css4{text-align:left;width:350px;height:70px;}
 		h3{font-size:30px;font-weight:bold;}
 		.css5{float:left;}
 	</style>
@@ -68,7 +68,7 @@
 						</div>
 						<div class="css4">
 							请选择心仪专业：
-							<select name="select1">
+							<select>
 								<option>--请选择--</option>
 								<option value="计算机">计算机</option>
 								<option value="计算机">数学</option>
