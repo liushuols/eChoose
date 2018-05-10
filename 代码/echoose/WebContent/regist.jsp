@@ -14,22 +14,21 @@
 	<link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/iconfont.css">
     <link rel="stylesheet" href="css/reg.css">
+    <link rel="stylesheet" type="text/css" href="css/zcity.css">
 	
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript" src="js/vali.min.js"></script>
 	
 	<style type="text/css">
+		#register{height:780px;}
 		.vali input{width:100%;height:40px;}
 		.css1{background-color:#0080ff;color:white;}
-		.submit .btn{background-color:#0080ff;height:50px;width:100%;font-size:20px;color:white;font-weight:bold;margin-top:50px;}
+		.submit .btn{background-color:#0080ff;height:50px;width:100%;font-size:20px;color:white;font-weight:bold;float:left;}
 		.css3 input{height:15px;}
 		.css3{text-align:left;height:15px;margin-top:30px;}
-		.css4{text-align:left;}
+		.css4{text-align:left;float:left;width:350px;height:70px;}
 		h3{font-size:30px;font-weight:bold;}
-		.css5{height:70px;float:left;}
-		.demoTable .td-04{height:30px;}
-		.zcityGroup .zcityItem .zcityItem-main .cityContainer{height:120px;border:1px solid #eee;}
-		.zcityGroup .zcityItem .zcityItem-main .citylist .cityitem{padding:0 10px;display:block;height:32px;line-height:32px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-align:left;}
+		.css5{float:left;}
 	</style>
 </head>
 <body>
@@ -67,37 +66,37 @@
 						<div class="vali">
 							<input type="text" name="" value="" placeholder="请输入邮箱">
 						</div>
+						<div class="css4">
+							请选择心仪专业：
+							<select name="select1">
+								<option>--请选择--</option>
+								<option value="计算机">计算机</option>
+								<option value="计算机">数学</option>
+								<option value="计算机">医学</option>
+								
+							</select>
+						</div>
+					
 						<div clsss="css5">
 							<table class="demoTable">
 							    <thead>
 							        <tr>
-							      
-							            <th class="td-04"><h6 class="title">请选择所在省市</h6></th>
-							            
+							            <th class="td-04"><h6 class="title">请选择所在城市：</h6></th>
 							        </tr>
 							    </thead>
 							    <tbody>
 							        <tr>
-							            
 							            <td class="td-04">
 							                <!--zcityGroup start-->
 							                <div class="zcityGroup" city-range="{'level_start':1,'level_end':3}"></div>
 							                <!--zcityGroup end-->
 							            </td>
-							            
 							        </tr>
 							    </tbody>
 							</table>
 						</div>
-						<div class="css4">
-							请选择心仪专业：
-							<select name="select1">  
-							  <option>--请选择--</option>  
-							  <option value="计算机">计算机</option>  
-							  <option value="数学">数学</option>  
-							  <option value="医学">医学</option>  
-							</select>  
-						</div>
+						
+						
 						<div class="submit">
 							<input type="submit" class="btn" value="立即注册">
 						</div>
