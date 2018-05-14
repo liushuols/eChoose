@@ -2,7 +2,7 @@ package com.demo.test;
 
 public class SendMsg {
 	  public static void main(String[] args) {
-	        String mobileNumber = "15732105376";//接收验证码的手机号码
+	        String mobileNumber = "15703286210";//接收验证码的手机号码
 	        try {
 	            String str = SendCode.sendMsg(mobileNumber);
 	            if("success".equals(str)){
