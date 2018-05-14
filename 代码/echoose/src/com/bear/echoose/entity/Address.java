@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 package com.bear.echoose.entity;
 
 import java.util.HashSet;

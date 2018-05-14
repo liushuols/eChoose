@@ -105,55 +105,55 @@ $(function(){
           <div class="ly_relative">
             <div class="product_list">
               <div class="ly_items">
-                <div class="ly_pic"><a href="#" > <img src="images/1.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/gx.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >院校查询</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="#" > <img src="images/1.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/zy.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >专业汇总</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="#" > <img src="images/1.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/yx.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >院校汇总</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="#" > <img src="images/1.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/job.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >职业展望</a></h3>
                 </div>
               </div>
               <div class="ly_items  mar_l0">
-                <div class="ly_pic"><a href="#" > <img src="images/1.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/shoucang.png" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >我的收藏</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="#" > <img src="images/1.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/chat.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >聊天室</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="#" > <img src="images/1.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/gkrl.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >高考日历</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="#" > <img src="images/1.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/zixun.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >在线咨询</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="#" > <img src="images/1.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/VR.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >VR亲身体验</a></h3>
                 </div>
@@ -235,70 +235,70 @@ $(function(){
           <div class="ly_relative">
             <div class="ly_absolute">
               <div class="ly_item">
-                <div class="ly_pic"><a href="#" > <img src="images/2.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/byou.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >北京邮电大学</a></h3>
                   <div class="ly_intro"> 材料节省能源，无污染、易回收，设计符合人体工程学原理，减少多余功能，在正常和非正常使用情况下，不会对人体产生不利影响和伤害，加工过程中能源消耗小的家具。</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="#" > <img src="images/2.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/bj.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >北京交通大学</a></h3>
                   <div class="ly_intro">材料节省能源，无污染、易回收，设计符合人体工程学原理，减少多余功能，在正常和非正常使用情况下，不会对人体产生不利影响和伤害，加工过程中能源消耗小的家具。</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="#" > <img src="images/2.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/tian.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >天津大学</a></h3>
                   <div class="ly_intro"> 材料节省能源，无污染、易回收，设计符合人体工程学原理，减少多余功能，在正常和非正常使用情况下，不会对人体产生不利影响和伤害，加工过程中能源消耗小的家具。</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="#" > <img src="images/2.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/by.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >北京电影学院</a></h3>
                   <div class="ly_intro">材料节省能源，无污染、易回收，设计符合人体工程学原理，减少多余功能，在正常和非正常使用情况下，不会对人体产生不利影响和伤害，加工过程中能源消耗小的家具。</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="#" > <img src="images/2.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/wh.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >武汉大学</a></h3>
                   <div class="ly_intro">材料节省能源，无污染、易回收，设计符合人体工程学原理，减少多余功能，在正常和非正常使用情况下，不会对人体产生不利影响和伤害，加工过程中能源消耗小的家具。</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="#" > <img src="images/2.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/hgd.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >河北工业大学</a></h3>
                   <div class="ly_intro">材料节省能源，无污染、易回收，设计符合人体工程学原理，减少多余功能，在正常和非正常使用情况下，不会对人体产生不利影响和伤害，加工过程中能源消耗小的家具。</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="#" > <img src="images/2.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/hblg.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >华北理工大学</a></h3>
                   <div class="ly_intro">材料节省能源，无污染、易回收，设计符合人体工程学原理，减少多余功能，在正常和非正常使用情况下，不会对人体产生不利影响和伤害，加工过程中能源消耗小的家具。</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="#" > <img src="images/2.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/dl.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >大连理工大学</a></h3>
                   <div class="ly_intro">材料节省能源，无污染、易回收，设计符合人体工程学原理，减少多余功能，在正常和非正常使用情况下，不会对人体产生不利影响和伤害，加工过程中能源消耗小的家具。</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="#" > <img src="images/2.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/zgzf.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >中国政法大学</a></h3>
                   <div class="ly_intro">材料节省能源，无污染、易回收，设计符合人体工程学原理，减少多余功能，在正常和非正常使用情况下，不会对人体产生不利影响和伤害，加工过程中能源消耗小的家具。</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="#" > <img src="images/2.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/byu.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >北京语言大学</a></h3>
                   <div class="ly_intro">材料节省能源，无污染、易回收，设计符合人体工程学原理，减少多余功能，在正常和非正常使用情况下，不会对人体产生不利影响和伤害，加工过程中能源消耗小的家具。</div>
