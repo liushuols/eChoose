@@ -25,17 +25,15 @@ import com.sun.jndi.cosnaming.IiopUrl.Address;
 public class Studentuser {
 	private int id;
 	private String sname;
-	private String ssex;
-	private int sphone;
+	private String sphone;
 	private String spassword;
 	private String semail;
+	private String smajor;
 	private Set <Collection> collectionSet = new HashSet<Collection>();
 	private Set<Address> addressSet = new HashSet<Address>();
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-
-	
 	public int getId() {
 		return id;
 	}
@@ -48,16 +46,10 @@ public class Studentuser {
 	public void setSname(String sname) {
 		this.sname = sname;
 	}
-	public String getSsex() {
-		return ssex;
-	}
-	public void setSsex(String ssex) {
-		this.ssex = ssex;
-	}
-	public int getSphone() {
+	public String getSphone() {
 		return sphone;
 	}
-	public void setSphone(int sphone) {
+	public void setSphone(String sphone) {
 		this.sphone = sphone;
 	}
 	public String getSpassword() {
@@ -90,6 +82,12 @@ public class Studentuser {
 	}
 	public void setAddressSet(Set<Address> addressSet) {
 		this.addressSet = addressSet;
+	}
+	public String getSmajor() {
+		return smajor;
+	}
+	public void setSmajor(String smajor) {
+		this.smajor = smajor;
 	}
 
 	

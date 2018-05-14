@@ -34,6 +34,19 @@
 		#rePassword_span{padding-left:320px;line-height:20px;}
 		#Email_span{padding-left:200px;line-height:20px;}
 	</style>
+<script type="text/javascript">
+	function send(){
+		 String mobileNumber = "15703286210";//接收验证码的手机号码
+
+	            String str = SendCode.sendMsg(mobileNumber);
+	            if("success".equals(str)){
+	                System.out.println("发送成功！");
+	            }else{
+	                System.out.println("发送失败！");
+	            }
+	       
+	}
+</script>
 </head>
 <body>
 <div class="wrap">
@@ -42,37 +55,37 @@
 		<div class="vli">
 			<div class="wrapper move">
 				<div id="register">
-					<form class="form2" method="" onsubmit="return validateForm() action="">
+					<form class="form2" method="post" action="studentuser/saveuser" >
 						<h3>易选择网注册</h3>
 						
 						<div class="vali">
-							<input type="text" placeholder="请输入用户名" id="username" class="input_class" onblur="checkUsername(this)" /><span id="username_span"></span>
+							<input type="text" name="username"  placeholder="请输入用户名" id="username" class="input_class" onblur="checkUsername(this)" /><span id="username_span"></span>
 						</div>
 						
 						<div class="vali">
-								<input type="text" placeholder="请输入11位手机号" id="telenum" class="input_class" onblur="checkTelenum(this)" /><span id="telenum_span">请输入11位手机号</span>
+								<input type="text"  name="tel" placeholder="请输入11位手机号" id="telenum" class="input_class" onblur="checkTelenum(this)" /><span id="telenum_span">请输入11位手机号</span>
 							</div>
-						<div class="marb0">
+						<%-- <div class="marb0">
 							<div class="vali pho">
 								<input type="text" name="" value="" placeholder="请输入验证码">
 							</div>
 							<div class="vali pcd">
-								<input type="submit" name="" value="获取验证码" class="css1">
+								<input type="button"  value="获取验证码" class="css1"  onclick="send(this)">
 							</div>
 							<div class="cl1"></div>
-						</div>
+						</div>--%>
 						<div class="vali">
-							<input type="password" placeholder="请填写长度至少为8个字符的密码" id="password" class="input_class" onblur="checkPassword(this)" /><span id="password_span">请输入8-12位密码</span>
+							<input type="password"  name="password" placeholder="请填写长度至少为8个字符的密码" id="password" class="input_class" onblur="checkPassword(this)" /><span id="password_span">请输入8-12位密码</span>
 						</div>
 						<div class="vali">
 							<input type="password" placeholder="请再次输入密码" id="rePassword" class="input_class" onblur="checkRePassword(this)" /><span id="rePassword_span">两次密码不一致</span>
 						</div>
 						<div class="vali">
-							<input type="text" placeholder="请输入邮箱" id="Email" class="input_class" onblur="checkEmail(this)" /><span id="Email_span">格式示例：xxxxxxxx@163.com</span>
+							<input type="text"  name="email" placeholder="请输入邮箱" id="Email" class="input_class" onblur="checkEmail(this)" /><span id="Email_span">格式示例：xxxxxxxx@163.com</span>
 						</div>
 						<div class="css4">
 							请选择心仪专业：
-							<select>
+							<select name="major">
 								<option>--请选择--</option>
 								<option value="计算机">计算机</option>
 								<option value="数学类">数学类</option>
