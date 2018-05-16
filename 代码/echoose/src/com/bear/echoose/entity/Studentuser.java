@@ -12,33 +12,33 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.JoinColumn; 
 
-import com.sun.jndi.cosnaming.IiopUrl.Address;
 
 @Entity
-@Table(name="Studentuser")
+@Table(name="studentuser")//表名
 
 
 public class Studentuser {
-	private int id;
+	private int suid;
 	private String sname;
 	private String sphone;
 	private String spassword;
 	private String semail;
 	private String smajor;
-	private Set <Collection> collectionSet = new HashSet<Collection>();
-	private Set<Address> addressSet = new HashSet<Address>();
+//	private Set <Collection> collectionSet = new HashSet<Collection>();
+//	private School school;
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	public int getId() {
-		return id;
+	public int getSuid() {
+		return suid;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setSuid(int suid) {
+		this.suid = suid;
 	}
 	public String getSname() {
 		return sname;
@@ -65,30 +65,32 @@ public class Studentuser {
 		this.semail = semail;
 	}
 	
-	@OneToMany(mappedBy="studentuser", targetEntity=Collection.class,  cascade=CascadeType.ALL,fetch=FetchType.EAGER)
+//	@OneToMany(mappedBy="studentuser", targetEntity=Collection.class,  cascade=CascadeType.ALL,fetch=FetchType.EAGER)
+//
+//	public Set<Collection> getCollectionSet() {
+//		return collectionSet;
+//	}
+//	public void setCollectionSet(Set<Collection> collectionSet) {
+//		this.collectionSet = collectionSet;
+//	}
+//	
 
-	public Set<Collection> getCollectionSet() {
-		return collectionSet;
-	}
-	public void setCollectionSet(Set<Collection> collectionSet) {
-		this.collectionSet = collectionSet;
-	}
-	
-	@ManyToMany
-	@JoinTable(name="student_address", joinColumns=@JoinColumn(name="sid"), inverseJoinColumns=@JoinColumn(name="aid"))
-
-	public Set<Address> getAddressSet() {
-		return addressSet;
-	}
-	public void setAddressSet(Set<Address> addressSet) {
-		this.addressSet = addressSet;
-	}
 	public String getSmajor() {
 		return smajor;
 	}
 	public void setSmajor(String smajor) {
 		this.smajor = smajor;
 	}
+	
+//	@ManyToOne
+//	@JoinColumn(name="sid")
+//	public School getSchool() {
+//		return school;
+//	}
+//	public void setSchool(School school) {
+//		this.school = school;
+//	}
+	
 
 	
 

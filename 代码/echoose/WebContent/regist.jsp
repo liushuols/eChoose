@@ -1,8 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@page import="com.demo.test.SendCode" %>
+<%@page import="com.demo.test.CheckSumBuilder" %>
+<%@page import="com.demo.test.MobileMessageCheck" %>
+<%@page import="com.demo.web.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-	<%
+<%
 		String path = request.getContextPath();
 		String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 	%>
@@ -36,7 +40,7 @@
 	</style>
 <script type="text/javascript">
 	function send(){
-		 String mobileNumber = "15703286210";//接收验证码的手机号码
+		 String mobileNumber = "17716554698" //接收验证码的手机号码
 
 	            String str = SendCode.sendMsg(mobileNumber);
 	            if("success".equals(str)){
@@ -65,15 +69,15 @@
 						<div class="vali">
 								<input type="text"  name="tel" placeholder="请输入11位手机号" id="telenum" class="input_class" onblur="checkTelenum(this)" /><span id="telenum_span">请输入11位手机号</span>
 							</div>
-						<%-- <div class="marb0">
+						<div class="marb0">
 							<div class="vali pho">
 								<input type="text" name="" value="" placeholder="请输入验证码">
 							</div>
 							<div class="vali pcd">
-								<input type="button"  value="获取验证码" class="css1"  onclick="send(this)">
+								<input type="button"  value="获取验证码" class="css1"  onclick="send();">
 							</div>
 							<div class="cl1"></div>
-						</div>--%>
+						</div>
 						<div class="vali">
 							<input type="password"  name="password" placeholder="请填写长度至少为8个字符的密码" id="password" class="input_class" onblur="checkPassword(this)" /><span id="password_span">请输入8-12位密码</span>
 						</div>

@@ -69,5 +69,22 @@ public class SendCode {
         }
         return "error";
     }
+    
+    public  void  send () {
+        String mobileNumber = "15703286210";//接收验证码的手机号码
+        try {
+            String str = SendCode.sendMsg(mobileNumber);
+            if("success".equals(str)){
+                System.out.println("发送成功！");
+            }else{
+                System.out.println("发送失败！");
+            }
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+        }
+    }
 }
+
+
 

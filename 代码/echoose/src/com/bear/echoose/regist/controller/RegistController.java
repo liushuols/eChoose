@@ -17,12 +17,12 @@ import com.bear.echoose.regist.service.RegistServiceImpl;
 public class RegistController {
 
 	@Resource
-	private RegistServiceImpl RegistServiceImpl;
+	private RegistServiceImpl registServiceImpl;
 	@RequestMapping("/saveuser")
 	public String addUser(Model model,@RequestParam("username") String name,@RequestParam("password") String pwd,
 			@RequestParam("tel") String tel,@RequestParam("major") String major,
 			@RequestParam("email") String email) {
-		List<Studentuser> userList = this.RegistServiceImpl.findAllStudentuser();//泛型里面是实体类名
+		List<Studentuser> userList = this.registServiceImpl.findAllStudentuser();//泛型里面是实体类名
 		
 		//如果数据库中存在这个用户，直接跳转到登录页面֤
 		for(int i = 0 ;i < userList.size();i++) {
@@ -39,8 +39,8 @@ public class RegistController {
 		studentuser.setSemail(email);
 		studentuser.setSmajor(major);
 		//调用service层的方法
-		this.RegistServiceImpl.saveStudentUser(studentuser);
-		model.addAttribute("studentuser", studentuser);//
+		this.registServiceImpl.saveStudentUser(studentuser);
+		model.addAttribute("studentuser", studentuser);
 		return "login";
 	}
 

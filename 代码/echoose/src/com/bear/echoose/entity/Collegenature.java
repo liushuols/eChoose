@@ -17,33 +17,34 @@ import javax.persistence.Table;
 
 
 public class Collegenature {
-	private int id;
+	private int cnid;
 	private String cnname;
-	private Set<School> schoolSet = new HashSet<School>();
+//	private Set<School> schoolSet = new HashSet<School>();
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	public int getCnid() {
+		return cnid;
+	}
+	public void setCnid(int cnid) {
+		this.cnid = cnid;
+	}
 	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
 	public String getCnname() {
 		return cnname;
 	}
+	
 	public void setCnname(String cnname) {
 		this.cnname = cnname;
 	}
-	@OneToMany(mappedBy="collegenature", targetEntity=Collection.class,  cascade=CascadeType.ALL,fetch=FetchType.EAGER)
-	
-	public Set<School> getSchoolSet() {
-		return schoolSet;
-	}
-	public void setSchoolSet(Set<School> schoolSet) {
-		this.schoolSet = schoolSet;
-	}
+//	@OneToMany(mappedBy="collegenature", targetEntity=School.class,  cascade=CascadeType.ALL,fetch=FetchType.EAGER)
+//	
+//	public Set<School> getSchoolSet() {
+//		return schoolSet;
+//	}
+//	public void setSchoolSet(Set<School> schoolSet) {
+//		this.schoolSet = schoolSet;
+//	}
 	
 
 }

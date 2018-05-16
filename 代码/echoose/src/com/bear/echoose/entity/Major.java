@@ -10,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -17,26 +18,37 @@ import javax.persistence.Table;
 @Table(name="major")
 
 public class Major {
-	private int id;
+	private int mid;
 	private String mname;
 	private int mcode;
 	private String mbtype;
 	private String mintroduce;
-	private Mscore mscore;
-	private Set<School> schoolSet = new HashSet<School>();
+//	private Mscore mscore;
+//	private Majortype majortype;
+//	private Set<School> schoolSet = new HashSet<School>();
+	
+//	@ManyToOne
+//	@JoinColumn(name="mtid")
+//	public Majortype getMajortype() {
+//		return majortype;
+//	}
+//	public void setMajortype(Majortype majortype) {
+//		this.majortype = majortype;
+//	}
+
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	
-	public int getId() {
-		return id;
+	public int getMid() {
+		return mid;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setMid(int mid) {
+		this.mid = mid;
 	}
 	public String getMname() {
 		return mname;
 	}
+	
 	public void setMname(String mname) {
 		this.mname = mname;
 	}
@@ -59,24 +71,24 @@ public class Major {
 		this.mintroduce = mintroduce;
 	}
 	
-	@ManyToMany(mappedBy="school")
-	
-	public Set<School> getSchoolSet() {
-		return schoolSet;
-	}
-	public void setSchoolSet(Set<School> schoolSet) {
-		this.schoolSet = schoolSet;
-	}
-	
-	@OneToOne(cascade=CascadeType.ALL)
-	@JoinColumn(name="mssid")
-	
-	public Mscore getMscore() {
-		return mscore;
-	}
-	public void setMscore(Mscore mscore) {
-		this.mscore = mscore;
-	}
+//	@ManyToMany(mappedBy="major")
+//	
+//	public Set<School> getSchoolSet() {
+//		return schoolSet;
+//	}
+//	public void setSchoolSet(Set<School> schoolSet) {
+//		this.schoolSet = schoolSet;
+//	}
+//	
+//	@OneToOne(cascade=CascadeType.ALL)
+//	@JoinColumn(name="msid")
+//	
+//	public Mscore getMscore() {
+//		return mscore;
+//	}
+//	public void setMscore(Mscore mscore) {
+//		this.mscore = mscore;
+//	}
 	
 	
 	

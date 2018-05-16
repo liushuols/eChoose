@@ -15,17 +15,18 @@ import javax.persistence.Table;
 @Entity
 @Table(name="majorscoretype")
 public class Majorscoretype {
-	private int id;
+	private int mstid;
 	private String mstname;
-	private Set <Mscore> mscoreSet = new HashSet<Mscore>();
+//	private Set <Mscore> mscoreSet = new HashSet<Mscore>();
+	
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	public int getId() {
-		return id;
+	public int getMstid() {
+		return mstid;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setMstid(int mstid) {
+		this.mstid = mstid;
 	}
 	public String getMstname() {
 		return mstname;
@@ -33,13 +34,13 @@ public class Majorscoretype {
 	public void setMstname(String mstname) {
 		this.mstname = mstname;
 	}
-	@OneToMany(mappedBy="majorscoretype", targetEntity=Collection.class,  cascade=CascadeType.ALL,fetch=FetchType.EAGER)
-	public Set<Mscore> getMscoreSet() {
-		return mscoreSet;
-	}
-	public void setMscoreSet(Set<Mscore> mscoreSet) {
-		this.mscoreSet = mscoreSet;
-	}
+//	@OneToMany(mappedBy="majorscoretype", targetEntity=Mscore.class,  cascade=CascadeType.ALL,fetch=FetchType.EAGER)
+//	public Set<Mscore> getMscoreSet() {
+//		return mscoreSet;
+//	}
+//	public void setMscoreSet(Set<Mscore> mscoreSet) {
+//		this.mscoreSet = mscoreSet;
+//	}
 	
 	
 }

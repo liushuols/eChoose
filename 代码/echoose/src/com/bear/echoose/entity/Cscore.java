@@ -12,27 +12,28 @@ import javax.persistence.Table;
 @Entity
 @Table(name="cscore")
 public class Cscore {
-	private int id;
+	private int csid;
 	private Date cyear;
 	private int min;
 	private int max;
 	private int average;
 	private int cnum;
 	private String mbatch;
-	private School school;
+//	private School school;
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	
-	public int getId() {
-		return id;
+	public int getCsid() {
+		return csid;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setCsid(int csid) {
+		this.csid = csid;
 	}
 	public Date getCyear() {
 		return cyear;
 	}
+	
 	public void setCyear(Date cyear) {
 		this.cyear = cyear;
 	}
@@ -66,13 +67,13 @@ public class Cscore {
 	public void setMbatch(String mbatch) {
 		this.mbatch = mbatch;
 	}
-	@OneToOne(mappedBy="cscore")
-	public School getSchool() {
-		return school;
-	}
-	public void setSchool(School school) {
-		this.school = school;
-	}
+//	@OneToOne(mappedBy="cscore")
+//	public School getSchool() {
+//		return school;
+//	}
+//	public void setSchool(School school) {
+//		this.school = school;
+//	}
 	
 	
 	
