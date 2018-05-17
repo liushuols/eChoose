@@ -9,21 +9,22 @@ import javax.persistence.Table;
 @Entity
 @Table(name="news")
 public class News {
-	private int id;
+	private int nid;
 	private String ntitle;
 	private String ncontent;
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	public int getId() {
-		return id;
+	public int getNid() {
+		return nid;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setNid(int nid) {
+		this.nid = nid;
 	}
 	public String getNtitle() {
 		return ntitle;
 	}
+	
 	public void setNtitle(String ntitle) {
 		this.ntitle = ntitle;
 	}

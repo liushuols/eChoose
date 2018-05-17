@@ -9,7 +9,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name="hteacheruser")
 public class HTeacheruser {
-	private int id;
+	private int huid;
 	private int hphone;
 	private String hpassword;
 	private String hemail;
@@ -18,15 +18,16 @@ public class HTeacheruser {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	public int getId() {
-		return id;
+	public int getHuid() {
+		return huid;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setHuid(int huid) {
+		this.huid = huid;
 	}
 	public int getHphone() {
 		return hphone;
 	}
+	
 	public void setHphone(int hphone) {
 		this.hphone = hphone;
 	}

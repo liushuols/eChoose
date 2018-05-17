@@ -180,6 +180,8 @@ input[type=number]::-webkit-outer-spin-button {
 .form-data .lang-btn.off{
     color: #0080ff;
     background-color: #e5e5e5;
+    color:white;
+    text-align:center;
 }
 .bottom-info{
     width: 400px;
@@ -188,6 +190,7 @@ input[type=number]::-webkit-outer-spin-button {
     color: #cacaca;
     margin: 0 auto 30px;
     text-align: center;
+    margin: 20px auto;
 }
 .bottom-info a{
     color: #42a5f5;

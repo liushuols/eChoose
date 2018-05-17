@@ -1,8 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@page import="com.demo.test.SendCode" %>
+<%@page import="com.demo.test.CheckSumBuilder" %>
+<%@page import="com.demo.test.MobileMessageCheck" %>
+<%@page import="com.demo.web.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-	<%
+<%
 		String path = request.getContextPath();
 		String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 	%>
@@ -20,7 +24,7 @@
 	<script type="text/javascript" src="js/vali.min.js"></script>
 	
 	<style type="text/css">
-		#register{height:650px;}
+		#register{height:700px;width:500px;}
 		.vali input{width:100%;height:40px;}
 		.css1{background-color:#0080ff;color:white;}
 		.submit .btn{background-color:#0080ff;height:50px;width:100%;font-size:20px;color:white;font-weight:bold;float:left;}
@@ -29,7 +33,24 @@
 		.css4{text-align:left;width:350px;height:70px;}
 		h3{font-size:30px;font-weight:bold;}
 		.css5{float:left;height:70px;}
+		#telenum_span{padding-left:300px;line-height:20px;}
+		#password_span{padding-left:300px;line-height:20px;}
+		#rePassword_span{padding-left:320px;line-height:20px;}
+		#Email_span{padding-left:200px;line-height:20px;}
 	</style>
+<script type="text/javascript">
+	function send(){
+		 String mobileNumber = "17716554698" //接收验证码的手机号码
+
+	            String str = SendCode.sendMsg(mobileNumber);
+	            if("success".equals(str)){
+	                System.out.println("发送成功！");
+	            }else{
+	                System.out.println("发送失败！");
+	            }
+	       
+	}
+</script>
 </head>
 <body>
 <div class="wrap">
@@ -38,37 +59,37 @@
 		<div class="vli">
 			<div class="wrapper move">
 				<div id="register">
-					<form class="form2" method="" action="">
+					<form class="form2" method="post" action="studentuser/saveuser" >
 						<h3>易选择网注册</h3>
 						
 						<div class="vali">
-							<input type="text" name="" value="" placeholder="请输入用户名">
+							<input type="text" name="username"  placeholder="请输入用户名" id="username" class="input_class" onblur="checkUsername(this)" /><span id="username_span"></span>
 						</div>
 						
 						<div class="vali">
-								<input type="text" name="" value="" placeholder="请输入11位手机号">
+								<input type="text"  name="tel" placeholder="请输入11位手机号" id="telenum" class="input_class" onblur="checkTelenum(this)" /><span id="telenum_span">请输入11位手机号</span>
 							</div>
 						<div class="marb0">
 							<div class="vali pho">
 								<input type="text" name="" value="" placeholder="请输入验证码">
 							</div>
 							<div class="vali pcd">
-								<input type="button" name="" value="获取验证码" class="css1">
+								<input type="button"  value="获取验证码" class="css1"  onclick="send();">
 							</div>
 							<div class="cl1"></div>
 						</div>
 						<div class="vali">
-							<input type="password" name="" value="" placeholder="请填写长度至少为8个字符的密码">
+							<input type="password"  name="password" placeholder="请填写长度至少为8个字符的密码" id="password" class="input_class" onblur="checkPassword(this)" /><span id="password_span">请输入8-12位密码</span>
 						</div>
 						<div class="vali">
-							<input type="password" name="" value="" placeholder="请再次输入密码" id="password">
+							<input type="password" placeholder="请再次输入密码" id="rePassword" class="input_class" onblur="checkRePassword(this)" /><span id="rePassword_span">两次密码不一致</span>
 						</div>
 						<div class="vali">
-							<input type="text" name="" value="" placeholder="请输入邮箱">
+							<input type="text"  name="email" placeholder="请输入邮箱" id="Email" class="input_class" onblur="checkEmail(this)" /><span id="Email_span">格式示例：xxxxxxxx@163.com</span>
 						</div>
 						<div class="css4">
 							请选择心仪专业：
-							<select name="select1">
+							<select name="major">
 								<option>--请选择--</option>
 								<option value="计算机">计算机</option>
 								<option value="数学类">数学类</option>
@@ -174,4 +195,176 @@
 	zcityrun('.zcityGroup');
 	</script>
 </body>
+<script type="text/css">  
+		.input_class {  /*设置class属性名称为input_class的标签内容*/  
+   		 width:250px;  
+   		 height:16px;      
+		}  
+  
+		caption{        /*设置caption标签内容*/  
+   		 font-size:30px;  
+    	color:red;  
+	    text-shadow: yellow 6px 0px 5px;   
+	    font-stretch: wider;  
+	    font-weight: 900;   
+	}  
+  
+	.aaa{          /*设置class属性名称为aaa的标签内容*/  
+	    font-size:16px;  
+	    font-weight: bold;  
+	}  
+  
+	</script>
+	<script type="text/javascript">  
+  
+       var  usernameRegex = /^\w{3,15}$/;  
+     
+        var passwordRegex = /^\w{6,12}$/;
+        
+        var teleRegex = /^1\d{10}$/
+       
+        var emailRegex = /^\w+@\w+(\.\w+)+$/;  
+     
+        var realNameRegex = /^[\u4e00-\u9fa5]{2,5}$/;  
+          
+    
+        function validateForm(){  
+            var flag = true;  
+            //校验密码  
+            var passwordNode = byId("password");  //获得ID值为password的节点对象  
+            var password = passwordNode.value;  
+            if(!passwordRegex.test(password)){  
+                byId("password_span").style.color = "red";  
+                flag = false;  
+            }  
+              
+            //确认密码  
+            var rePasswordNode = byId("rePassword");  //获得ID值为rePassword的节点对象  
+            var rePassword = rePasswordNode.value;  
+            if(!password==rePassword){  
+                byId("rePassword_span").style.color = "red";  
+                flag = false;  
+            }else if(!passwordRegex.test(rePassword)){  
+                byId("rePassword_span").style.color = "red";  
+                flag = false;  
+            }else{  
+                byId("rePassword_span").style.color = "green";  
+            }  
+            
+          //校验手机号
+            var teleNode = byId("telenum");  //获得ID值为telenum的节点对象  
+            var tele = teleNode.value;  
+            if(!teleRegex.test(tele)){  
+                byId("telenum_span").style.color = "red";  
+                flag = false;  
+            }  
+            
+            //校验邮箱  
+            var emailNode = byId("Email");  //获得ID值为Email的节点对象  
+            var email = emailNode.value;  
+            if(!emailRegex.test(email)){  
+                byId("Email_span").style.color = "red";  
+                flag = false;  
+            }  
+              
+            //校验姓名  
+            var realNameNode = byId("realName");  //获得ID值为realName的节点对象  
+            var realName = realNameNode.value;  
+            if(!realNameRegex.test(realName)){  
+                byId("realName_span").style.color = "red";  
+                flag = false;  
+            }  
+              
+            //校验省份  
+            var provinceNode = byId("province");  //获得ID值为province的节点对象  
+            var province = provinceNode.value;  
+            if("--请选择--" == province){  
+                byId("province_span").style.color = "red";  
+                flag = false;  
+            }  
+  
+            return flag;  
+        }  
+
+		function byId(id){  //自定义方法，用于获取传递过来的ID值对应的节点对象  
+            return document.getElementById(id);  
+        }  
+              
+        function checkUsername(node){ //当鼠标离开节点时调用此方法，验证节点内容是否符合注册规范  
+            //校验用户名  
+            var username = node.value;  //得到传递过来的节点对象的值  
+            if(!usernameRegex.test(username)){  //验证是否符合节点对应的正则表达式  
+                byId("username_span").style.color = "red"; //不符合，相应内容变成红色  
+            }else{  
+                byId("username_span").style.color = "green";  //符合，相应内容变成绿色  
+            }  
+        }  
+          
+        function checkPassword(node){  //当鼠标离开节点时调用此方法，验证节点内容是否符合注册规范  
+            //校验密码  
+            var password = node.value;  
+            //alert("111");  
+            if (!passwordRegex.test(password)) {  
+                byId("password_span").style.color = "red";  
+            }  
+            else {  
+                byId("password_span").style.color = "green";  
+            }  
+        }     
+              
+        function checkRePassword(node){  //当鼠标离开节点时调用此方法，验证节点内容是否符合注册规范  
+            //确认密码                
+            var rePassword = node.value;  
+            var password = byId("password").value;  
+            //alert(repassword+"***"+password);           
+            if(!password==rePassword){                    
+                byId("rePassword_span").style.color = "red";  
+            }else if(!passwordRegex.test(rePassword)){  
+                byId("rePassword_span").style.color = "red";  
+            }else{  
+                byId("rePassword_span").style.color = "green";  
+            }  
+        }         
+  		
+        function checkTelenum(node){  //当鼠标离开节点时调用此方法，验证节点内容是否符合注册规范  
+            //校验手机号  
+            var tele = node.value;  
+            if(!teleRegex.test(tele)){  
+                byId("telenum_span").style.color = "red";  
+            }else{  
+                byId("telenum_span").style.color = "green";  
+            }  
+        }  
+        
+        function checkEmail(node){  //当鼠标离开节点时调用此方法，验证节点内容是否符合注册规范  
+            //校验邮箱  
+            var email = node.value;  
+            if(!emailRegex.test(email)){  
+                byId("Email_span").style.color = "red";  
+            }else{  
+                byId("Email_span").style.color = "green";  
+            }  
+        }  
+              
+        function checkName(node){  //当鼠标离开节点时调用此方法，验证节点内容是否符合注册规范  
+            var realName = node.value;  
+            if(!realNameRegex.test(realName)){  
+                byId("realName_span").style.color = "red";  
+            }else{  
+                byId("realName_span").style.color = "green";  
+            }  
+        }  
+          
+        function checkProvince(node){  //当鼠标离开节点时调用此方法，验证节点内容是否符合注册规范  
+            var province = node.value;  
+            if("--请选择--" == province){  
+                byId("province_span").style.color = "red";  
+            }else{  
+                byId("province_span").style.color = "green";  
+            }  
+        }  
+  
+</script>  
+	
+
 </html>

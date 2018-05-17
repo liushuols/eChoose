@@ -18,34 +18,35 @@ import com.sun.jndi.cosnaming.IiopUrl.Address;
 @Table(name="collegetype")
 
 public class Collegetype {
-	private int id;
+	private int ctid;
 	private String ctname;
-	private Set<School> schoolSet = new HashSet<School>();
+//	private Set<School> schoolSet = new HashSet<School>();
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	
-	public int getId() {
-		return id;
+	public int getCtid() {
+		return ctid;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setCtid(int ctid) {
+		this.ctid = ctid;
 	}
 	public String getCtname() {
 		return ctname;
 	}
+	
 	public void setCtname(String ctname) {
 		this.ctname = ctname;
 	}
 	
-	@OneToMany(mappedBy="collegetype", targetEntity=Collection.class,  cascade=CascadeType.ALL,fetch=FetchType.EAGER)
-	
-	public Set<School> getSchoolSet() {
-		return schoolSet;
-	}
-	public void setSchoolSet(Set<School> schoolSet) {
-		this.schoolSet = schoolSet;
-	}
+//	@OneToMany(mappedBy="collegetype", targetEntity=School.class,  cascade=CascadeType.ALL,fetch=FetchType.EAGER)
+//	
+//	public Set<School> getSchoolSet() {
+//		return schoolSet;
+//	}
+//	public void setSchoolSet(Set<School> schoolSet) {
+//		this.schoolSet = schoolSet;
+//	}
 
 	
 

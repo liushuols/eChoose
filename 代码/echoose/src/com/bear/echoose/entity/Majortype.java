@@ -15,32 +15,33 @@ import javax.persistence.Table;
 @Entity
 @Table(name="majortype")
 public class Majortype {
-	private int id;
+	private int mtid;
 	private String mtname;
-	private Set <Major> majorSet = new HashSet<Major>();
+//	private Set <Major> majorSet = new HashSet<Major>();
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	public int getId() {
-		return id;
+	public int getMtid() {
+		return mtid;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setMtid(int mtid) {
+		this.mtid = mtid;
 	}
 	public String getMtname() {
 		return mtname;
 	}
+	
 	public void setMtname(String mtname) {
 		this.mtname = mtname;
 	}
-	@OneToMany(mappedBy="majortype", targetEntity=Collection.class,  cascade=CascadeType.ALL,fetch=FetchType.EAGER)
-	
-	public Set<Major> getMajorSet() {
-		return majorSet;
-	}
-	public void setMajorSet(Set<Major> majorSet) {
-		this.majorSet = majorSet;
-	}
+//	@OneToMany(mappedBy="majortype", targetEntity=Major.class,  cascade=CascadeType.ALL,fetch=FetchType.EAGER)
+//	
+//	public Set<Major> getMajorSet() {
+//		return majorSet;
+//	}
+//	public void setMajorSet(Set<Major> majorSet) {
+//		this.majorSet = majorSet;
+//	}
 	
 	
 }

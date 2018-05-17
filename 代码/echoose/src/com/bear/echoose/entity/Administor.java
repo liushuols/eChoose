@@ -9,7 +9,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name="administor")
 public class Administor {
-	private int id;
+	private int adid;
 	private String aname;
 	private String apassword;
 	private String aemail;	
@@ -17,11 +17,12 @@ public class Administor {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	public int getId() {
-		return id;
+	
+	public int getAdid() {
+		return adid;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setAdid(int adid) {
+		this.adid = adid;
 	}
 	public String getAname() {
 		return aname;

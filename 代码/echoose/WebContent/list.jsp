@@ -118,73 +118,73 @@ $(function(){
           </div>
           <div class="pro_list">
             <div class="ly_items">
-              <div class="ly_pic"> <a href="#" > <img src="images/1.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="#" > <img src="images/qinghua.jpg" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
                 <h3> <a href="#" >清华大学</a> </h3>
               </div>
             </div>
             <div class="ly_items">
-              <div class="ly_pic"> <a href="#" > <img src="images/2.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="#" > <img src="images/beida.jpg" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
                 <h3> <a href="#" >北京大学</a> </h3>
               </div>
             </div>
             <div class="ly_items">
-              <div class="ly_pic"> <a href="#" > <img src="images/3.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="#" > <img src="images/zheda.jpg" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
                 <h3> <a href="#" >浙江大学</a> </h3>
               </div>
             </div>
             <div class="ly_items mar_l0">
-              <div class="ly_pic"> <a href="#" > <img src="images/4.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="#" > <img src="images/wuhan.jpg" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
                 <h3> <a href="#" >武汉大学</a> </h3>
               </div>
             </div>
             <div class="ly_items">
-              <div class="ly_pic"> <a href="#" > <img src="images/5.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="#" > <img src="images/xiada.jpg" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
                 <h3> <a href="#" >厦门大学</a> </h3>
               </div>
             </div>
             <div class="ly_items">
-              <div class="ly_pic"> <a href="#" > <img src="images/6.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="#" > <img src="images/fudan.jpg" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
                 <h3> <a href="#" >复旦大学</a> </h3>
               </div>
             </div>
             <div class="ly_items">
-              <div class="ly_pic"> <a href="#" > <img src="images/7.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="#" > <img src="images/zhongshan.jpg" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
                 <h3> <a href="#" >中山大学</a> </h3>
               </div>
             </div>
             <div class="ly_items mar_l0">
-              <div class="ly_pic"> <a href="#" > <img src="images/8.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="#" > <img src="images/renda.jpg" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
                 <h3> <a href="#" >中国人民大学</a> </h3>
               </div>
             </div>
             <div class="ly_items">
-              <div class="ly_pic"> <a href="#" > <img src="images/9.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="#" > <img src="images/beihang.jpg" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
                 <h3> <a href="#" >北京航空航天</a> </h3>
               </div>
             </div>
             <div class="ly_items">
-              <div class="ly_pic"> <a href="#" > <img src="images/10.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="#" > <img src="images/beili.jpg" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
                 <h3> <a href="#" >北京理工</a> </h3>
               </div>
             </div>
             <div class="ly_items">
-              <div class="ly_pic"> <a href="#" > <img src="images/1.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="#" > <img src="images/tianjin.jpg" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
                 <h3> <a href="#" >天津大学</a> </h3>
               </div>
             </div>
             <div class="ly_items mar_l0">
-              <div class="ly_pic"> <a href="#" > <img src="images/2.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="#" > <img src="images/dongbei.jpg" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
                 <h3> <a href="#" >东北大学</a> </h3>
               </div>
