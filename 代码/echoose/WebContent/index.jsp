@@ -79,9 +79,11 @@ $(function(){
 <!--banner-->
 <div class="banner">
   <ul class="slides">
+    <li style="background:url(images/zhiyuan2.jpg) 50% 0 no-repeat;"></li>
+    <li style="background:url(images/gaokao1.jpg) 50% 0 no-repeat;"></li>
     <li style="background:url(images/4.jpg) 50% 0 no-repeat;"></li>
-    <li style="background:url(images/5.jpg) 50% 0 no-repeat;"></li>
-    <li style="background:url(images/4.jpg) 50% 0 no-repeat;"></li>
+    <li style="background:url(images/remen1.png) 50% 0 no-repeat;"></li>
+    <li style="background:url(images/kefu1.jpg) 50% 0 no-repeat;"></li>
   </ul>
 </div>
 <script src="js/jquery.flexslider-min.js"></script>
@@ -105,55 +107,55 @@ $(function(){
           <div class="ly_relative">
             <div class="product_list">
               <div class="ly_items">
-                <div class="ly_pic"><a href="#" > <img src="images/1.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/gx.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >院校查询</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="#" > <img src="images/1.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/zy.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >专业汇总</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="#" > <img src="images/1.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/yx.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >院校汇总</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="#" > <img src="images/1.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/job.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >职业展望</a></h3>
                 </div>
               </div>
               <div class="ly_items  mar_l0">
-                <div class="ly_pic"><a href="#" > <img src="images/1.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/shoucang.png" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >我的收藏</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="#" > <img src="images/1.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/chat.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >聊天室</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="#" > <img src="images/1.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/gkrl.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >高考日历</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="#" > <img src="images/1.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/zixun.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >在线咨询</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="#" > <img src="images/1.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/VR.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >VR亲身体验</a></h3>
                 </div>
@@ -235,73 +237,73 @@ $(function(){
           <div class="ly_relative">
             <div class="ly_absolute">
               <div class="ly_item">
-                <div class="ly_pic"><a href="#" > <img src="images/2.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/byou.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >北京邮电大学</a></h3>
-                  <div class="ly_intro"> 材料节省能源，无污染、易回收，设计符合人体工程学原理，减少多余功能，在正常和非正常使用情况下，不会对人体产生不利影响和伤害，加工过程中能源消耗小的家具。</div>
+                  <div class="ly_intro">以信息科技为特色，工学门类为主体，管理学、文学、理学等多个学科门类协调发展的全国重点大学</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="#" > <img src="images/2.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/bj.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >北京交通大学</a></h3>
-                  <div class="ly_intro">材料节省能源，无污染、易回收，设计符合人体工程学原理，减少多余功能，在正常和非正常使用情况下，不会对人体产生不利影响和伤害，加工过程中能源消耗小的家具。</div>
+                  <div class="ly_intro">具备以信息、管理等学科为优势，以交通科学与技术为特色，工、管、经、理、文、法、哲等多学科协调发展的完备的学科培养体系</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="#" > <img src="images/2.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/tian.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >天津大学</a></h3>
-                  <div class="ly_intro"> 材料节省能源，无污染、易回收，设计符合人体工程学原理，减少多余功能，在正常和非正常使用情况下，不会对人体产生不利影响和伤害，加工过程中能源消耗小的家具。</div>
+                  <div class="ly_intro">前身为北洋大学，是中国第一所现代大学</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="#" > <img src="images/2.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/by.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >北京电影学院</a></h3>
-                  <div class="ly_intro">材料节省能源，无污染、易回收，设计符合人体工程学原理，减少多余功能，在正常和非正常使用情况下，不会对人体产生不利影响和伤害，加工过程中能源消耗小的家具。</div>
+                  <div class="ly_intro">亚洲规模最大、世界著名的电影专业院校，各教学单位之间互为支撑，文、导、表、摄、录、美、管理、动画以及电影理论和技术等，开办11个本科专业，具有3个博士和硕士学位一级学科授权点。</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="#" > <img src="images/2.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/wh.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >武汉大学</a></h3>
-                  <div class="ly_intro">材料节省能源，无污染、易回收，设计符合人体工程学原理，减少多余功能，在正常和非正常使用情况下，不会对人体产生不利影响和伤害，加工过程中能源消耗小的家具。</div>
+                  <div class="ly_intro">简称“武大”，是一所位于湖北武汉市的中国重点综合研究型大学，是与法国高校联系最紧密、合作最广泛的中国高校，是世界权威期刊《Science》列出的“中国最杰出的大学”之一。</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="#" > <img src="images/2.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/hgd.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >河北工业大学</a></h3>
-                  <div class="ly_intro">材料节省能源，无污染、易回收，设计符合人体工程学原理，减少多余功能，在正常和非正常使用情况下，不会对人体产生不利影响和伤害，加工过程中能源消耗小的家具。</div>
+                  <div class="ly_intro">隶属于河北省的一所国家“211工程”高校，地处天津，是全国唯一一所异地办学的211大学。</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="#" > <img src="images/2.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/hblg.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >华北理工大学</a></h3>
-                  <div class="ly_intro">材料节省能源，无污染、易回收，设计符合人体工程学原理，减少多余功能，在正常和非正常使用情况下，不会对人体产生不利影响和伤害，加工过程中能源消耗小的家具。</div>
+                  <div class="ly_intro">简称华北理工，位于河北省唐山市，是一所以工、医为主，理、经、管、文、法、艺多学科协调发展，具有留学生教育、研究生教育、本科教育、继续教育等全方位教育层次的省属重点骨干大学。</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="#" > <img src="images/2.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/dl.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >大连理工大学</a></h3>
-                  <div class="ly_intro">材料节省能源，无污染、易回收，设计符合人体工程学原理，减少多余功能，在正常和非正常使用情况下，不会对人体产生不利影响和伤害，加工过程中能源消耗小的家具。</div>
+                  <div class="ly_intro">坐落于滨城大连，“卓越大学联盟”、“中俄工科大学联盟”、“中俄交通大学联盟”、“中欧工程教育平台”主要成员，设有“研究生院”和“国家大学科技园”。</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="#" > <img src="images/2.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/zgzf.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >中国政法大学</a></h3>
-                  <div class="ly_intro">材料节省能源，无污染、易回收，设计符合人体工程学原理，减少多余功能，在正常和非正常使用情况下，不会对人体产生不利影响和伤害，加工过程中能源消耗小的家具。</div>
+                  <div class="ly_intro">诞生于1952年，位于北京市，是中华人民共和国教育部直属的一所以法学为特色和优势，文学、史学、哲学、经济学、管理学、教育学等多学科协调发展的全国重点大学。</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="#" > <img src="images/2.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/byu.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="#" >北京语言大学</a></h3>
-                  <div class="ly_intro">材料节省能源，无污染、易回收，设计符合人体工程学原理，减少多余功能，在正常和非正常使用情况下，不会对人体产生不利影响和伤害，加工过程中能源消耗小的家具。</div>
+                  <div class="ly_intro">中华人民共和国教育部直属高等学校，是中国唯一一所以对来华留学生进行汉语、中华文化教育为主要任务的国际型大学，素有“小联合国”之称</div>
                 </div>
               </div>
             </div>
