@@ -63,10 +63,10 @@ $(function(){
 <!--导航-->
 <div id="ly_menu">
   <div class="ly_wrap">
-    <div class="lyg_fir lyg_current"><a href="default.html">网站首页</a></div>
-    <div class="lyg_fir"><a href="about.html">院校库</a></div>
+    <div class="lyg_fir lyg_current"><a href="index.jsp">网站首页</a></div>
+    <div class="lyg_fir"><a href="school.jsp">院校库</a></div>
     <div class="lyg_fir"><a href="product.html">专业库</a></div>
-    <div class="lyg_fir"><a href="news.html">新闻中心</a></div>
+    <div class="lyg_fir"><a href="news.jsp">新闻中心</a></div>
     <div class="lyg_fir"><a href="">院校推荐</a></div>
     <div class="lyg_fir"><a href="">在线咨询</a></div>
     <div class="lyg_fir"><a href="">我的收藏</a></div>

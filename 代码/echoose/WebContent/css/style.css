@@ -32,7 +32,7 @@ a.red:hover{color:red; text-decoration:underline;}
 #ly_w1000 .ly_wrap{ width:970px; padding:0 5px;}
 .ly_fl{ float:left;}
 .ly_fr{ float:right;}
-.ly_min{ min-width:1200px;}
+.ly_min{}
 #ly_w1000 .ly_min{ min-width:980px;}
 .lyg_support{ padding:5px 0; font-size:14px; text-align:center;}
 /*Page*/
@@ -73,7 +73,7 @@ a.red:hover{color:red; text-decoration:underline;}
 #ly_menu .lyg_fir:hover,#ly_menu .lyg_current{ border-bottom:3px solid #e43031;}
 #ly_menu .lyg_fir:hover a{ text-decoration:none;}
 /*搴曢儴*/
-#ly_footer{ padding:25px 0; background:#66c245;}
+#ly_footer{ background:#66c245;}
 #ly_footer .ly_lbar{ border-right:1px solid #bfeeae; padding-right:20px;}
 #ly_footer .ly_lbar .ly_logo{ width:200px; height:60px;}
 #ly_footer .ly_cbar .ly_copyright{ min-height:20px; width:500px; margin-left:25px; color:#fff;line-height:2em;padding-top:5px;}
