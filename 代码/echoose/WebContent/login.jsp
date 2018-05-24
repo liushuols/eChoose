@@ -34,7 +34,7 @@
     <div class="wpn">
         <div class="form-data pos">
             <div class="css1"><h1>易选择网登录</h1></div>
-            <form action="studentuserlogin" method="post">
+         <form action="studentuserlogin" method="post">
             <div class="form1">
                 <p class="p-input pos">
                     <label for="num">请输入手机号/邮箱/用户名</label>
@@ -43,7 +43,7 @@
                 </p>
                 <p class="p-input pos">
                     <label for="num">请输入密码</label>
-                    <input type="text" name="spassword" id="num">
+                    <input type="password" name="spassword" id="num">
                     <span class="tel-warn num-err hide"><em>账号或密码错误，请重新输入</em><i class="icon-warn"></i></span>
                 </p>
                 
@@ -63,13 +63,14 @@
             <div class="lang-btn off log-btn">
             	<input type="submit" value="登录">
             </div>
+          </form>
             <div class="third-party">
                 <a href="<%=basePath %>#" class="log-qq icon-qq-round"></a>
                 <a href="<%=basePath %>#" class="log-qq icon-weixin"></a>
                 <a href="<%=basePath %>#" class="log-qq icon-sina1"></a>
             </div>
             <p class="right">Powered by © 2018</p>
-            </form>
+        
         </div>
     </div>
 </div>

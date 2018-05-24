@@ -29,7 +29,7 @@ public class LoginController {
 				model.addAttribute("spassword", pwd);
 				session.setAttribute("user",userlist.get(i));
 				//session.setAttribute("shoppingcart", userlist.get(i).getOrderSet());
-				return "redirect:index";
+				return "redirect:school/list";
 			}
 		}
 		model.addAttribute("error", "您还未注册，请先注册！");

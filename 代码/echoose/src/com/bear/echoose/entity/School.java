@@ -26,6 +26,8 @@ public class School {
 	private String sspecial;
 	private String sbelong;
 	private String snet;
+	private String sintroduce;
+	private String simg;
 //	private Address address;
 //	private Cscore cscore;
 //	private Set<Major> majorSet = new HashSet<Major>();
@@ -33,7 +35,8 @@ public class School {
 //	private Collegetype collegetype;
 	
 	
-//	@ManyToOne
+
+	//	@ManyToOne
 //	@JoinColumn(name="aid")
 //	public Address getAddress() {
 //		return address;
@@ -86,6 +89,12 @@ public class School {
 	public void setSnet(String snet) {
 		this.snet = snet;
 	}
+	public String getSintroduce() {
+		return sintroduce;
+	}
+	public void setSintroduce(String sintroduce) {
+		this.sintroduce = sintroduce;
+	}
 //	@ManyToMany
 //	@JoinTable(name="school_major", joinColumns=@JoinColumn(name="scid"), inverseJoinColumns=@JoinColumn(name="mid"))
 //	public Set<Major> getMajorSet() {
@@ -107,6 +116,12 @@ public class School {
 	}
 	public void setSname(String sname) {
 		this.sname = sname;
+	}
+	public String getSimg() {
+		return simg;
+	}
+	public void setSimg(String simg) {
+		this.simg = simg;
 	}
 	
 	
