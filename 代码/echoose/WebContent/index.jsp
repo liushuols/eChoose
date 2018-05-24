@@ -70,8 +70,13 @@ $(function(){
       </div>
     </div>
     <div class="div2">
+<<<<<<< HEAD
       <a href="<%=basePath %>">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;登录&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;个人中心</a>
       &emsp;&emsp;<a href="<%=basePath %>">管理员登录</a>
+=======
+      <a href="regist.jsp">免费注册&nbsp;&nbsp;</a> | <a href="login.jsp">&nbsp;&nbsp;登录&nbsp;&nbsp;</a> | <a href="">&nbsp;&nbsp;个人中心</a>
+      &emsp;&emsp;<a href="adminlogin.jsp">管理员登录</a>
+>>>>>>> 454476015800c5a3c38fe380f670aa871178c400
     </div>
     <div class="lyg_clear"></div>
   </div>
@@ -79,6 +84,7 @@ $(function(){
 <!--导航-->
 <div id="ly_menu">
   <div class="ly_wrap">
+<<<<<<< HEAD
     <div class="lyg_fir lyg_current"><a href="<%=basePath %>index.jsp">网站首页</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>school.jsp">院校库</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>product.html">专业库</a></div>
@@ -89,6 +95,22 @@ $(function(){
     <div class="lyg_fir"><a href="<%=basePath %>">高考须知</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">常见问题</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">关于我们</a></div>
+=======
+    <div class="lyg_fir lyg_current"><a href="index.jsp">网站首页</a></div>
+    <div class="lyg_fir"><a href="school.jsp">院校库</a></div>
+<<<<<<< HEAD
+    <div class="lyg_fir"><a href="">专业库</a></div>
+=======
+    <div class="lyg_fir"><a href="product.html">专业库</a></div>
+>>>>>>> ab4678fea58eee0fec4958d4cc2bf11bac565120
+    <div class="lyg_fir"><a href="news.jsp">新闻中心</a></div>
+    <div class="lyg_fir"><a href="">院校推荐</a></div>
+    <div class="lyg_fir"><a href="">在线咨询</a></div>
+    <div class="lyg_fir"><a href="">我的收藏</a></div>
+    <div class="lyg_fir"><a href="">高考须知</a></div>
+    <div class="lyg_fir"><a href="">常见问题</a></div>
+    <div class="lyg_fir"><a href="">关于我们</a></div>
+>>>>>>> 454476015800c5a3c38fe380f670aa871178c400
     <div class="lyg_clear"></div>
   </div>
 </div>
