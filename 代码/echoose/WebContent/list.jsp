@@ -79,9 +79,11 @@ $(function(){
 <!-- banner -->
 <div class="banner">
   <ul class="slides">
-    <li style="background:url(images/4.jpg) 50% 0 no-repeat;"></li>
-    <li style="background:url(images/5.jpg) 50% 0 no-repeat;"></li>
-    <li style="background:url(images/4.jpg) 50% 0 no-repeat;"></li>
+       <li style="background:url(images/zhiyuan3.jpg) 50% 0 no-repeat;"></li>
+       <li style="background:url(images/gaokao1.jpg) 50% 0 no-repeat;"></li>
+       <li style="background:url(images/4.jpg) 50% 0 no-repeat;"></li>
+       <li style="background:url(images/remen1.png) 50% 0 no-repeat;"></li>
+       <li style="background:url(images/kefu1.jpg) 50% 0 no-repeat;"></li>
   </ul>
 </div>
 <script src="js/jquery.flexslider-min.js"></script>

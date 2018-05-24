@@ -65,7 +65,11 @@ $(function(){
   <div class="ly_wrap">
     <div class="lyg_fir lyg_current"><a href="index.jsp">网站首页</a></div>
     <div class="lyg_fir"><a href="school.jsp">院校库</a></div>
+<<<<<<< HEAD
     <div class="lyg_fir"><a href="">专业库</a></div>
+=======
+    <div class="lyg_fir"><a href="product.html">专业库</a></div>
+>>>>>>> ab4678fea58eee0fec4958d4cc2bf11bac565120
     <div class="lyg_fir"><a href="news.jsp">新闻中心</a></div>
     <div class="lyg_fir"><a href="">院校推荐</a></div>
     <div class="lyg_fir"><a href="">在线咨询</a></div>
@@ -79,7 +83,7 @@ $(function(){
 <!--banner-->
 <div class="banner">
   <ul class="slides">
-    <li style="background:url(images/zhiyuan2.jpg) 50% 0 no-repeat;"></li>
+    <li style="background:url(images/zhiyuan3.jpg) 50% 0 no-repeat;"></li>
     <li style="background:url(images/gaokao1.jpg) 50% 0 no-repeat;"></li>
     <li style="background:url(images/4.jpg) 50% 0 no-repeat;"></li>
     <li style="background:url(images/remen1.png) 50% 0 no-repeat;"></li>
@@ -182,7 +186,7 @@ $(function(){
           <div class="lyg_blank20"></div>
           <div class="ly_content">
             <div class="ly_a_lbar ly_fl">
-              <div class="ly_pic"> <img src="images/2.jpg" width="248" height="216" /></div>
+              <div class="ly_pic"> <img src="images/aboutus.jpg" width="248" height="216" /></div>
             </div>
             <div class="ly_a_rbar ly_fr">
               <div class="ly_title">易选择网站简介</div>
@@ -200,7 +204,7 @@ $(function(){
           <div class="ly_content">
             <div class="ly_item">
               <div class="ly_n_lbar ly_fl">
-                <div class="ly_pic"><a href="#" > <img src="images/8.jpg" width="145" height="103" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/yonghusay.jpg" width="145" height="103" /></a></div>
               </div>
               <div class="ly_n_rbar ly_fr">
                 <h3><a href="#" ></a></h3>
@@ -212,7 +216,7 @@ $(function(){
             <div class="ly_line"></div>
             <div class="ly_item">
               <div class="ly_n_lbar ly_fl">
-                <div class="ly_pic"><a href="#" > <img src="images/5.jpg" width="145" height="103" /></a></div>
+                <div class="ly_pic"><a href="#" > <img src="images/yonghusay.jpg" width="145" height="103" /></a></div>
               </div>
               <div class="ly_n_rbar ly_fr">
                 <h3><a href="#" ></a></h3>
@@ -346,7 +350,7 @@ $(function(){
               </div>
             </div>
             <div id="con_one_3" style="display: none;">
-              <div class="con_l"> <a href=""><img src="images/2.jpg" width="320" height="230"></a> </div>
+              <div class="con_l"> <a href=""><img src="images/timg.jpg" width="320" height="230"></a> </div>
               <div class="con_r">
                 <ul>
                   <li><strong><a href="">定制家具进家 室内甲醛超标该怪谁?</a></strong> <span><a href="">越来越多的消费者在装修过程中选择可以随心定制的家具,但无一例外,都会用到大量板材。卖家都说自己板材环保,可安装完家具后...</a></span></li>

@@ -2,19 +2,23 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+<%
+		String path = request.getContextPath();
+		String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+	%>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <link href="http://www.gaokao.com/favicon.ico" rel="shortcut icon"/>
 
-<link href="http://college.gaokao.com/style/college/css/base.css" rel="stylesheet" type="text/css" />
-<link href="http://college.gaokao.com/style/college/css/style.css?2014623" rel="stylesheet" type="text/css" />
-<link href="http://college.gaokao.com/style/college/css/nav_jump_gk.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="http://college.gaokao.com/style/college/js/jquery.js"></script>
+<link href="<%=basePath %>css/base1.css" rel="stylesheet" type="text/css" />
+<link href="<%=basePath %>css/style1.css?2014623" rel="stylesheet" type="text/css" />
+<link href="<%=basePath %>css/nav_jump_gk.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="<%=basePath %>js/jquery.js"></script>
 
-<script type="text/javascript" src="http://college.gaokao.com/style/college/js/common.js"></script>
+<script type="text/javascript" src="<%=basePath %>js/common.js"></script>
 
-<script type="text/javascript" src="http://cbjs.baidu.com/js/s.js"></script>
+<script type="text/javascript" src="<%=basePath %>js/s.js"></script>
 
 <!--[if IE 6]>
 
@@ -28,11 +32,11 @@
 
 <![endif]-->
 <!--新增-->
-<link rel="stylesheet" type="text/css" href="http://www.gaokao.com/public/css/new_base.css"> 
-<link rel="stylesheet" type="text/css" href="http://www.gaokao.com/public/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="<%=basePath %>css/new_base.css"> 
+<link rel="stylesheet" type="text/css" href="<%=basePath %>css/common.css"/>
 
-<script type="text/javascript" src="http://www.gaokao.com/public/js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="http://www.gaokao.com/public/js/common.js"></script>
+<script type="text/javascript" src="<%=basePath %>js/jquery-1.9.2.min.js"></script>
+<script type="text/javascript" src="<%=basePath %>js/common1.js"></script>
 
 <link rel='stylesheet' type='text/css' href='css/style.css' />
 <script type='text/javascript' src='js/jquery-1.8.2.min.js' ></script>
@@ -50,12 +54,13 @@ $(function(){
 })
 </script>
 <style type="text/css">
-	.divcss{padding-left:280px;font-size:15px;}
-	.divcss1{padding-left:450px;margin-top:20px;}
-	.divcss2{padding-left:280px;margin-top:15px;}
+	.divcss{padding-left:180px;font-size:15px;}
+	.divcss1{padding-left:300px;margin-top:20px;}
+	.divcss2{padding-left:180px;margin-top:15px;}
 	.div1{float:left;padding-left:350px;}
 	.div2{margin-top:45px;float:left;}
 	.div3{color:#8e8e8e; margin-top:10px;}
+	.wrapper{background-color:#66c245;}
 </style>
 <!--[if IE 6]>
 <script type='text/javascript' src='js/dd_belatedpng.js' ></script>
@@ -84,8 +89,8 @@ $(function(){
       </div>
     </div>
     <div class="div2">
-      <a href="">免费注册&nbsp;&nbsp;</a> | <a href="">&nbsp;&nbsp;登录&nbsp;&nbsp;</a> | <a href="">&nbsp;&nbsp;个人中心</a>
-      &emsp;&emsp;<a href="">管理员登录</a>
+      <a href="regist.jsp">免费注册&nbsp;&nbsp;</a> | <a href="login.jsp">&nbsp;&nbsp;登录&nbsp;&nbsp;</a> | <a href="">&nbsp;&nbsp;个人中心</a>
+      &emsp;&emsp;<a href="adminlogin.jsp">管理员登录</a>
     </div>
     <div class="lyg_clear"></div>
   </div>
@@ -93,10 +98,10 @@ $(function(){
 <!--导航-->
 <div id="ly_menu">
   <div class="ly_wrap">
-    <div class="lyg_fir lyg_current"><a href="default.html">网站首页</a></div>
-    <div class="lyg_fir"><a href="about.html">院校库</a></div>
-    <div class="lyg_fir"><a href="product.html">专业库</a></div>
-    <div class="lyg_fir"><a href="news.html">新闻中心</a></div>
+    <div class="lyg_fir lyg_current"><a href="index.jsp">网站首页</a></div>
+    <div class="lyg_fir"><a href="">院校库</a></div>
+    <div class="lyg_fir"><a href="">专业库</a></div>
+    <div class="lyg_fir"><a href="news.jsp">新闻中心</a></div>
     <div class="lyg_fir"><a href="">院校推荐</a></div>
     <div class="lyg_fir"><a href="">在线咨询</a></div>
     <div class="lyg_fir"><a href="">我的收藏</a></div>
@@ -161,7 +166,7 @@ $(function(){
                                             <a href="http://college.gaokao.com/schlist/lX/">X</a>
                                             <a href="http://college.gaokao.com/schlist/lY/">Y</a>
                                             <a href="http://college.gaokao.com/schlist/lZ/">Z</a>
-                                            <a href="http://college.gaokao.com/schlist/l锛/">锛</a>
+                                            
                                     </span>
             </div>
             <h4 class="letter_Tlt letter_Active">全部</h4>
@@ -722,7 +727,7 @@ $(function(){
 
 <div style="display:none;">
     <script type='text/javascript'>var EDUU_GKEY="高考网/院校库/高校搜索/主页";</script>
-    <script type="text/javascript" src="http://img.eduuu.com/edu/js/ggc.js?gx=2011_4"></script>
+    <script type="text/javascript" src="<%=basePath %>js/ggc.js?gx=2011_4"></script>
     <script src=" http://s50.cnzz.com/stat.php?id=1997329&amp;web_id=1997329" type="text/javascript"></script>
 </div>
 <div class="compare_Float">
@@ -842,16 +847,21 @@ $(function(){
 <!--新底 开始 20140225-->
 <div class="footer2013">
 	<div class="wrapper">
-    	<dl class="link clearfix">
-        	<dt class="ft18 ffm">城市导航</dt>
-			<dd><a title="北京高考网" target="_blank" href="http://www.gaokao.com/beijing/">北京高考</a> <a title="上海高考网" target="_blank" href="http://sh.gaokao.com/">上海高考</a> <a title="天津高考网" target="_blank" href="http://www.gaokao.com/tianjin/">天津高考</a> <a title="重庆高考网" target="_blank" href="http://www.gaokao.com/chongqing/">重庆高考</a> <a title="广东高考网" target="_blank" href="http://www.gaokao.com/guangdong/">广东高考</a> <a title="江苏高考网" target="_blank" href="http://www.gaokao.com/jiangsu/">江苏高考</a> <a title="山东高考网" target="_blank" href="http://www.gaokao.com/shandong/">山东高考</a> <a title="浙江高考网" target="_blank" href="http://www.gaokao.com/zhejiang/">浙江高考</a> <a title="湖北高考网" target="_blank" href="http://www.gaokao.com/hubei/">湖北高考</a> <a title="四川高考网" target="_blank" href="http://www.gaokao.com/sichuan/">四川高考</a> <a title="黑龙江高考网" target="_blank" href="http://www.gaokao.com/heilongjiang/">黑龙江高考</a><br /><a title="湖南高考网" target="_blank" href="http://www.gaokao.com/hunan/">湖南高考</a> <a title="辽宁高考网" target="_blank" href="http://www.gaokao.com/liaoning/">辽宁高考</a> <a title="海南高考网" target="_blank" href="http://www.gaokao.com/hainan/">海南高考</a> <a title="宁夏高考网" target="_blank" href="http://www.gaokao.com/ningxia/">宁夏高考</a> <a title="福建高考网" target="_blank" href="http://www.gaokao.com/fujian/">福建高考</a> <a title="甘肃高考网" target="_blank" href="http://www.gaokao.com/gansu/">甘肃高考</a> <a title="河北高考网" target="_blank" href="http://www.gaokao.com/hebei/">河北高考</a> <a title="吉林高考网" target="_blank" href="http://www.gaokao.com/jilin/">吉林高考</a> <a title="江西高考网" target="_blank" href="http://www.gaokao.com/jiangxi/">江西高考</a> <a title="云南高考网" target="_blank" href="http://www.gaokao.com/yunnan/">云南高考</a> <a title="内蒙古高考网" target="_blank" href="http://www.gaokao.com/neimenggu/">内蒙古高考</a><br /> <a title="河南高考网" target="_blank" href="http://www.gaokao.com/henan/">河南高考</a> <a title="广西高考网" target="_blank" href="http://www.gaokao.com/guangxi/">广西高考</a> <a title="陕西高考网" target="_blank" href="http://www.gaokao.com/shanxi/">陕西高考</a> <a title="山西高考网" target="_blank" href="http://www.gaokao.com/sx/">山西高考</a> <a title="安徽高考网" target="_blank" href="http://www.gaokao.com/anhui/">安徽高考</a> <a title="新疆高考网" target="_blank" href="http://www.gaokao.com/xinjiang/">新疆高考</a> <a title="西藏高考网" target="_blank" href="http://www.gaokao.com/xizang/">西藏高考</a> <a title="贵州高考网" target="_blank" href="http://www.gaokao.com/guizhou/">贵州高考</a> <a title="青海高考网" target="_blank" href="http://www.gaokao.com/qinghai/">青海高考</a> <a title="港澳高考网" target="_blank" href="http://www.gaokao.com/gd/">港澳高考</a>
-            </dd>
-		</dl>
-        <div class="tc">
-        	<p><a title="关于我们" target="_blank" href="http://www.eduu.com/edgw/">关于我们</a> - <a target="_blank" href="http://www.gaokao.com/z2014/ad/">广告服务</a> - <a target="_blank" href="http://www.eduu.com/z/yqlj/index.html">友情链接</a> - <a target="_blank" href="http://bj.aoshu.com/include/map.html">网站地图</a> - <a target="_blank" href="http://www.eduu.com/include/fuwu.html">服务条款</a> - <a title="学而思招聘" target="_blank" href="http://www.eduu.com/edgw/cpyc/shzp/">诚聘英才</a> - <a target="_blank" href="http://www.gaokao.com/z2014/contactus/">联系我们</a></p>
-            <p><a target="_blank" href="http://www.miibeian.gov.cn/">京ICP备09042963号-9</a> 北京市公安局海淀分局备案编号：1101081950</p>
-        	<p>高考网版权所有 Copyright &#169; 2005-2017 www.gaokao.com. All Rights Reserved.</p>
-        </div>
+    	 <div class="divcss">
+    	<a href="">院校库</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="">专业库</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="">院校推荐</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="">专业对比</a>&emsp;&emsp;&emsp;&emsp;<a href="">招生计划</a><br>
+		<a href="">报考流程</a>&emsp;&emsp;&emsp;&emsp;<a href="">历年分数线</a>&emsp;&emsp;&emsp;&emsp;<a href="">高考月历表</a>&emsp;&emsp;&emsp;&emsp;<a href="">高考须知</a>&emsp;&emsp;&emsp;&emsp;<a href="">高校选择</a><br>
+		<a href="">专业选择</a>&emsp;&emsp;&emsp;&emsp;<a href="">报考误区</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="">新闻资讯</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="">最新热点</a>&emsp;&emsp;&emsp;&emsp;<a href="">高招动态</a><br>
+		<a href="">系统介绍</a>&emsp;&emsp;&emsp;&emsp;<a href="">购卡详情</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="">使用指南</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="">成功案例</a>&emsp;&emsp;&emsp;&emsp;<a href="">常见问题</a>
+    </div>
+    
+    <div class="divcss1">
+    	<a href="">关于我们&nbsp;&nbsp;</a> | <a href="">&nbsp;&nbsp;帮助中心&nbsp;&nbsp;</a> | <a href="">&nbsp;&nbsp;版权声明&nbsp;&nbsp;</a> | <a href="">&nbsp;&nbsp;合作伙伴</a>
+    </div>
+    
+    <div class="divcss2">
+    	&emsp;&emsp;地址：河北省石家庄市裕华区裕翔街道河北师范大学新校区软件学院 &emsp;&emsp;&emsp;&emsp; 官方QQ群：684033794 <br>
+    	@2017 &emsp; www.yixuanze.com All Rights Reserved.河北师范大学软件学院版权所有 &emsp;&emsp; 冀ICP备05060708号
+    </div>
     </div>
 </div>
 
