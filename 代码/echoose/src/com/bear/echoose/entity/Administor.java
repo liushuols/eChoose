@@ -12,8 +12,6 @@ public class Administor {
 	private int adid;
 	private String aname;
 	private String apassword;
-	private String aemail;	
-	private String asex;
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -36,19 +34,6 @@ public class Administor {
 	public void setApassword(String apassword) {
 		this.apassword = apassword;
 	}
-	public String getAemail() {
-		return aemail;
-	}
-	public void setAemail(String aemail) {
-		this.aemail = aemail;
-	}
-	public String getAsex() {
-		return asex;
-	}
-	public void setAsex(String asex) {
-		this.asex = asex;
-	}
-	
 	
 }
 
