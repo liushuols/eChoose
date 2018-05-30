@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.bear.echoose.entity.Index;
 import com.bear.echoose.entity.School;
 import com.bear.echoose.index.service.IndexServiceImpl;
 

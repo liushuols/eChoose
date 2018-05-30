@@ -173,11 +173,11 @@ $(function(){
 
                                     <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/1/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/1.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="北京大学" /></a><strong title="北京大学" class="blue"><a href="http://college.gaokao.com/school/1/" target="_blank">北京大学</a></strong>                    </dt>
+                        <a href="http://www.pku.edu.cn/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/1.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="北京大学" /></a><strong title="北京大学" class="blue"><a href="http://college.gaokao.com/school/1/" target="_blank">北京大学</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('1','北京大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/1/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.pku.edu.cn/" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：北京</li>
@@ -185,17 +185,17 @@ $(function(){
                             <li>高校类型：综合</li>
                             <li>高校隶属：教育部</li>
                             <li>高校性质：本科</li>
-                            <li>学校网址：www.pku.edu.cn</li>
+                            <li>学校网址：http://www.pku.edu.cn</li>
                         </ul>
                     </dd>
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/2/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/2.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="中国人民大学" /></a><strong title="中国人民大学" class="blue"><a href="http://college.gaokao.com/school/2/" target="_blank">中国人民大学</a></strong>                    </dt>
+                        <a href="http://www.ruc.edu.cn" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/2.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="中国人民大学" /></a><strong title="中国人民大学" class="blue"><a href="http://college.gaokao.com/school/2/" target="_blank">中国人民大学</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('2','中国人民大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/2/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.ruc.edu.cn/" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：北京</li>
@@ -203,17 +203,17 @@ $(function(){
                             <li>高校类型：综合</li>
                             <li>高校隶属：教育部</li>
                             <li>高校性质：本科</li>
-                            <li>学校网址：www.ruc.edu.cn</li>
+                            <li>学校网址：http://www.ruc.edu.cn</li>
                         </ul>
                     </dd>
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/3/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/3.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="清华大学" /></a><strong title="清华大学" class="blue"><a href="http://college.gaokao.com/school/3/" target="_blank">清华大学</a></strong>                    </dt>
+                        <a href="http://www.tsinghua.edu.cn" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/3.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="清华大学" /></a><strong title="清华大学" class="blue"><a href="http://college.gaokao.com/school/3/" target="_blank">清华大学</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('3','清华大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/3/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.tsinghua.edu.cn" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：北京</li>
@@ -221,17 +221,17 @@ $(function(){
                             <li>高校类型：工科</li>
                             <li>高校隶属：教育部</li>
                             <li>高校性质：本科</li>
-                            <li>学校网址：www.tsinghua.edu.cn</li>
+                            <li>学校网址：http://www.tsinghua.edu.cn</li>
                         </ul>
                     </dd>
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/4/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/4.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="北京航空航天大学" /></a><strong title="北京航空航天大学" class="blue"><a href="http://college.gaokao.com/school/4/" target="_blank">北京航空航天</a></strong>                    </dt>
+                        <a href="http://www.buaa.edu.cn" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/4.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="北京航空航天大学" /></a><strong title="北京航空航天大学" class="blue"><a href="http://college.gaokao.com/school/4/" target="_blank">北京航空航天</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('4','北京航空航天大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/4/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.buaa.edu.cn/" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：北京</li>
@@ -239,17 +239,17 @@ $(function(){
                             <li>高校类型：工科</li>
                             <li>高校隶属：工业与信息化部</li>
                             <li>高校性质：本科</li>
-                            <li>学校网址：www.buaa.edu.cn</li>
+                            <li>学校网址：http://www.buaa.edu.cn</li>
                         </ul>
                     </dd>
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/5/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/5.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="北京理工大学" /></a><strong title="北京理工大学" class="blue"><a href="http://college.gaokao.com/school/5/" target="_blank">北京理工大学</a></strong>                    </dt>
+                        <a href="http://www.bit.edu.cn" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/5.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="北京理工大学" /></a><strong title="北京理工大学" class="blue"><a href="http://college.gaokao.com/school/5/" target="_blank">北京理工大学</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('5','北京理工大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/5/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.bit.edu.cn/" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：北京</li>
@@ -257,17 +257,17 @@ $(function(){
                             <li>高校类型：工科</li>
                             <li>高校隶属：工业与信息化部</li>
                             <li>高校性质：本科</li>
-                            <li>学校网址：www.bit.edu.cn</li>
+                            <li>学校网址：http://www.bit.edu.cn</li>
                         </ul>
                     </dd>
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/6/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/6.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="中国农业大学" /></a><strong title="中国农业大学" class="blue"><a href="http://college.gaokao.com/school/6/" target="_blank">中国农业大学</a></strong>                    </dt>
+                        <a href="http://www.cau.edu.cn/" target="_blank"><img src="http://www.cau.edu.cn/" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="中国农业大学" /></a><strong title="中国农业大学" class="blue"><a href="http://college.gaokao.com/school/6/" target="_blank">中国农业大学</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('6','中国农业大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/6/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.cau.edu.cn/" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：北京</li>
@@ -281,11 +281,11 @@ $(function(){
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/7/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/7.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="北京师范大学" /></a><strong title="北京师范大学" class="blue"><a href="http://college.gaokao.com/school/7/" target="_blank">北京师范大学</a></strong>                    </dt>
+                        <a href="http://www.bnu.edu.cn" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/7.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="北京师范大学" /></a><strong title="北京师范大学" class="blue"><a href="http://college.gaokao.com/school/7/" target="_blank">北京师范大学</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('7','北京师范大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/7/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.bnu.edu.cn" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：北京</li>
@@ -293,17 +293,17 @@ $(function(){
                             <li>高校类型：师范</li>
                             <li>高校隶属：教育部</li>
                             <li>高校性质：本科</li>
-                            <li>学校网址：www.bnu.edu.cn</li>
+                            <li>学校网址：http://www.bnu.edu.cn</li>
                         </ul>
                     </dd>
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/8/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/8.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="中央民族大学" /></a><strong title="中央民族大学" class="blue"><a href="http://college.gaokao.com/school/8/" target="_blank">中央民族大学</a></strong>                    </dt>
+                        <a href="http://www.muc.edu.cn" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/8.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="中央民族大学" /></a><strong title="中央民族大学" class="blue"><a href="http://college.gaokao.com/school/8/" target="_blank">中央民族大学</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('8','中央民族大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/8/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.muc.edu.cn" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：北京</li>
@@ -311,17 +311,17 @@ $(function(){
                             <li>高校类型：民族</li>
                             <li>高校隶属：国家民族事务委员会</li>
                             <li>高校性质：本科</li>
-                            <li>学校网址：www.muc.edu.cn</li>
+                            <li>学校网址：http://www.muc.edu.cn</li>
                         </ul>
                     </dd>
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/9/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/9.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="南开大学" /></a><strong title="南开大学" class="blue"><a href="http://college.gaokao.com/school/9/" target="_blank">南开大学</a></strong>                    </dt>
+                        <a href="http://www.nankai.edu.cn" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/9.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="南开大学" /></a><strong title="南开大学" class="blue"><a href="http://college.gaokao.com/school/9/" target="_blank">南开大学</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('9','南开大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/9/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.nankai.edu.cn" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：天津</li>
@@ -329,17 +329,17 @@ $(function(){
                             <li>高校类型：综合</li>
                             <li>高校隶属：教育部</li>
                             <li>高校性质：本科</li>
-                            <li>学校网址：www.nankai.edu.cn</li>
+                            <li>学校网址：http://www.nankai.edu.cn</li>
                         </ul>
                     </dd>
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/10/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/10.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="天津大学" /></a><strong title="天津大学" class="blue"><a href="http://college.gaokao.com/school/10/" target="_blank">天津大学</a></strong>                    </dt>
+                        <a href="http://www.tju.edu.cn/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/10.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="天津大学" /></a><strong title="天津大学" class="blue"><a href="http://college.gaokao.com/school/10/" target="_blank">天津大学</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('10','天津大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/10/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.tju.edu.cn/" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：天津</li>
@@ -347,17 +347,17 @@ $(function(){
                             <li>高校类型：工科</li>
                             <li>高校隶属：教育部</li>
                             <li>高校性质：本科</li>
-                            <li>学校网址：——</li>
+                            <li>学校网址：http://www.tju.edu.cn/</li>
                         </ul>
                     </dd>
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/11/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/11.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="大连理工大学" /></a><strong title="大连理工大学" class="blue"><a href="http://college.gaokao.com/school/11/" target="_blank">大连理工大学</a></strong>                    </dt>
+                        <a href="https://www.dlut.edu.cn/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/11.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="大连理工大学" /></a><strong title="大连理工大学" class="blue"><a href="http://college.gaokao.com/school/11/" target="_blank">大连理工大学</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('11','大连理工大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/11/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="https://www.dlut.edu.cn/" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：辽宁</li>
@@ -365,17 +365,17 @@ $(function(){
                             <li>高校类型：工科</li>
                             <li>高校隶属：教育部</li>
                             <li>高校性质：本科</li>
-                            <li>学校网址：——</li>
+                            <li>学校网址：https://www.dlut.edu.cn/</li>
                         </ul>
                     </dd>
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/12/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/12.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="东北大学" /></a><strong title="东北大学" class="blue"><a href="http://college.gaokao.com/school/12/" target="_blank">东北大学</a></strong>                    </dt>
+                        <a href="http://www.neu.edu.cn" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/12.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="东北大学" /></a><strong title="东北大学" class="blue"><a href="http://college.gaokao.com/school/12/" target="_blank">东北大学</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('12','东北大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/12/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.neu.edu.cn" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：辽宁</li>
@@ -383,17 +383,17 @@ $(function(){
                             <li>高校类型：工科</li>
                             <li>高校隶属：教育部</li>
                             <li>高校性质：本科</li>
-                            <li>学校网址：www.neu.edu.cn</li>
+                            <li>学校网址：http://www.neu.edu.cn</li>
                         </ul>
                     </dd>
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/13/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/13.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="吉林大学" /></a><strong title="吉林大学" class="blue"><a href="http://college.gaokao.com/school/13/" target="_blank">吉林大学</a></strong>                    </dt>
+                        <a href="http://www.jlu.edu.cn" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/13.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="吉林大学" /></a><strong title="吉林大学" class="blue"><a href="http://college.gaokao.com/school/13/" target="_blank">吉林大学</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('13','吉林大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/13/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.jlu.edu.cn" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：吉林</li>
@@ -401,17 +401,17 @@ $(function(){
                             <li>高校类型：综合</li>
                             <li>高校隶属：教育部</li>
                             <li>高校性质：本科</li>
-                            <li>学校网址：www.jlu.edu.cn</li>
+                            <li>学校网址：http://www.jlu.edu.cn</li>
                         </ul>
                     </dd>
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/14/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/14.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="哈尔滨工业大学" /></a><strong title="哈尔滨工业大学" class="blue"><a href="http://college.gaokao.com/school/14/" target="_blank">哈尔滨工业大</a></strong>                    </dt>
+                        <a href="http://www.hit.edu.cn/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/14.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="哈尔滨工业大学" /></a><strong title="哈尔滨工业大学" class="blue"><a href="http://college.gaokao.com/school/14/" target="_blank">哈尔滨工业大</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('14','哈尔滨工业大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/14/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.hit.edu.cn/" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：黑龙江</li>
@@ -425,11 +425,11 @@ $(function(){
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/15/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/15.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="复旦大学" /></a><strong title="复旦大学" class="blue"><a href="http://college.gaokao.com/school/15/" target="_blank">复旦大学</a></strong>                    </dt>
+                        <a href="http://www.fudan.edu.cn/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/15.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="复旦大学" /></a><strong title="复旦大学" class="blue"><a href="http://college.gaokao.com/school/15/" target="_blank">复旦大学</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('15','复旦大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/15/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.fudan.edu.cn/" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：上海</li>
@@ -443,11 +443,11 @@ $(function(){
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/16/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/16.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="同济大学" /></a><strong title="同济大学" class="blue"><a href="http://college.gaokao.com/school/16/" target="_blank">同济大学</a></strong>                    </dt>
+                        <a href="http://www.tongji.edu.cn" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/16.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="同济大学" /></a><strong title="同济大学" class="blue"><a href="http://college.gaokao.com/school/16/" target="_blank">同济大学</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('16','同济大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/16/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.tongji.edu.cn" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：上海</li>
@@ -455,17 +455,17 @@ $(function(){
                             <li>高校类型：工科</li>
                             <li>高校隶属：教育部</li>
                             <li>高校性质：本科</li>
-                            <li>学校网址：www.tongji.edu.cn</li>
+                            <li>学校网址：http://www.tongji.edu.cn</li>
                         </ul>
                     </dd>
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/17/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/17.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="上海交通大学" /></a><strong title="上海交通大学" class="blue"><a href="http://college.gaokao.com/school/17/" target="_blank">上海交通大学</a></strong>                    </dt>
+                        <a href="http://www.sjtu.edu.cn" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/17.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="上海交通大学" /></a><strong title="上海交通大学" class="blue"><a href="http://college.gaokao.com/school/17/" target="_blank">上海交通大学</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('17','上海交通大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/17/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.sjtu.edu.cn" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：上海</li>
@@ -473,17 +473,17 @@ $(function(){
                             <li>高校类型：综合</li>
                             <li>高校隶属：教育部</li>
                             <li>高校性质：本科</li>
-                            <li>学校网址：www.sjtu.edu.cn</li>
+                            <li>学校网址：http://www.sjtu.edu.cn</li>
                         </ul>
                     </dd>
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/18/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/18.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="华东师范大学" /></a><strong title="华东师范大学" class="blue"><a href="http://college.gaokao.com/school/18/" target="_blank">华东师范大学</a></strong>                    </dt>
+                        <a href="http://www.ecnu.edu.cn" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/18.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="华东师范大学" /></a><strong title="华东师范大学" class="blue"><a href="http://college.gaokao.com/school/18/" target="_blank">华东师范大学</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('18','华东师范大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/18/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.ecnu.edu.cn" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：上海</li>
@@ -491,17 +491,17 @@ $(function(){
                             <li>高校类型：师范</li>
                             <li>高校隶属：教育部</li>
                             <li>高校性质：本科</li>
-                            <li>学校网址：www.ecnu.edu.cn</li>
+                            <li>学校网址：http://www.ecnu.edu.cn</li>
                         </ul>
                     </dd>
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/19/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/19.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="南京大学" /></a><strong title="南京大学" class="blue"><a href="http://college.gaokao.com/school/19/" target="_blank">南京大学</a></strong>                    </dt>
+                        <a href="http://www.nju.edu.cn" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/19.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="南京大学" /></a><strong title="南京大学" class="blue"><a href="http://college.gaokao.com/school/19/" target="_blank">南京大学</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('19','南京大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/19/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.nju.edu.cn" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：江苏</li>
@@ -509,17 +509,17 @@ $(function(){
                             <li>高校类型：综合</li>
                             <li>高校隶属：教育部</li>
                             <li>高校性质：本科</li>
-                            <li>学校网址：www.nju.edu.cn</li>
+                            <li>学校网址：http://www.nju.edu.cn</li>
                         </ul>
                     </dd>
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/20/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/20.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="东南大学" /></a><strong title="东南大学" class="blue"><a href="http://college.gaokao.com/school/20/" target="_blank">东南大学</a></strong>                    </dt>
+                        <a href="http://www.seu.edu.cn" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/20.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="东南大学" /></a><strong title="东南大学" class="blue"><a href="http://college.gaokao.com/school/20/" target="_blank">东南大学</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('20','东南大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/20/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.seu.edu.cn" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：江苏</li>
@@ -527,17 +527,17 @@ $(function(){
                             <li>高校类型：综合</li>
                             <li>高校隶属：教育部</li>
                             <li>高校性质：本科</li>
-                            <li>学校网址：www.seu.edu.cn</li>
+                            <li>学校网址：http://www.seu.edu.cn</li>
                         </ul>
                     </dd>
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/21/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/21.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="中国矿业大学(徐州)" /></a><strong title="中国矿业大学(徐州)" class="blue"><a href="http://college.gaokao.com/school/21/" target="_blank">中国矿业大学</a></strong>                    </dt>
+                        <a href="http://www.cumt.edu.cn/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/21.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="中国矿业大学(徐州)" /></a><strong title="中国矿业大学(徐州)" class="blue"><a href="http://college.gaokao.com/school/21/" target="_blank">中国矿业大学</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('21','中国矿业大学(徐州)');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/21/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.cumt.edu.cn/" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：江苏</li>
@@ -551,11 +551,11 @@ $(function(){
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/22/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/22.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="浙江大学" /></a><strong title="浙江大学" class="blue"><a href="http://college.gaokao.com/school/22/" target="_blank">浙江大学</a></strong>                    </dt>
+                        <a href="http://www.zju.edu.cn" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/22.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="浙江大学" /></a><strong title="浙江大学" class="blue"><a href="http://college.gaokao.com/school/22/" target="_blank">浙江大学</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('22','浙江大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/22/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.zju.edu.cn" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：浙江</li>
@@ -563,17 +563,17 @@ $(function(){
                             <li>高校类型：综合</li>
                             <li>高校隶属：教育部</li>
                             <li>高校性质：本科</li>
-                            <li>学校网址：www.zju.edu.cn</li>
+                            <li>学校网址：http://www.zju.edu.cn</li>
                         </ul>
                     </dd>
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/23/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/23.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="中国科学技术大学" /></a><strong title="中国科学技术大学" class="blue"><a href="http://college.gaokao.com/school/23/" target="_blank">中国科学技术</a></strong>                    </dt>
+                        <a href="http://www.ustc.edu.cn" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/23.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="中国科学技术大学" /></a><strong title="中国科学技术大学" class="blue"><a href="http://college.gaokao.com/school/23/" target="_blank">中国科学技术</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('23','中国科学技术大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/23/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.ustc.edu.cn" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：安徽</li>
@@ -581,17 +581,17 @@ $(function(){
                             <li>高校类型：工科</li>
                             <li>高校隶属：中国科学院</li>
                             <li>高校性质：本科</li>
-                            <li>学校网址：www.ustc.edu.cn</li>
+                            <li>学校网址：http://www.ustc.edu.cn</li>
                         </ul>
                     </dd>
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/24/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/24.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="厦门大学" /></a><strong title="厦门大学" class="blue"><a href="http://college.gaokao.com/school/24/" target="_blank">厦门大学</a></strong>                    </dt>
+                        <a href="http://www.xmu.edu.cn" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/24.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="厦门大学" /></a><strong title="厦门大学" class="blue"><a href="http://college.gaokao.com/school/24/" target="_blank">厦门大学</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('24','厦门大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/24/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.xmu.edu.cn" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：福建</li>
@@ -605,11 +605,11 @@ $(function(){
                 </dl>
                             <dl>
                     <dt>
-                        <a href="http://college.gaokao.com/school/25/" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/25.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="山东大学" /></a><strong title="山东大学" class="blue"><a href="http://college.gaokao.com/school/25/" target="_blank">山东大学</a></strong>                    </dt>
+                        <a href="http://www.bkzs.sdu.edu.cn" target="_blank"><img src="http://college.gaokao.com/style/college/images/icon/25.png" onerror="this.src='http://college.gaokao.com/style/college/images/icon_default.png'" width="63" height="63" alt="山东大学" /></a><strong title="山东大学" class="blue"><a href="http://college.gaokao.com/school/25/" target="_blank">山东大学</a></strong>                    </dt>
                     <dd>
                         <div class="right">
                             <p><a class="org" href="javascript:void(0);" onclick="javascript:setpk('25','山东大学');">+高校对比</a></p>
-                            <p class="topMargin20"><a class="btn_gary" href="http://college.gaokao.com/school/25/" target="_blank">进入主页</a></p>
+                            <p class="topMargin20"><a class="btn_gary" href="http://www.bkzs.sdu.edu.cn" target="_blank">进入主页</a></p>
                         </div>
                         <ul>
                             <li>高校所在地：山东</li>
@@ -617,18 +617,18 @@ $(function(){
                             <li>高校类型：综合</li>
                             <li>高校隶属：教育部</li>
                             <li>高校性质：本科</li>
-                            <li>学校网址：www.bkzs.sdu.edu.cn</li>
+                            <li>学校网址：http://www.bkzs.sdu.edu.cn</li>
                         </ul>
                     </dd>
                 </dl>
                               </div>
         <div>
             <ul class="fany">
-                <li>首页</li>
-                <li><< 上一页</li>
-                <li><a href="http://college.gaokao.com/schlist/p2/">下一页 >></a></li>
-                <li><a href="http://college.gaokao.com/schlist/p107/">末页</a></li>
-                <li id="qx">1/107页 第<input id="pagenum" type="text" />页 <input id="pagego" type="image" src="http://college.gaokao.com/style/college/images/go.jpg" width="31" height="20" /></li>
+                <li><a href="school.jsp">首页</a></li>
+                <li>上一页</li>
+                <li><a href="school1.jsp">下一页 >></a></li>
+                <li><a href="school3.jsp">末页</a></li>
+                <li id="qx">1/107页 </li>
             </ul>
         </div>
     </div>
