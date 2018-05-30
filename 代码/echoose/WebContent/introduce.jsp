@@ -178,8 +178,10 @@
 								<p><br/>
 								</p>
 							</div>
-							<div class="lyg_page"><a class="lyg_last" href="#">上一篇</a> <a class="lyg_next"
-																						  href="#">下一篇</a></div>
+							<div class="lyg_page">
+								<a class="lyg_last" href="major.jsp">上一篇</a>
+								<a class="lyg_next" href="notice.jsp">下一篇</a>
+							</div>
 						</div>
 					</div>
 				</div>

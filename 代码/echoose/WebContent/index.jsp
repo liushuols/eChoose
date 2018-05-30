@@ -12,9 +12,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel='stylesheet' type='text/css' href="<%=basePath %>css/style.css" />
-<script type='text/javascript' src='js/jquery-1.8.2.min.js' ></script>
-<script type='text/javascript' src='js/web.js' ></script>
-<script type='text/javascript' src='js/gundong.js' ></script>
+<script type='text/javascript' src='<%=basePath%>js/jquery-1.8.2.min.js' ></script>
+<script type='text/javascript' src='<%=basePath%>js/web.js' ></script>
+<script type='text/javascript' src='<%=basePath%>js/gundong.js' ></script>
 <script>
 $(function(){
 	web_obj.slide('.gundong_',{
@@ -33,9 +33,12 @@ $(function(){
 	.div1{float:left;padding-left:350px;}
 	.div2{margin-top:45px;float:left;}
 	.div3{color:#8e8e8e; margin-top:10px;}
+	.div4{margin-top:-30px;margin-left:140px;}
+	.div5{height:20px;}
+	.exitlogin{font-size:15px;font-weight:bold;}
 </style>
 <!--[if IE 6]>
-<script type='text/javascript' src='js/dd_belatedpng.js' ></script>
+<script type='text/javascript' src='<%=basePath%>js/dd_belatedpng.js' ></script>
 <![endif]-->
 
 <title>首页</title>
@@ -53,7 +56,7 @@ $(function(){
 <div id="ly_header" class="ly_min">
   <div class="ly_wrap">
     <div class="ly_lbar ly_fl">
-      <div id="ly_logo"><a href="<%=basePath %>default.html"> <img src="" /> <span></span> </a></div>
+      <div id="ly_logo"><a href="<%=basePath %>default.html"> <img src="<%=basePath%>" /> <span></span> </a></div>
     </div>
     
     <div class="div1">
@@ -69,14 +72,13 @@ $(function(){
         <div class="ly_hot"> 热门搜索： <a href="<%=basePath %>#">热门专业&emsp;</a><a href="<%=basePath %>#">高校分数线&emsp;</a><a href="<%=basePath %>#">高校推荐</a></div>
       </div>
     </div>
+    
     <div class="div2">
-<<<<<<< HEAD
-      <a href="<%=basePath %>">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;登录&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;个人中心</a>
-      &emsp;&emsp;<a href="<%=basePath %>">管理员登录</a>
-=======
-      <a href="regist.jsp">免费注册&nbsp;&nbsp;</a> | <a href="login.jsp">&nbsp;&nbsp;登录&nbsp;&nbsp;</a> | <a href="">&nbsp;&nbsp;个人中心</a>
-      &emsp;&emsp;<a href="adminlogin.jsp">管理员登录</a>
->>>>>>> 454476015800c5a3c38fe380f670aa871178c400
+      <div class="div4">
+    	欢迎您，${sname }&emsp;&emsp;<a href="" class="exitlogin" style="text-decoration:underline;">退出登录</a>
+      </div><br>
+      <div class="div5"><a href="<%=basePath %>">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;登录&nbsp;&nbsp;</a><a href="<%=basePath %>">&nbsp;&nbsp;</a>
+      &emsp;&emsp;<a href="<%=basePath %>">管理员登录</a></div>
     </div>
     <div class="lyg_clear"></div>
   </div>
@@ -84,47 +86,30 @@ $(function(){
 <!--导航-->
 <div id="ly_menu">
   <div class="ly_wrap">
-<<<<<<< HEAD
     <div class="lyg_fir lyg_current"><a href="<%=basePath %>index.jsp">网站首页</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>school.jsp">院校库</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>product.html">专业库</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>news.jsp">新闻中心</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>">院校推荐</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>type/collegetype">院校推荐</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">在线咨询</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">我的收藏</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">高考须知</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">常见问题</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">关于我们</a></div>
-=======
-    <div class="lyg_fir lyg_current"><a href="index.jsp">网站首页</a></div>
-    <div class="lyg_fir"><a href="school.jsp">院校库</a></div>
-<<<<<<< HEAD
-    <div class="lyg_fir"><a href="">专业库</a></div>
-=======
-    <div class="lyg_fir"><a href="product.html">专业库</a></div>
->>>>>>> ab4678fea58eee0fec4958d4cc2bf11bac565120
-    <div class="lyg_fir"><a href="news.jsp">新闻中心</a></div>
-    <div class="lyg_fir"><a href="">院校推荐</a></div>
-    <div class="lyg_fir"><a href="">在线咨询</a></div>
-    <div class="lyg_fir"><a href="">我的收藏</a></div>
-    <div class="lyg_fir"><a href="">高考须知</a></div>
-    <div class="lyg_fir"><a href="">常见问题</a></div>
-    <div class="lyg_fir"><a href="">关于我们</a></div>
->>>>>>> 454476015800c5a3c38fe380f670aa871178c400
     <div class="lyg_clear"></div>
   </div>
 </div>
 <!--banner-->
 <div class="banner">
   <ul class="slides">
-    <li style="background:url(images/zhiyuan3.jpg) 50% 0 no-repeat;"></li>
-    <li style="background:url(images/gaokao1.jpg) 50% 0 no-repeat;"></li>
-    <li style="background:url(images/4.jpg) 50% 0 no-repeat;"></li>
-    <li style="background:url(images/remen1.png) 50% 0 no-repeat;"></li>
-    <li style="background:url(images/kefu1.jpg) 50% 0 no-repeat;"></li>
+    <li style="background:url(<%=basePath %>images/zhiyuan3.jpg) 50% 0 no-repeat;"></li>
+    <li style="background:url(<%=basePath %>images/gaokao1.jpg) 50% 0 no-repeat;"></li>
+    <li style="background:url(<%=basePath %>images/4.jpg) 50% 0 no-repeat;"></li>
+    <li style="background:url(<%=basePath %>images/remen1.png) 50% 0 no-repeat;"></li>
+    <li style="background:url(<%=basePath %>images/kefu1.jpg) 50% 0 no-repeat;"></li>
   </ul>
 </div>
-<script src="js/jquery.flexslider-min.js"></script>
+<script src="<%=basePath%>js/jquery.flexslider-min.js"></script>
 <script>
     $(function(){
         $('.banner').flexslider({
@@ -145,61 +130,61 @@ $(function(){
           <div class="ly_relative">
             <div class="product_list">
               <div class="ly_items">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="images/gx.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/gx.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="<%=basePath %>#" >院校查询</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="images/zy.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/zy.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="<%=basePath %>#" >专业汇总</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="images/yx.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/yx.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="<%=basePath %>#" >院校汇总</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="images/job.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/job.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="<%=basePath %>#" >职业展望</a></h3>
                 </div>
               </div>
               <div class="ly_items  mar_l0">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="images/shoucang.png" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/shoucang.png" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="<%=basePath %>#" >我的收藏</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="images/chat.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/chat.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="<%=basePath %>#" >聊天室</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="images/gkrl.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/gkrl.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="<%=basePath %>#" >高考日历</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="images/zixun.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/zixun.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="<%=basePath %>#" >在线咨询</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="images/VR.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/VR.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="<%=basePath %>#" >VR亲身体验</a></h3>
                 </div>
               </div>
               <div class="ly_items mar_l0">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="images/1.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/1.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="<%=basePath %>#" >关于我们</a></h3>
                 </div>
@@ -220,7 +205,7 @@ $(function(){
           <div class="lyg_blank20"></div>
           <div class="ly_content">
             <div class="ly_a_lbar ly_fl">
-              <div class="ly_pic"> <img src="images/aboutus.jpg" width="248" height="216" /></div>
+              <div class="ly_pic"> <img src="<%=basePath%>images/aboutus.jpg" width="248" height="216" /></div>
             </div>
             <div class="ly_a_rbar ly_fr">
               <div class="ly_title">易选择网站简介</div>
@@ -238,7 +223,7 @@ $(function(){
           <div class="ly_content">
             <div class="ly_item">
               <div class="ly_n_lbar ly_fl">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="images/yonghusay.jpg" width="145" height="103" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/yonghusay.jpg" width="145" height="103" /></a></div>
               </div>
               <div class="ly_n_rbar ly_fr">
                 <h3><a href="<%=basePath %>#" ></a></h3>
@@ -250,7 +235,7 @@ $(function(){
             <div class="ly_line"></div>
             <div class="ly_item">
               <div class="ly_n_lbar ly_fl">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="images/yonghusay.jpg" width="145" height="103" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/yonghusay.jpg" width="145" height="103" /></a></div>
               </div>
               <div class="ly_n_rbar ly_fr">
                 <h3><a href="<%=basePath %>#" ></a></h3>
@@ -277,70 +262,70 @@ $(function(){
             <div class="ly_absolute">
             <c:forEach var="school" items="${schoolList }">
               <div class="ly_item">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath %>${school.simg}" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>${school.simg}" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="" >${school.sname }</a></h3>
-                  <div class="ly_intro">${school.sintroduce }</div>
+                  <div class="ly_intro"></div>
                 </div>
               </div>
               <!-- <div class="ly_item">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="images/bj.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/bj.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="<%=basePath %>#" >北京交通大学</a></h3>
                   <div class="ly_intro">具备以信息、管理等学科为优势，以交通科学与技术为特色，工、管、经、理、文、法、哲等多学科协调发展的完备的学科培养体系</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="images/tian.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/tian.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="<%=basePath %>#" >天津大学</a></h3>
                   <div class="ly_intro">前身为北洋大学，是中国第一所现代大学</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="images/by.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/by.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="<%=basePath %>#" >北京电影学院</a></h3>
                   <div class="ly_intro">亚洲规模最大、世界著名的电影专业院校，各教学单位之间互为支撑，文、导、表、摄、录、美、管理、动画以及电影理论和技术等，开办11个本科专业，具有3个博士和硕士学位一级学科授权点。</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="images/wh.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/wh.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="<%=basePath %>#" >武汉大学</a></h3>
                   <div class="ly_intro">简称“武大”，是一所位于湖北武汉市的中国重点综合研究型大学，是与法国高校联系最紧密、合作最广泛的中国高校，是世界权威期刊《Science》列出的“中国最杰出的大学”之一。</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="images/hgd.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/hgd.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="<%=basePath %>#" >河北工业大学</a></h3>
                   <div class="ly_intro">隶属于河北省的一所国家“211工程”高校，地处天津，是全国唯一一所异地办学的211大学。</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="images/hblg.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/hblg.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="<%=basePath %>#" >华北理工大学</a></h3>
                   <div class="ly_intro">简称华北理工，位于河北省唐山市，是一所以工、医为主，理、经、管、文、法、艺多学科协调发展，具有留学生教育、研究生教育、本科教育、继续教育等全方位教育层次的省属重点骨干大学。</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="images/dl.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/dl.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="<%=basePath %>#" >大连理工大学</a></h3>
                   <div class="ly_intro">坐落于滨城大连，“卓越大学联盟”、“中俄工科大学联盟”、“中俄交通大学联盟”、“中欧工程教育平台”主要成员，设有“研究生院”和“国家大学科技园”。</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="images/zgzf.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/zgzf.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="<%=basePath %>#" >中国政法大学</a></h3>
                   <div class="ly_intro">诞生于1952年，位于北京市，是中华人民共和国教育部直属的一所以法学为特色和优势，文学、史学、哲学、经济学、管理学、教育学等多学科协调发展的全国重点大学。</div>
                 </div>
               </div>
               <div class="ly_item">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="images/byu.jpg" width="196" height="196" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/byu.jpg" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
                   <h3><a href="<%=basePath %>#" >北京语言大学</a></h3>
                   <div class="ly_intro">中华人民共和国教育部直属高等学校，是中国唯一一所以对来华留学生进行汉语、中华文化教育为主要任务的国际型大学，素有“小联合国”之称</div>
@@ -368,7 +353,7 @@ $(function(){
           </div>
           <div class="lib_Contentbox lib_tabborder">
             <div id="con_one_1" style="display: block;">
-              <div class="con_l"> <a href="<%=basePath %>"><img src="images/7.jpg" width="320" height="230"></a> </div>
+              <div class="con_l"> <a href="<%=basePath %>"><img src="<%=basePath%>images/7.jpg" width="320" height="230"></a> </div>
               <div class="con_r">
                 <ul>
                   <li><strong><a href="<%=basePath %>">胶黏剂可不是小玩意 打造环保家居绝不能忽视</a></strong> <span><a href="<%=basePath %>">胶黏剂是装修时十分重要的辅材,它的选购可是十分重要的...</a></span></li>
@@ -378,7 +363,7 @@ $(function(){
               </div>
             </div>
             <div id="con_one_2" style="display: none;">
-              <div class="con_l"> <a href="<%=basePath %>b"><img src="images/4.jpg" width="320" height="230"></a> </div>
+              <div class="con_l"> <a href="<%=basePath %>b"><img src="<%=basePath%>images/4.jpg" width="320" height="230"></a> </div>
               <div class="con_r">
                 <ul>
                   <li><strong><a href="<%=basePath %>">2016年中国家居行业环保程度调查 </a></strong> <span> <a href="<%=basePath %>">目前国内的大家居品牌早在“十三五”之前就已把握住了风向,以绿色环保作为重要的企业理念。在小家居品牌跟随风向开始宣扬环保的时候,环保理念早已在一线 家居品牌的...</a></span></li>
@@ -388,7 +373,7 @@ $(function(){
               </div>
             </div>
             <div id="con_one_3" style="display: none;">
-              <div class="con_l"> <a href="<%=basePath %>"><img src="images/timg.jpg" width="320" height="230"></a> </div>
+              <div class="con_l"> <a href="<%=basePath %>"><img src="<%=basePath%>images/timg.jpg" width="320" height="230"></a> </div>
               <div class="con_r">
                 <ul>
                   <li><strong><a href="<%=basePath %>">定制家具进家 室内甲醛超标该怪谁?</a></strong> <span><a href="<%=basePath %>">越来越多的消费者在装修过程中选择可以随心定制的家具,但无一例外,都会用到大量板材。卖家都说自己板材环保,可安装完家具后...</a></span></li>
@@ -398,7 +383,7 @@ $(function(){
               </div>
             </div>
             <div id="con_one_4" style="display: none;">
-              <div class="con_l"> <a href="<%=basePath %>"><img src="images/6.jpg" width="320" height="230"></a> </div>
+              <div class="con_l"> <a href="<%=basePath %>"><img src="<%=basePath%>images/6.jpg" width="320" height="230"></a> </div>
               <div class="con_r">
                 <ul>
                   <li><strong><a href="<%=basePath %>">“绿色认证”成商家噱头 环保家具真假难辨</a></strong> <span><a href="<%=basePath %>">市场上的“甲醛”家具泛滥,消费者对家具健康环保的意识愈发增强,使得绿色环保家具愈发成为市场上的宠儿...</a></span></li>
@@ -411,7 +396,7 @@ $(function(){
         </div>
       </div>
       <div class="r">
-        <a href="<%=basePath %>"><img src="images/8.png"></a>
+        <a href="<%=basePath %>"><img src="<%=basePath%>images/8.png"></a>
       </div>
     </div>
   </div>
