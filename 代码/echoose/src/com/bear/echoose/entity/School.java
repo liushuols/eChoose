@@ -26,7 +26,6 @@ public class School {
 	private String sspecial;
 	private String sbelong;
 	private String snet;
-	private String sintroduce;
 	private String simg;
 //	private Address address;
 //	private Cscore cscore;
@@ -88,12 +87,6 @@ public class School {
 	}
 	public void setSnet(String snet) {
 		this.snet = snet;
-	}
-	public String getSintroduce() {
-		return sintroduce;
-	}
-	public void setSintroduce(String sintroduce) {
-		this.sintroduce = sintroduce;
 	}
 //	@ManyToMany
 //	@JoinTable(name="school_major", joinColumns=@JoinColumn(name="scid"), inverseJoinColumns=@JoinColumn(name="mid"))

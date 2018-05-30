@@ -34,23 +34,20 @@
     <div class="wpn">
         <div class="form-data pos">
             <div class="css1"><h1>&nbsp;&nbsp;管理员登录</h1></div>
-         <form action="studentuserlogin" method="post">
+         <form action="administorlogin" method="post">
             <div class="form1">
                 <p class="p-input pos">
                     <label for="num">请输入手机号/邮箱/用户名</label>
-                    <input type="text" name="sname" id="num">
+                    <input type="text" name="aname" id="num">
                     <span class="tel-warn num-err hide"><em>账号或密码错误，请重新输入</em><i class="icon-warn"></i></span>
                 </p>
                 <p class="p-input pos">
                     <label for="num">请输入密码</label>
-                    <input type="password" name="spassword" id="num">
+                    <input type="password" name="apassword" id="num">
                     <span class="tel-warn num-err hide"><em>账号或密码错误，请重新输入</em><i class="icon-warn"></i></span>
                 </p>
                 
                 <p class="p-input pos code hide">
-                    <label for="veri">请输入验证码</label>
-                    <input type="text" id="veri">
-                    <img src="">
                     <span class="tel-warn img-err hide"><em>账号或密码错误，请重新输入</em><i class="icon-warn"></i></span>
                     <!-- <a href="<%=basePath %>javascript:;">换一换</a> -->
                 </p>
