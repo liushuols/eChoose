@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page import="java.util.List" %>
@@ -15,6 +15,11 @@
 <script type='text/javascript' src='<%=basePath%>js/jquery-1.8.2.min.js' ></script>
 <script type='text/javascript' src='<%=basePath%>js/web.js' ></script>
 <script type='text/javascript' src='<%=basePath%>js/gundong.js' ></script>
+<link rel="stylesheet" href="<%=basePath %>css/index.css"/>
+<link rel="stylesheet" href="<%=basePath %>css/swiper3.07.min.css"/>
+<script src="<%=basePath %>js/jquery-1.11.2.min.js"></script>
+<script src="<%=basePath %>js/main.js"></script>
+<script src="<%=basePath %>js/koala.min.1.5.js"></script>
 <script>
 $(function(){
 	web_obj.slide('.gundong_',{
@@ -33,6 +38,12 @@ $(function(){
 	.div1{float:left;padding-left:350px;}
 	.div2{margin-top:45px;float:left;}
 	.div3{color:#8e8e8e; margin-top:10px;}
+	.ly_pic{margin:0 50px;}
+	.ly_pro_box{margin:0 50px;}
+	table{  border-collapse:collapse;  }
+	.fenye{height:60px;width:800px;margin-top:100px;}
+	.fenye2{font-size:20px}
+	.fenye input{background-color:#66c245;width:70px;}
 </style>
 <!--[if IE 6]>
 <script type='text/javascript' src='<%=basePath%>js/dd_belatedpng.js' ></script>
@@ -71,11 +82,11 @@ $(function(){
 <!--导航-->
 <div id="ly_menu">
   <div class="ly_wrap">
-    <div class="lyg_fir lyg_current"><a href="<%=basePath%>default.html">网站首页</a></div>
+    <div class="lyg_fir"><a href="<%=basePath%>index.jsp">网站首页</a></div>
     <div class="lyg_fir"><a href="<%=basePath%>about.html">院校库</a></div>
     <div class="lyg_fir"><a href="<%=basePath%>product.html">专业库</a></div>
     <div class="lyg_fir"><a href="<%=basePath%>news.html">新闻中心</a></div>
-    <div class="lyg_fir"><a href="<%=basePath%>">院校推荐</a></div>
+    <div class="lyg_fir lyg_current"><a href="<%=basePath%>">院校推荐</a></div>
     <div class="lyg_fir"><a href="<%=basePath%>">在线咨询</a></div>
     <div class="lyg_fir"><a href="<%=basePath%>">我的收藏</a></div>
     <div class="lyg_fir"><a href="<%=basePath%>">高考须知</a></div>
@@ -126,85 +137,45 @@ $(function(){
             <div class="lyg_clear"></div>
           </div>
           <div class="pro_list">
-          <c:forEach var="school" items="${schoolList1}">
+          <c:forEach var="school" items="${schoolList}">
             <div class="ly_items">
-              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>${school.simg}" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>${school.simg}" width="250" height="250" /></a> </div>
               <div class="ly_pro_box">
                 <h3> <a href="<%=basePath%>#" >${school.sname}</a> </h3>
               </div>
             </div>
            </c:forEach>
-            <%-- <div class="ly_items">
-              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>images/beida.jpg" width="198" height="198" /></a> </div>
-              <div class="ly_pro_box">
-                <h3> <a href="<%=basePath%>#" >北京大学</a> </h3>
-              </div>
-            </div>
-            <div class="ly_items">
-              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>images/zheda.jpg" width="198" height="198" /></a> </div>
-              <div class="ly_pro_box">
-                <h3> <a href="<%=basePath%>#" >浙江大学</a> </h3>
-              </div>
-            </div>
-            <div class="ly_items mar_l0">
-              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>images/wuhan.jpg" width="198" height="198" /></a> </div>
-              <div class="ly_pro_box">
-                <h3> <a href="<%=basePath%>#" >武汉大学</a> </h3>
-              </div>
-            </div>
-            <div class="ly_items">
-              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>images/xiada.jpg" width="198" height="198" /></a> </div>
-              <div class="ly_pro_box">
-                <h3> <a href="<%=basePath%>#" >厦门大学</a> </h3>
-              </div>
-            </div>
-            <div class="ly_items">
-              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>images/fudan.jpg" width="198" height="198" /></a> </div>
-              <div class="ly_pro_box">
-                <h3> <a href="<%=basePath%>#" >复旦大学</a> </h3>
-              </div>
-            </div>
-            <div class="ly_items">
-              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>images/zhongshan.jpg" width="198" height="198" /></a> </div>
-              <div class="ly_pro_box">
-                <h3> <a href="<%=basePath%>#" >中山大学</a> </h3>
-              </div>
-            </div>
-            <div class="ly_items mar_l0">
-              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>images/renda.jpg" width="198" height="198" /></a> </div>
-              <div class="ly_pro_box">
-                <h3> <a href="<%=basePath%>#" >中国人民大学</a> </h3>
-              </div>
-            </div>
-            <div class="ly_items">
-              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>images/beihang.jpg" width="198" height="198" /></a> </div>
-              <div class="ly_pro_box">
-                <h3> <a href="<%=basePath%>#" >北京航空航天</a> </h3>
-              </div>
-            </div>
-            <div class="ly_items">
-              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>images/beili.jpg" width="198" height="198" /></a> </div>
-              <div class="ly_pro_box">
-                <h3> <a href="<%=basePath%>#" >北京理工</a> </h3>
-              </div>
-            </div>
-            <div class="ly_items">
-              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>images/tianjin.jpg" width="198" height="198" /></a> </div>
-              <div class="ly_pro_box">
-                <h3> <a href="<%=basePath%>#" >天津大学</a> </h3>
-              </div>
-            </div>
-            <div class="ly_items mar_l0">
-              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>images/dongbei.jpg" width="198" height="198" /></a> </div>
-              <div class="ly_pro_box">
-                <h3> <a href="<%=basePath%>#" >东北大学</a> </h3>
-              </div>
-            </div> --%>
+            
           </div>
           <div class="lyg_clear"></div>
         </div>
         <div class="lyg_blank25"></div>
-        <div class="Page clearfix"> <span>46 条记录 1/6 页</span> <a href="<%=basePath%>">下一页</a> <span class="current">1</span> <a href="<%=basePath%>">&nbsp;2&nbsp;</a> <a href="<%=basePath%>">&nbsp;3&nbsp;</a> <a href="<%=basePath%>">&nbsp;4&nbsp;</a> <a href="<%=basePath%>">&nbsp;5&nbsp;</a> <a href="<%=basePath%>">下5页</a> <a href="<%=basePath%>">末页</a> </div>
+        <div> 
+        	<table class="fenye">
+      					 <tr>
+            				<td colspan="6" align="center" bgcolor="white" class="fenye2">共&nbsp;${page.totalRecords}&nbsp;条记录 &nbsp;共&nbsp;${page.totalPages}&nbsp;页 &nbsp;当前第&nbsp;${page.pageNo}&nbsp;页 &emsp;&emsp;&emsp;       
+			                <a href="<%=request.getContextPath()%>/school/list1?pageNo=${page.topPageNo}"><input type="button" name="fristPage" value="首页" class="fenye2"/></a>&nbsp;&nbsp;
+			                <c:choose>
+			                  <c:when test="${page.pageNo!=1}">             
+			                      <a href="<%=request.getContextPath()%>/school/list1?pageNo=${page.previousPageNo }"><input type="button" name="previousPage" value="上一页"  class="fenye2"/></a> &nbsp;               
+			                  </c:when>
+			                  <c:otherwise>   
+			                      <input type="button" disabled="disabled" name="previousPage" value="上一页" class="fenye2" />       
+			                  </c:otherwise>
+			                </c:choose>&nbsp;&nbsp;
+			                <c:choose>
+			                  <c:when test="${page.pageNo != page.totalPages}">
+			                    <a href="<%=request.getContextPath()%>/school/list1?pageNo=${page.nextPageNo }"><input type="button" name="nextPage" value="下一页" class="fenye2"/></a>&nbsp;
+			                  </c:when>
+			                  <c:otherwise>    
+			                      <input type="button" disabled="disabled" name="nextPage" value="下一页" />
+			                  </c:otherwise>
+			                </c:choose>&nbsp;&nbsp;
+			                <a href="<%=request.getContextPath()%>/school/list1?pageNo=${page.bottomPageNo}"><input type="button" name="lastPage" value="尾页" class="fenye2"/></a>&nbsp;
+			            </td>
+        			</tr>
+     			</table>
+        </div>
       </div>
       <div class="lyg_clear"></div>
     </div>
