@@ -234,8 +234,8 @@ $(function(){
               <div class="ly_pic"> <img src="<%=basePath%>images/aboutus.jpg" width="248" height="216" /></div>
             </div>
             <div class="ly_a_rbar ly_fr">
-              <div class="ly_title">易选择网站简介</div>
-              <div class="ly_intro">  </div>
+              <div class="ly_title"><span style="font-weight:bolder">易选择网站简介</span></div>
+              <div class="ly_intro"> &nbsp;&nbsp;易选择网站创建的主要目的是帮助高考生择校和高校发布信息的网站，与同类型的网站先比易选泽不仅照顾到了高考生，而且关联到了高校，为高考生与高校间建立了一座相互了解和沟通的桥梁。因此易选泽可以为高考生提供最适合自己，最理想的填报志愿的方案。高校老师可以通过在我们网站发布信息，来提高学校的曝光率和知名度，吸引更多更优秀的生源。 </div>
             </div>
             <div class="lyg_clear"></div>
           </div>
