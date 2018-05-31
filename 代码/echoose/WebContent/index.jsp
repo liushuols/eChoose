@@ -73,16 +73,16 @@ $(function(){
     </div>
     
     <div class="div2">
-<<<<<<< HEAD
+
       <div class="div4">
     	欢迎您，${sname }&emsp;&emsp;<a href="" class="exitlogin" style="text-decoration:underline;">退出登录</a>
       </div><br>
       <div class="div5"><a href="<%=basePath %>">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;登录&nbsp;&nbsp;</a><a href="<%=basePath %>">&nbsp;&nbsp;</a>
       &emsp;&emsp;<a href="<%=basePath %>">管理员登录</a></div>
-=======
+
       <a href="<%=basePath %>">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;登录&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;个人中心</a>
       &emsp;&emsp;<a href="<%=basePath %>">管理员登录</a>
->>>>>>> cf8291aed47605d3104b1c0e48e85bf69e28f703
+
     </div>
     <div class="lyg_clear"></div>
   </div>

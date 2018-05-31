@@ -1,0 +1,5 @@
+/.project
+/.settings/
+/com/
+/dbinfo.properties
+/spring-bean.xml
