@@ -243,8 +243,8 @@
 						 
 					</div>
 					<div class="lyg_page">
-						<a class="lyg_last" href="#">上一篇</a>
-						<a class="lyg_next" href="#">下一篇</a>
+						<a class="lyg_last" href="${ctx}/notice.jsp">上一篇</a>
+						<a class="lyg_next" href="${ctx}/introduce.jsp">下一篇</a>
 					</div>
 				</div>
 			</div>

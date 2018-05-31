@@ -33,6 +33,9 @@ $(function(){
 	.div1{float:left;padding-left:350px;}
 	.div2{margin-top:45px;float:left;}
 	.div3{color:#8e8e8e; margin-top:10px;}
+	.div4{margin-top:-30px;margin-left:140px;}
+	.div5{height:20px;}
+	.exitlogin{font-size:15px;font-weight:bold;}
 </style>
 <!--[if IE 6]>
 <script type='text/javascript' src='<%=basePath%>js/dd_belatedpng.js' ></script>
@@ -55,6 +58,7 @@ $(function(){
     <div class="ly_lbar ly_fl">
       <div id="ly_logo"><a href="<%=basePath %>default.html"> <img src="<%=basePath%>" /> <span></span> </a></div>
     </div>
+    
     <div class="div1">
       <div class="ly_top">
         <div id="ly_search">
@@ -68,9 +72,24 @@ $(function(){
         <div class="ly_hot"> 热门搜索： <a href="<%=basePath %>#">热门专业&emsp;</a><a href="<%=basePath %>#">高校分数线&emsp;</a><a href="<%=basePath %>#">高校推荐</a></div>
       </div>
     </div>
+    
     <div class="div2">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 48b2358830cff5c7124b2257ac4f33994bbbca87
+      <div class="div4">
+    	欢迎您，${sname }&emsp;&emsp;<a href="" class="exitlogin" style="text-decoration:underline;">退出登录</a>
+      </div><br>
+      <div class="div5"><a href="<%=basePath %>">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;登录&nbsp;&nbsp;</a><a href="<%=basePath %>">&nbsp;&nbsp;</a>
+      &emsp;&emsp;<a href="<%=basePath %>">管理员登录</a></div>
+<<<<<<< HEAD
+=======
+=======
       <a href="<%=basePath %>">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;登录&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;个人中心</a>
       &emsp;&emsp;<a href="<%=basePath %>">管理员登录</a>
+>>>>>>> cf8291aed47605d3104b1c0e48e85bf69e28f703
+>>>>>>> 48b2358830cff5c7124b2257ac4f33994bbbca87
     </div>
     <div class="lyg_clear"></div>
   </div>
@@ -82,7 +101,11 @@ $(function(){
     <div class="lyg_fir"><a href="<%=basePath %>school.jsp">院校库</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>product.html">专业库</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>news.jsp">新闻中心</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>">院校推荐</a></div>
+<<<<<<< HEAD
+    <div class="lyg_fir"><a href="<%=basePath %>school/list1">院校推荐</a></div>
+=======
+    <div class="lyg_fir"><a href="<%=basePath %>type/collegetype">院校推荐</a></div>
+>>>>>>> 48b2358830cff5c7124b2257ac4f33994bbbca87
     <div class="lyg_fir"><a href="<%=basePath %>">在线咨询</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">我的收藏</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">高考须知</a></div>
@@ -254,10 +277,18 @@ $(function(){
             <div class="ly_absolute">
             <c:forEach var="school" items="${schoolList }">
               <div class="ly_item">
+<<<<<<< HEAD
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>${school.simg}" width="196" height="196" /></a></div>
+=======
+<<<<<<< HEAD
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>${school.simg}" width="196" height="196" /></a></div>
+=======
                 <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%><%=basePath %>${school.simg}" width="196" height="196" /></a></div>
+>>>>>>> cf8291aed47605d3104b1c0e48e85bf69e28f703
+>>>>>>> 48b2358830cff5c7124b2257ac4f33994bbbca87
                 <div class="ly_pro_box">
                   <h3><a href="" >${school.sname }</a></h3>
-                  <div class="ly_intro">${school.sintroduce }</div>
+                  <div class="ly_intro"></div>
                 </div>
               </div>
               <!-- <div class="ly_item">

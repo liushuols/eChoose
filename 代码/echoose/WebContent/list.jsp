@@ -1,13 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page import="java.util.List" %>
+<%@page import="com.bear.echoose.entity.School" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+<%
+		String path = request.getContextPath();
+		String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+	%>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel='stylesheet' type='text/css' href='css/style.css' />
-<script type='text/javascript' src='js/jquery-1.8.2.min.js' ></script>
-<script type='text/javascript' src='js/web.js' ></script>
-<script type='text/javascript' src='js/gundong.js' ></script>
+<link rel='stylesheet' type='text/css' href='<%=basePath%>css/style.css' />
+<script type='text/javascript' src='<%=basePath%>js/jquery-1.8.2.min.js' ></script>
+<script type='text/javascript' src='<%=basePath%>js/web.js' ></script>
+<script type='text/javascript' src='<%=basePath%>js/gundong.js' ></script>
 <script>
 $(function(){
 	web_obj.slide('.gundong_',{
@@ -28,16 +35,17 @@ $(function(){
 	.div3{color:#8e8e8e; margin-top:10px;}
 </style>
 <!--[if IE 6]>
-<script type='text/javascript' src='js/dd_belatedpng.js' ></script>
+<script type='text/javascript' src='<%=basePath%>js/dd_belatedpng.js' ></script>
 <![endif]-->
 
 <title>院校库</title>
 </head>
 <body>
+
 <div id="ly_header" class="ly_min">
   <div class="ly_wrap">
     <div class="ly_lbar ly_fl">
-      <div id="ly_logo"><a href="default.htmll"> <img src="" /> <span></span> </a></div>
+      <div id="ly_logo"><a href="<%=basePath%>default.htmll"> <img src="<%=basePath%>" /> <span></span> </a></div>
     </div>
     
     <div class="div1">
@@ -50,12 +58,12 @@ $(function(){
         </div>
       </div>
       <div class="div3">
-        <div class="ly_hot"> 热门搜索： <a href="#">热门专业&emsp;</a><a href="#">高校分数线&emsp;</a><a href="#">高校推荐</a></div>
+        <div class="ly_hot"> 热门搜索： <a href="<%=basePath%>#">热门专业&emsp;</a><a href="<%=basePath%>#">高校分数线&emsp;</a><a href="<%=basePath%>#">高校推荐</a></div>
       </div>
     </div>
     <div class="div2">
-      <a href="">免费注册&nbsp;&nbsp;</a> | <a href="">&nbsp;&nbsp;登录&nbsp;&nbsp;</a> | <a href="">&nbsp;&nbsp;个人中心</a>
-      &emsp;&emsp;<a href="">管理员登录</a>
+      <a href="<%=basePath%>">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath%>">&nbsp;&nbsp;登录&nbsp;&nbsp;</a> | <a href="<%=basePath%>">&nbsp;&nbsp;个人中心</a>
+      &emsp;&emsp;<a href="<%=basePath%>">管理员登录</a>
     </div>
     <div class="lyg_clear"></div>
   </div>
@@ -63,30 +71,30 @@ $(function(){
 <!--导航-->
 <div id="ly_menu">
   <div class="ly_wrap">
-    <div class="lyg_fir lyg_current"><a href="default.html">网站首页</a></div>
-    <div class="lyg_fir"><a href="about.html">院校库</a></div>
-    <div class="lyg_fir"><a href="product.html">专业库</a></div>
-    <div class="lyg_fir"><a href="news.html">新闻中心</a></div>
-    <div class="lyg_fir"><a href="">院校推荐</a></div>
-    <div class="lyg_fir"><a href="">在线咨询</a></div>
-    <div class="lyg_fir"><a href="">我的收藏</a></div>
-    <div class="lyg_fir"><a href="">高考须知</a></div>
-    <div class="lyg_fir"><a href="">常见问题</a></div>
-    <div class="lyg_fir"><a href="">关于我们</a></div>
+    <div class="lyg_fir lyg_current"><a href="<%=basePath%>default.html">网站首页</a></div>
+    <div class="lyg_fir"><a href="<%=basePath%>about.html">院校库</a></div>
+    <div class="lyg_fir"><a href="<%=basePath%>product.html">专业库</a></div>
+    <div class="lyg_fir"><a href="<%=basePath%>news.html">新闻中心</a></div>
+    <div class="lyg_fir"><a href="<%=basePath%>">院校推荐</a></div>
+    <div class="lyg_fir"><a href="<%=basePath%>">在线咨询</a></div>
+    <div class="lyg_fir"><a href="<%=basePath%>">我的收藏</a></div>
+    <div class="lyg_fir"><a href="<%=basePath%>">高考须知</a></div>
+    <div class="lyg_fir"><a href="<%=basePath%>">常见问题</a></div>
+    <div class="lyg_fir"><a href="<%=basePath%>">关于我们</a></div>
     <div class="lyg_clear"></div>
   </div>
 </div>
 <!-- banner -->
 <div class="banner">
   <ul class="slides">
-       <li style="background:url(images/zhiyuan3.jpg) 50% 0 no-repeat;"></li>
-       <li style="background:url(images/gaokao1.jpg) 50% 0 no-repeat;"></li>
-       <li style="background:url(images/4.jpg) 50% 0 no-repeat;"></li>
-       <li style="background:url(images/remen1.png) 50% 0 no-repeat;"></li>
-       <li style="background:url(images/kefu1.jpg) 50% 0 no-repeat;"></li>
+       <li style="background:url(<%=basePath %>images/zhiyuan3.jpg) 50% 0 no-repeat;"></li>
+    <li style="background:url(<%=basePath %>images/gaokao1.jpg) 50% 0 no-repeat;"></li>
+    <li style="background:url(<%=basePath %>images/4.jpg) 50% 0 no-repeat;"></li>
+    <li style="background:url(<%=basePath %>images/remen1.png) 50% 0 no-repeat;"></li>
+    <li style="background:url(<%=basePath %>images/kefu1.jpg) 50% 0 no-repeat;"></li>
   </ul>
 </div>
-<script src="js/jquery.flexslider-min.js"></script>
+<script src="<%=basePath%>js/jquery.flexslider-min.js"></script>
 <script>
     $(function(){
         $('.banner').flexslider({
@@ -102,100 +110,101 @@ $(function(){
         <div id="lyg_left_bar">
           <h2>学校展示</h2>
           <dl>
-            <dt> <a href="#" >“985工程”院校</a> </dt>
+             <dt> <a href="#" >“985工程”院校</a> </dt>
             <dt> <a href="#" >“211工程”院校</a> </dt>
             <dt> <a href="#" >中央部属本科院校</a> </dt>
             <dt> <a href="#" >省属本科院校</a> </dt>
             <dt> <a href="#" >高职院校</a> </dt>
-            <dt> <a href="#" >其他院校</a> </dt>
           </dl>
         </div>
       </div>
       <div class="lyg_rpage">
         <div class="lyg_rpage_box">
           <div class="lyg_page_title">
-            <h2>热门大学排行榜</h2>
-            <div id="lyg_breadcrumb"> <a class="ly_home" href="#">首页</a> <font>></font> <span class="lyg_current">热门大学排行榜</span> </div>
+            <h2>热门大学</h2>
+            <div id="lyg_breadcrumb"> <a class="ly_home" href="<%=basePath%>#">首页</a> <font>></font> <span class="lyg_current">热门大学</span> </div>
             <div class="lyg_clear"></div>
           </div>
           <div class="pro_list">
+          <c:forEach var="school" items="${schoolList1}">
             <div class="ly_items">
-              <div class="ly_pic"> <a href="#" > <img src="images/qinghua.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>${school.simg}" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
-                <h3> <a href="#" >清华大学</a> </h3>
+                <h3> <a href="<%=basePath%>#" >${school.sname}</a> </h3>
+              </div>
+            </div>
+           </c:forEach>
+            <%-- <div class="ly_items">
+              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>images/beida.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pro_box">
+                <h3> <a href="<%=basePath%>#" >北京大学</a> </h3>
               </div>
             </div>
             <div class="ly_items">
-              <div class="ly_pic"> <a href="#" > <img src="images/beida.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>images/zheda.jpg" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
-                <h3> <a href="#" >北京大学</a> </h3>
-              </div>
-            </div>
-            <div class="ly_items">
-              <div class="ly_pic"> <a href="#" > <img src="images/zheda.jpg" width="198" height="198" /></a> </div>
-              <div class="ly_pro_box">
-                <h3> <a href="#" >浙江大学</a> </h3>
+                <h3> <a href="<%=basePath%>#" >浙江大学</a> </h3>
               </div>
             </div>
             <div class="ly_items mar_l0">
-              <div class="ly_pic"> <a href="#" > <img src="images/wuhan.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>images/wuhan.jpg" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
-                <h3> <a href="#" >武汉大学</a> </h3>
+                <h3> <a href="<%=basePath%>#" >武汉大学</a> </h3>
               </div>
             </div>
             <div class="ly_items">
-              <div class="ly_pic"> <a href="#" > <img src="images/xiada.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>images/xiada.jpg" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
-                <h3> <a href="#" >厦门大学</a> </h3>
+                <h3> <a href="<%=basePath%>#" >厦门大学</a> </h3>
               </div>
             </div>
             <div class="ly_items">
-              <div class="ly_pic"> <a href="#" > <img src="images/fudan.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>images/fudan.jpg" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
-                <h3> <a href="#" >复旦大学</a> </h3>
+                <h3> <a href="<%=basePath%>#" >复旦大学</a> </h3>
               </div>
             </div>
             <div class="ly_items">
-              <div class="ly_pic"> <a href="#" > <img src="images/zhongshan.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>images/zhongshan.jpg" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
-                <h3> <a href="#" >中山大学</a> </h3>
+                <h3> <a href="<%=basePath%>#" >中山大学</a> </h3>
               </div>
             </div>
             <div class="ly_items mar_l0">
-              <div class="ly_pic"> <a href="#" > <img src="images/renda.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>images/renda.jpg" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
-                <h3> <a href="#" >中国人民大学</a> </h3>
+                <h3> <a href="<%=basePath%>#" >中国人民大学</a> </h3>
               </div>
             </div>
             <div class="ly_items">
-              <div class="ly_pic"> <a href="#" > <img src="images/beihang.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>images/beihang.jpg" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
-                <h3> <a href="#" >北京航空航天</a> </h3>
+                <h3> <a href="<%=basePath%>#" >北京航空航天</a> </h3>
               </div>
             </div>
             <div class="ly_items">
-              <div class="ly_pic"> <a href="#" > <img src="images/beili.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>images/beili.jpg" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
-                <h3> <a href="#" >北京理工</a> </h3>
+                <h3> <a href="<%=basePath%>#" >北京理工</a> </h3>
               </div>
             </div>
             <div class="ly_items">
-              <div class="ly_pic"> <a href="#" > <img src="images/tianjin.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>images/tianjin.jpg" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
-                <h3> <a href="#" >天津大学</a> </h3>
+                <h3> <a href="<%=basePath%>#" >天津大学</a> </h3>
               </div>
             </div>
             <div class="ly_items mar_l0">
-              <div class="ly_pic"> <a href="#" > <img src="images/dongbei.jpg" width="198" height="198" /></a> </div>
+              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>images/dongbei.jpg" width="198" height="198" /></a> </div>
               <div class="ly_pro_box">
-                <h3> <a href="#" >东北大学</a> </h3>
+                <h3> <a href="<%=basePath%>#" >东北大学</a> </h3>
               </div>
-            </div>
+            </div> --%>
           </div>
           <div class="lyg_clear"></div>
         </div>
         <div class="lyg_blank25"></div>
-        <div class="Page clearfix"> <span>46 条记录 1/6 页</span> <a href="">下一页</a> <span class="current">1</span> <a href="">&nbsp;2&nbsp;</a> <a href="">&nbsp;3&nbsp;</a> <a href="">&nbsp;4&nbsp;</a> <a href="">&nbsp;5&nbsp;</a> <a href="">下5页</a> <a href="">末页</a> </div>
+        <div class="Page clearfix"> <span>46 条记录 1/6 页</span> <a href="<%=basePath%>">下一页</a> <span class="current">1</span> <a href="<%=basePath%>">&nbsp;2&nbsp;</a> <a href="<%=basePath%>">&nbsp;3&nbsp;</a> <a href="<%=basePath%>">&nbsp;4&nbsp;</a> <a href="<%=basePath%>">&nbsp;5&nbsp;</a> <a href="<%=basePath%>">下5页</a> <a href="<%=basePath%>">末页</a> </div>
       </div>
       <div class="lyg_clear"></div>
     </div>
@@ -205,14 +214,14 @@ $(function(){
 <div id="ly_footer" class="ly_min">
   <div class="ly_wrap">
     <div class="divcss">
-    	<a href="">院校库</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="">专业库</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="">院校推荐</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="">专业对比</a>&emsp;&emsp;&emsp;&emsp;<a href="">招生计划</a><br>
-		<a href="">报考流程</a>&emsp;&emsp;&emsp;&emsp;<a href="">历年分数线</a>&emsp;&emsp;&emsp;&emsp;<a href="">高考月历表</a>&emsp;&emsp;&emsp;&emsp;<a href="">高考须知</a>&emsp;&emsp;&emsp;&emsp;<a href="">高校选择</a><br>
-		<a href="">专业选择</a>&emsp;&emsp;&emsp;&emsp;<a href="">报考误区</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="">新闻资讯</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="">最新热点</a>&emsp;&emsp;&emsp;&emsp;<a href="">高招动态</a><br>
-		<a href="">系统介绍</a>&emsp;&emsp;&emsp;&emsp;<a href="">购卡详情</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="">使用指南</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="">成功案例</a>&emsp;&emsp;&emsp;&emsp;<a href="">常见问题</a>
+    	<a href="<%=basePath%>">院校库</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath%>">专业库</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath%>">院校推荐</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath%>">专业对比</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath%>">招生计划</a><br>
+		<a href="<%=basePath%>">报考流程</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath%>">历年分数线</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath%>">高考月历表</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath%>">高考须知</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath%>">高校选择</a><br>
+		<a href="<%=basePath%>">专业选择</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath%>">报考误区</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath%>">新闻资讯</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath%>">最新热点</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath%>">高招动态</a><br>
+		<a href="<%=basePath%>">系统介绍</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath%>">购卡详情</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath%>">使用指南</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath%>">成功案例</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath%>">常见问题</a>
     </div>
     
     <div class="divcss1">
-    	<a href="">关于我们&nbsp;&nbsp;</a> | <a href="">&nbsp;&nbsp;帮助中心&nbsp;&nbsp;</a> | <a href="">&nbsp;&nbsp;版权声明&nbsp;&nbsp;</a> | <a href="">&nbsp;&nbsp;合作伙伴</a>
+    	<a href="<%=basePath%>">关于我们&nbsp;&nbsp;</a> | <a href="<%=basePath%>">&nbsp;&nbsp;帮助中心&nbsp;&nbsp;</a> | <a href="<%=basePath%>">&nbsp;&nbsp;版权声明&nbsp;&nbsp;</a> | <a href="<%=basePath%>">&nbsp;&nbsp;合作伙伴</a>
     </div>
     
     <div class="divcss2">
