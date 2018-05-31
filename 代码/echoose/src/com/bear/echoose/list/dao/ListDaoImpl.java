@@ -1,4 +1,4 @@
-package com.bear.echoose.index.dao;
+package com.bear.echoose.list.dao;
 
 import java.util.List;
 
@@ -8,11 +8,10 @@ import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.stereotype.Repository;
 
-import com.bear.echoose.entity.Index;
 import com.bear.echoose.entity.School;
 
 @Repository
-public class IndexDaoImpl {
+public class ListDaoImpl {
 	@Resource
 	private SessionFactory sessionFactory;
 	
@@ -21,3 +20,4 @@ public class IndexDaoImpl {
 		return q.list();
 	}
 }
+

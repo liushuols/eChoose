@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.util.List" %>
+<%@ page import="com.bear.echoose.entity.Administor" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,6 +11,7 @@
     <title></title>
     <link href="styles/Common.css" rel="stylesheet" />
     <link href="styles/Index.css" rel="stylesheet" />
+    
 </head>
 <body>
     <div class="header">
@@ -17,7 +20,7 @@
         <label class="logo-title">易选择网后台</label>
         <ul class="inline">
             <li>
-                <img src="images/32/client.png" />&nbsp;&nbsp;欢迎您,Admin
+                <img src="images/32/client.png" />&nbsp;&nbsp;欢迎您,${adminname }
             </li>
             <li class="dropdown">
                 <a class="dropdown-toggle mymsg" data-toggle="dropdown" href="#"><img src="images/32/166.png" />&nbsp;&nbsp;修改个人信息<b class="caret"></b></a>
@@ -27,7 +30,7 @@
 
             </li>
             <li>
-                <img src="images/32/200.png" />&nbsp;&nbsp;<a class="loginout" href="#">退出</a>
+                <img src="images/32/200.png" />&nbsp;&nbsp;<a class="loginout" href="adminoff">退出</a>
             </li>
 
         </ul>
@@ -96,7 +99,6 @@
     <script src="bootstrap2.3.2/js/bootstrap.min.js"></script>
     <script src="scripts/Index.js"></script>
 	<div style="text-align:center;">
-<p>来源:<a href="http://www.mycodes.net/" target="_blank">源码之家</a></p>
 </div>
 
 </body>
