@@ -7,20 +7,25 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
-import com.bear.echoose.collegetype.dao.CollegeTypeServiceImpl;
+import com.bear.echoose.collegetype.service.CollegetypeServiceImpl;
 import com.bear.echoose.entity.Collegetype;
+import com.bear.echoose.entity.School;
 
 @Controller
-@RequestMapping("type")
-public class CollegeTypeController {
-	@Resource
-	private CollegeTypeServiceImpl collegeTypeServiceImpl;
+@RequestMapping("collegetype")
+public class CollegetypeController {
 	
-	@RequestMapping("/collegetype")
-	public String findAllType(HttpSession session) {
-		List<Collegetype> collegetypeList = this.collegeTypeServiceImpl.listAllType();
-		session.setAttribute("collegetypeList", collegetypeList);
+	@Resource
+	private CollegetypeServiceImpl collegetypeServiceImpl;
+	
+	@RequestMapping("/schooltype")
+	public String findSchoolByType(HttpSession session,@RequestParam("ctid") int ctid) {
+		List<School> schoolTypeList = this.collegetypeServiceImpl.findSchoolByType(ctid);
+		List<Collegetype> collegeTypeList = this.collegetypeServiceImpl.queryByCtid(ctid);
+		session.setAttribute("schoolTypeList", schoolTypeList);
+		session.setAttribute("collegeTypeList", collegeTypeList);
 		return "list";
 	}
 }

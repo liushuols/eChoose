@@ -121,12 +121,15 @@ $(function(){
         <div id="lyg_left_bar">
           <h2>学校展示</h2>
           <dl>
-             <dt> <a href="#" >“985工程”院校</a> </dt>
-            <dt> <a href="#" >“211工程”院校</a> </dt>
-            <dt> <a href="#" >中央部属本科院校</a> </dt>
-            <dt> <a href="#" >省属本科院校</a> </dt>
-            <dt> <a href="#" >高职院校</a> </dt>
+          
+             <dt> <a href="<%=basePath %>collegetype/schooltype?ctid=1" >“985工程”院校</a> </dt>
+           <dt> <a href="<%=basePath %>collegetype/schooltype?ctid=2" >“211工程”院校</a> </dt>
+            <dt> <a href="<%=basePath %>collegetype/schooltype?ctid=3" >中央部属本科院校</a> </dt>
+            <dt> <a href="<%=basePath %>collegetype/schooltype?ctid=4" >省属本科院校</a> </dt>
+            <dt> <a href="<%=basePath %>collegetype/schooltype?ctid=5" >高职院校</a> </dt>
+            
           </dl>
+          
         </div>
       </div>
       <div class="lyg_rpage">

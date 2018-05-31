@@ -74,40 +74,12 @@ $(function(){
     </div>
     
     <div class="div2">
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 48b2358830cff5c7124b2257ac4f33994bbbca87
->>>>>>> ce66f01373947c5fb65809a1c190027bf7bc860f
-=======
->>>>>>> ca7322c56c15f82a575b7896689aa4262bc3600f
       <div class="div4">
     	欢迎您，${sname }&emsp;&emsp;<a href="" class="exitlogin" style="text-decoration:underline;">退出登录</a>
       </div><br>
       <div class="div5"><a href="<%=basePath %>">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;登录&nbsp;&nbsp;</a><a href="<%=basePath %>">&nbsp;&nbsp;</a>
       &emsp;&emsp;<a href="<%=basePath %>">管理员登录</a></div>
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-      <a href="<%=basePath %>">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;登录&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;个人中心</a>
-      &emsp;&emsp;<a href="<%=basePath %>">管理员登录</a>
-
-=======
-<<<<<<< HEAD
-=======
-=======
-      <a href="<%=basePath %>">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;登录&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;个人中心</a>
-      &emsp;&emsp;<a href="<%=basePath %>">管理员登录</a>
->>>>>>> cf8291aed47605d3104b1c0e48e85bf69e28f703
->>>>>>> 48b2358830cff5c7124b2257ac4f33994bbbca87
->>>>>>> ce66f01373947c5fb65809a1c190027bf7bc860f
-=======
-     
->>>>>>> ca7322c56c15f82a575b7896689aa4262bc3600f
     </div>
     <div class="lyg_clear"></div>
   </div>
