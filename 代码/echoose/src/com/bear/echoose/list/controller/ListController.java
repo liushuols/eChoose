@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.bear.echoose.entity.Collegetype;
 import com.bear.echoose.entity.Page;
 import com.bear.echoose.entity.School;
 import com.bear.echoose.list.service.ListServiceImpl;
@@ -30,6 +31,9 @@ public class ListController {
         request.setAttribute("page", page);
         List<School> schoolList = page.getList();
         session.setAttribute("schoolList", schoolList);
+        
+        List<Collegetype> typeList = this.listServiceImpl.findType();
+        session.setAttribute("typeList", typeList);
         return "list";
 }
 

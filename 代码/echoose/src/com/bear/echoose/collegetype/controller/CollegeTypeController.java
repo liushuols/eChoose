@@ -26,6 +26,6 @@ public class CollegetypeController {
 		List<Collegetype> collegeTypeList = this.collegetypeServiceImpl.queryByCtid(ctid);
 		session.setAttribute("schoolTypeList", schoolTypeList);
 		session.setAttribute("collegeTypeList", collegeTypeList);
-		return "list";
+		return "collegeType";
 	}
 }

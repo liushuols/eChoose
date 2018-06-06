@@ -89,14 +89,14 @@ $(function(){
   <div class="ly_wrap">
     <div class="lyg_fir lyg_current"><a href="<%=basePath %>index.jsp">网站首页</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>school.jsp">院校库</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>product.html">专业库</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>">专业库</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>news.jsp">新闻中心</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>school/list1">院校推荐</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">在线咨询</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">我的收藏</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>">高考须知</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>notice.jsp">高考须知</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">常见问题</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>">关于我们</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>significance.jsp">关于我们</a></div>
     <div class="lyg_clear"></div>
   </div>
 </div>
@@ -202,7 +202,7 @@ $(function(){
     <div class="ly_main_t">
       <div class="ly_lbar ly_fl">
         <div class="ly_article_bar">
-          <h2><a class="ly_more" href="<%=basePath %>#">查看更多</a><span>关于我们</span> <em>ABOUT US</em> </h2>
+          <h2><a class="ly_more" href="<%=basePath %>introduce.jsp">查看更多</a><span>关于我们</span> <em>ABOUT US</em> </h2>
           <div class="lyg_blank20"></div>
           <div class="ly_content">
             <div class="ly_a_lbar ly_fl">
@@ -228,7 +228,7 @@ $(function(){
               </div>
               <div class="ly_n_rbar ly_fr">
                 <h3><a href="<%=basePath %>#" ></a></h3>
-                <div class="ly_date">2016/06/23</div>
+                <div class="ly_date">&nbsp;&nbsp;我是2017年的考生，去年高考时考了530分，通过易选择网站推荐，我报了河北师范大学，并被成功得被录取到了软件学院。非常满意这个学校和易选择网站为我推荐的这个专业<br><br><br>2017/10/10</div>
                 <div class="ly_intro"></div>
               </div>
               <div class="lyg_clear"></div>
@@ -240,7 +240,7 @@ $(function(){
               </div>
               <div class="ly_n_rbar ly_fr">
                 <h3><a href="<%=basePath %>#" ></a></h3>
-                <div class="ly_date">2016/06/08</div>
+                <div class="ly_date">&nbsp;&nbsp;我成绩不错，根据易选泽的推荐，报考了清华大学高分子材料与工程专业，被录取后，发现自己很适合学习这个专业，而且这个专业市场需求量大，就业后工资高，易选择真的为我提供了最适合我的专业！<br><br>2017/12/10</div>
                 <div class="ly_intro"> </div>
               </div>
               <div class="lyg_clear"></div>
@@ -255,7 +255,7 @@ $(function(){
     <!--案例展示-->
     <div class="ly_main_b">
       <div class="ly_product_bar gundong_">
-        <h2><a class="ly_more" href="<%=basePath %>#">查看更多</a><span>名校展示</span> <em>SCHOOL SHOW</em> </h2>
+        <h2><a class="ly_more" href="<%=basePath %>school.jsp">查看更多</a><span>名校展示</span> <em>SCHOOL SHOW</em> </h2>
         <div class="lyg_blank25"></div>
         
         <div class="ly_content"><a class="ly_left_btn" href="<%=basePath %>javascript:;"></a><a class="ly_right_btn" href="<%=basePath %>javascript:;"></a>
