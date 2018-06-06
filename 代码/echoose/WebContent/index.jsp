@@ -95,7 +95,7 @@ $(function(){
     <div class="lyg_fir"><a href="<%=basePath %>">在线咨询</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">我的收藏</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">高考须知</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>">常见问题</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>score1.jsp">分数查询</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">关于我们</a></div>
     <div class="lyg_clear"></div>
   </div>
