@@ -20,4 +20,7 @@ public class SchoolDaoImpl {
 		Query q = this.sessionFactory.getCurrentSession().createQuery("from School");
 		return q.list();
 	}
+	
+	
+	
 }

@@ -78,7 +78,12 @@ $(function(){
     	欢迎您，${sname }&emsp;&emsp;<a href="" class="exitlogin" style="text-decoration:underline;">退出登录</a>
       </div><br>
       <div class="div5"><a href="<%=basePath %>">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;登录&nbsp;&nbsp;</a><a href="<%=basePath %>">&nbsp;&nbsp;</a>
+<<<<<<< HEAD
       &emsp;&emsp;<a href="<%=basePath %>adminLogin.jsp">管理员登录</a></div>
+=======
+      &emsp;&emsp;<a href="<%=basePath %>">管理员登录</a></div>
+
+>>>>>>> cfae6b240ff3414eae5c37833180a2b3381f711f
     </div>
     <div class="lyg_clear"></div>
   </div>
@@ -88,14 +93,14 @@ $(function(){
   <div class="ly_wrap">
     <div class="lyg_fir lyg_current"><a href="<%=basePath %>index.jsp">网站首页</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>school.jsp">院校库</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>product.html">专业库</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>">专业库</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>news.jsp">新闻中心</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>school/list1">院校推荐</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">在线咨询</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">我的收藏</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>">高考须知</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>notice.jsp">高考须知</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">常见问题</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>">关于我们</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>significance.jsp">关于我们</a></div>
     <div class="lyg_clear"></div>
   </div>
 </div>
@@ -201,15 +206,15 @@ $(function(){
     <div class="ly_main_t">
       <div class="ly_lbar ly_fl">
         <div class="ly_article_bar">
-          <h2><a class="ly_more" href="<%=basePath %>#">查看更多</a><span>关于我们</span> <em>ABOUT US</em> </h2>
+          <h2><a class="ly_more" href="<%=basePath %>introduce.jsp">查看更多</a><span>关于我们</span> <em>ABOUT US</em> </h2>
           <div class="lyg_blank20"></div>
           <div class="ly_content">
             <div class="ly_a_lbar ly_fl">
               <div class="ly_pic"> <img src="<%=basePath%>images/aboutus.jpg" width="248" height="216" /></div>
             </div>
             <div class="ly_a_rbar ly_fr">
-              <div class="ly_title">易选择网站简介</div>
-              <div class="ly_intro">  </div>
+              <div class="ly_title"><span style="font-weight:bolder">易选择网站简介</span></div>
+              <div class="ly_intro"> &nbsp;&nbsp;易选择网站创建的主要目的是帮助高考生择校和高校发布信息的网站，与同类型的网站先比易选泽不仅照顾到了高考生，而且关联到了高校，为高考生与高校间建立了一座相互了解和沟通的桥梁。因此易选泽可以为高考生提供最适合自己，最理想的填报志愿的方案。高校老师可以通过在我们网站发布信息，来提高学校的曝光率和知名度，吸引更多更优秀的生源。 </div>
             </div>
             <div class="lyg_clear"></div>
           </div>
@@ -227,7 +232,7 @@ $(function(){
               </div>
               <div class="ly_n_rbar ly_fr">
                 <h3><a href="<%=basePath %>#" ></a></h3>
-                <div class="ly_date">2016/06/23</div>
+                <div class="ly_date">&nbsp;&nbsp;我是2017年的考生，去年高考时考了530分，通过易选择网站推荐，我报了河北师范大学，并被成功得被录取到了软件学院。非常满意这个学校和易选择网站为我推荐的这个专业<br><br><br>2017/10/10</div>
                 <div class="ly_intro"></div>
               </div>
               <div class="lyg_clear"></div>
@@ -239,7 +244,7 @@ $(function(){
               </div>
               <div class="ly_n_rbar ly_fr">
                 <h3><a href="<%=basePath %>#" ></a></h3>
-                <div class="ly_date">2016/06/08</div>
+                <div class="ly_date">&nbsp;&nbsp;我成绩不错，根据易选泽的推荐，报考了清华大学高分子材料与工程专业，被录取后，发现自己很适合学习这个专业，而且这个专业市场需求量大，就业后工资高，易选择真的为我提供了最适合我的专业！<br><br>2017/12/10</div>
                 <div class="ly_intro"> </div>
               </div>
               <div class="lyg_clear"></div>
@@ -254,7 +259,7 @@ $(function(){
     <!--案例展示-->
     <div class="ly_main_b">
       <div class="ly_product_bar gundong_">
-        <h2><a class="ly_more" href="<%=basePath %>#">查看更多</a><span>名校展示</span> <em>SCHOOL SHOW</em> </h2>
+        <h2><a class="ly_more" href="<%=basePath %>school.jsp">查看更多</a><span>名校展示</span> <em>SCHOOL SHOW</em> </h2>
         <div class="lyg_blank25"></div>
         
         <div class="ly_content"><a class="ly_left_btn" href="<%=basePath %>javascript:;"></a><a class="ly_right_btn" href="<%=basePath %>javascript:;"></a>
@@ -262,75 +267,19 @@ $(function(){
             <div class="ly_absolute">
             <c:forEach var="school" items="${schoolList }">
               <div class="ly_item">
+<<<<<<< HEAD
                 <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>${school.simg}" width="196" height="196" /></a></div>
+=======
+
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>${school.simg}" width="196" height="196" /></a></div>
+
+>>>>>>> cfae6b240ff3414eae5c37833180a2b3381f711f
                 <div class="ly_pro_box">
                   <h3><a href="" >${school.sname }</a></h3>
                   <div class="ly_intro"></div>
                 </div>
               </div>
-              <!-- <div class="ly_item">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/bj.jpg" width="196" height="196" /></a></div>
-                <div class="ly_pro_box">
-                  <h3><a href="<%=basePath %>#" >北京交通大学</a></h3>
-                  <div class="ly_intro">具备以信息、管理等学科为优势，以交通科学与技术为特色，工、管、经、理、文、法、哲等多学科协调发展的完备的学科培养体系</div>
-                </div>
-              </div>
-              <div class="ly_item">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/tian.jpg" width="196" height="196" /></a></div>
-                <div class="ly_pro_box">
-                  <h3><a href="<%=basePath %>#" >天津大学</a></h3>
-                  <div class="ly_intro">前身为北洋大学，是中国第一所现代大学</div>
-                </div>
-              </div>
-              <div class="ly_item">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/by.jpg" width="196" height="196" /></a></div>
-                <div class="ly_pro_box">
-                  <h3><a href="<%=basePath %>#" >北京电影学院</a></h3>
-                  <div class="ly_intro">亚洲规模最大、世界著名的电影专业院校，各教学单位之间互为支撑，文、导、表、摄、录、美、管理、动画以及电影理论和技术等，开办11个本科专业，具有3个博士和硕士学位一级学科授权点。</div>
-                </div>
-              </div>
-              <div class="ly_item">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/wh.jpg" width="196" height="196" /></a></div>
-                <div class="ly_pro_box">
-                  <h3><a href="<%=basePath %>#" >武汉大学</a></h3>
-                  <div class="ly_intro">简称“武大”，是一所位于湖北武汉市的中国重点综合研究型大学，是与法国高校联系最紧密、合作最广泛的中国高校，是世界权威期刊《Science》列出的“中国最杰出的大学”之一。</div>
-                </div>
-              </div>
-              <div class="ly_item">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/hgd.jpg" width="196" height="196" /></a></div>
-                <div class="ly_pro_box">
-                  <h3><a href="<%=basePath %>#" >河北工业大学</a></h3>
-                  <div class="ly_intro">隶属于河北省的一所国家“211工程”高校，地处天津，是全国唯一一所异地办学的211大学。</div>
-                </div>
-              </div>
-              <div class="ly_item">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/hblg.jpg" width="196" height="196" /></a></div>
-                <div class="ly_pro_box">
-                  <h3><a href="<%=basePath %>#" >华北理工大学</a></h3>
-                  <div class="ly_intro">简称华北理工，位于河北省唐山市，是一所以工、医为主，理、经、管、文、法、艺多学科协调发展，具有留学生教育、研究生教育、本科教育、继续教育等全方位教育层次的省属重点骨干大学。</div>
-                </div>
-              </div>
-              <div class="ly_item">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/dl.jpg" width="196" height="196" /></a></div>
-                <div class="ly_pro_box">
-                  <h3><a href="<%=basePath %>#" >大连理工大学</a></h3>
-                  <div class="ly_intro">坐落于滨城大连，“卓越大学联盟”、“中俄工科大学联盟”、“中俄交通大学联盟”、“中欧工程教育平台”主要成员，设有“研究生院”和“国家大学科技园”。</div>
-                </div>
-              </div>
-              <div class="ly_item">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/zgzf.jpg" width="196" height="196" /></a></div>
-                <div class="ly_pro_box">
-                  <h3><a href="<%=basePath %>#" >中国政法大学</a></h3>
-                  <div class="ly_intro">诞生于1952年，位于北京市，是中华人民共和国教育部直属的一所以法学为特色和优势，文学、史学、哲学、经济学、管理学、教育学等多学科协调发展的全国重点大学。</div>
-                </div>
-              </div>
-              <div class="ly_item">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/byu.jpg" width="196" height="196" /></a></div>
-                <div class="ly_pro_box">
-                  <h3><a href="<%=basePath %>#" >北京语言大学</a></h3>
-                  <div class="ly_intro">中华人民共和国教育部直属高等学校，是中国唯一一所以对来华留学生进行汉语、中华文化教育为主要任务的国际型大学，素有“小联合国”之称</div>
-                </div>
-              </div> -->
+              
               </c:forEach>
             </div>
           </div>
