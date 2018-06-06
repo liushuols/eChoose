@@ -31,7 +31,7 @@ public class School {
 //	private Cscore cscore;
 //	private Set<Major> majorSet = new HashSet<Major>();
 //	private Collegenature collegenature;
-//	private Collegetype collegetype;
+	private Collegetype collegetype;
 	
 	
 
@@ -44,14 +44,14 @@ public class School {
 //		this.address = address;
 //	}
 //	
-//	@ManyToOne
-//	@JoinColumn(name="ctid")
-//	public Collegetype getCollegetype() {
-//		return collegetype;
-//	}
-//	public void setCollegetype(Collegetype collegetype) {
-//		this.collegetype = collegetype;
-//	}
+	@ManyToOne
+	@JoinColumn(name="ctid")
+	public Collegetype getCollegetype() {
+		return collegetype;
+	}
+	public void setCollegetype(Collegetype collegetype) {
+		this.collegetype = collegetype;
+	}
 //	@ManyToOne
 //	@JoinColumn(name="cnid")
 //	public Collegenature getCollegenature() {
