@@ -31,7 +31,7 @@ public class AdminLoginController {
 				session.setAttribute("adminname", name);
 				session.setAttribute("adminpassword", pwd);
 				session.setAttribute("admin",adminlist.get(i));
-				return "adminIndex";
+				return "redirect:adminschool/list";
 			}
 		}
 		return "adminlogin";

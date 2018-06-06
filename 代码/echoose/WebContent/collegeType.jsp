@@ -44,8 +44,7 @@ $(function(){
 	.fenye{height:60px;width:800px;margin-top:100px;}
 	.fenye2{font-size:20px}
 	.fenye input{background-color:#66c245;width:70px;}
-	#ly_footer a:hover{color:#ff6600;}
-	.ly_wrap{color:black;}
+	.ly_pro_box{width:200px;}
 </style>
 <!--[if IE 6]>
 <script type='text/javascript' src='<%=basePath%>js/dd_belatedpng.js' ></script>
@@ -55,6 +54,14 @@ $(function(){
 </head>
 <body>
 
+<%
+		String path1 = request.getContextPath();
+		String basePath1 = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path1+"/";
+		List<School> schoolTypelist = (List<School>)request.getSession().getAttribute("schoolTypeList");
+		if(schoolTypelist == null){
+			response.sendRedirect(basePath1 + "collegetype/schooltype");
+		}
+	%>
 <div id="ly_header" class="ly_min">
   <div class="ly_wrap">
     <div class="ly_lbar ly_fl">
@@ -84,16 +91,16 @@ $(function(){
 <!--导航-->
 <div id="ly_menu">
   <div class="ly_wrap">
-    <div class="lyg_fir lyg_current"><a href="<%=basePath %>index.jsp">网站首页</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>school.jsp">院校库</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>">专业库</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>news.jsp">新闻中心</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>school/list1">院校推荐</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>">在线咨询</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>">我的收藏</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>notice.jsp">高考须知</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>">常见问题</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>significance.jsp">关于我们</a></div>
+    <div class="lyg_fir"><a href="<%=basePath%>index.jsp">网站首页</a></div>
+    <div class="lyg_fir"><a href="<%=basePath%>about.html">院校库</a></div>
+    <div class="lyg_fir"><a href="<%=basePath%>product.html">专业库</a></div>
+    <div class="lyg_fir"><a href="<%=basePath%>news.html">新闻中心</a></div>
+    <div class="lyg_fir lyg_current"><a href="<%=basePath%>">院校推荐</a></div>
+    <div class="lyg_fir"><a href="<%=basePath%>">在线咨询</a></div>
+    <div class="lyg_fir"><a href="<%=basePath%>">我的收藏</a></div>
+    <div class="lyg_fir"><a href="<%=basePath%>">高考须知</a></div>
+    <div class="lyg_fir"><a href="<%=basePath%>">常见问题</a></div>
+    <div class="lyg_fir"><a href="<%=basePath%>">关于我们</a></div>
     <div class="lyg_clear"></div>
   </div>
 </div>
@@ -123,10 +130,13 @@ $(function(){
         <div id="lyg_left_bar">
           <h2>学校展示</h2>
           <dl>
-          <c:forEach var="type" items="${typeList }">
-             <dt> <a href="<%=basePath %>collegetype/schooltype?ctid=${type.ctid}" >${type.ctname }</a> </dt>
-           
-            </c:forEach>
+          
+             <dt> <a href="<%=basePath %>collegetype/schooltype?ctid=1" >“985工程”院校</a> </dt>
+           <dt> <a href="<%=basePath %>collegetype/schooltype?ctid=2" >“211工程”院校</a> </dt>
+            <dt> <a href="<%=basePath %>collegetype/schooltype?ctid=3" >中央部属本科院校</a> </dt>
+            <dt> <a href="<%=basePath %>collegetype/schooltype?ctid=4" >省属本科院校</a> </dt>
+            <dt> <a href="<%=basePath %>collegetype/schooltype?ctid=5" >高职院校</a> </dt>
+            
           </dl>
           
         </div>
@@ -134,14 +144,12 @@ $(function(){
       <div class="lyg_rpage">
         <div class="lyg_rpage_box">
           <div class="lyg_page_title">
-
             <h2>热门大学</h2>
             <div id="lyg_breadcrumb"> <a class="ly_home" href="<%=basePath%>#">首页</a> <font>></font> <span class="lyg_current">热门大学</span> </div>
             <div class="lyg_clear"></div>
-
           </div>
           <div class="pro_list">
-          <c:forEach var="school" items="${schoolList}">
+          <c:forEach var="school" items="${schoolTypeList}">
             <div class="ly_items">
               <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>${school.simg}" width="250" height="250" /></a> </div>
               <div class="ly_pro_box">
@@ -154,32 +162,7 @@ $(function(){
           <div class="lyg_clear"></div>
         </div>
         <div class="lyg_blank25"></div>
-        <div> 
-        	<table class="fenye">
-      					 <tr>
-            				<td colspan="6" align="center" bgcolor="white" class="fenye2">共&nbsp;${page.totalRecords}&nbsp;条记录 &nbsp;共&nbsp;${page.totalPages}&nbsp;页 &nbsp;当前第&nbsp;${page.pageNo}&nbsp;页 &emsp;&emsp;&emsp;       
-			                <a href="<%=request.getContextPath()%>/school/list1?pageNo=${page.topPageNo}"><input type="button" name="fristPage" value="首页" class="fenye2"/></a>&nbsp;&nbsp;
-			                <c:choose>
-			                  <c:when test="${page.pageNo!=1}">             
-			                      <a href="<%=request.getContextPath()%>/school/list1?pageNo=${page.previousPageNo }"><input type="button" name="previousPage" value="上一页"  class="fenye2"/></a> &nbsp;               
-			                  </c:when>
-			                  <c:otherwise>   
-			                      <input type="button" disabled="disabled" name="previousPage" value="上一页" class="fenye2" />       
-			                  </c:otherwise>
-			                </c:choose>&nbsp;&nbsp;
-			                <c:choose>
-			                  <c:when test="${page.pageNo != page.totalPages}">
-			                    <a href="<%=request.getContextPath()%>/school/list1?pageNo=${page.nextPageNo }"><input type="button" name="nextPage" value="下一页" class="fenye2"/></a>&nbsp;
-			                  </c:when>
-			                  <c:otherwise>    
-			                      <input type="button" disabled="disabled" name="nextPage" value="下一页" />
-			                  </c:otherwise>
-			                </c:choose>&nbsp;&nbsp;
-			                <a href="<%=request.getContextPath()%>/school/list1?pageNo=${page.bottomPageNo}"><input type="button" name="lastPage" value="尾页" class="fenye2"/></a>&nbsp;
-			            </td>
-        			</tr>
-     			</table>
-        </div>
+
       </div>
       <div class="lyg_clear"></div>
     </div>

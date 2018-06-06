@@ -7,6 +7,8 @@ import javax.annotation.Resource;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.stereotype.Repository;
+
+import com.bear.echoose.entity.Collegetype;
 import com.bear.echoose.entity.School;
 
 @Repository
@@ -35,6 +37,11 @@ public class ListDaoImpl {
 	        query.setMaxResults(length);            
 	        return query.list(); 
 	  }
+	 
+	 public List<Collegetype> findType(){
+		 Query q = this.sessionFactory.getCurrentSession().createQuery("from Collegetype");
+		 return q.list();
+	 }
 	 
 	//保存School对象
 		 public void save(School st){

@@ -7,6 +7,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.bear.echoose.entity.Collegetype;
 import com.bear.echoose.entity.Page;
 import com.bear.echoose.entity.School;
 import com.bear.echoose.list.dao.ListDaoImpl;
@@ -43,6 +44,10 @@ public class ListServiceImpl {
          page.setList(list);    
          return page;
      }
+	 
+	 public List<Collegetype> findType(){
+		 return this.listDaoImpl.findType();
+	 }
       public void Servicesave(School st){
    	   listDaoImpl.save(st);
       }
