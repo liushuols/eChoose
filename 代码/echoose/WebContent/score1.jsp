@@ -40,7 +40,7 @@ $(function(){
 	#spesli{padding-right:100px;}
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>高校推荐</title>
 <link href="http://www.gaokao.com/favicon.ico" rel="shortcut icon"/>
 <link href="css/base2.css" rel="stylesheet" type="text/css" />
 <link href="css/base3.css" rel="stylesheet" type="text/css" />
@@ -55,14 +55,6 @@ $(function(){
 
 </head>
 <body>
-<%
-		String path1 = request.getContextPath();
-		String basePath1 = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path1+"/";
-		List<School> schoollist = (List<School>)request.getSession().getAttribute("schoolList");
-		if(schoollist == null){
-			response.sendRedirect(basePath1 + "school/list");
-		}
-	%>
 	<div id="ly_header" class="ly_min">
   <div class="ly_wrap">
     <div class="ly_lbar ly_fl">
@@ -95,10 +87,10 @@ $(function(){
 <div id="ly_menu">
   <div class="ly_wrap">
     <div class="lyg_fir lyg_current"><a href="<%=basePath %>index.jsp">网站首页</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>school.jsp">院校库</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>product.html">专业库</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>school/list1">院校库</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>school.jsp">专业库</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>news.jsp">新闻中心</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>school/list1">院校推荐</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>score1.jsp">院校推荐</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">在线咨询</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">我的收藏</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">高考须知</a></div>
@@ -113,10 +105,10 @@ $(function(){
         <div class="ind_fom bk_ind">
             <div class="main mainc1">
               <ul class="newsSearch clearfix">
-              	<form action="school/list" method="post">
+              	<form  action="score/list" method="post">
                     <li id="schsli">
                         <b>高校搜索</b>
-                        <input id="schname" type="text" onfocus="this.value=''" onblur="if(!this.value) this.value='请输入高校名称'" value="请输入高校名称" class="input141" />
+                        <input id="schname" type="text" onfocus="this.value=''" onblur="if(!this.value) this.value='请输入高校名称'" value="请输入分数" name="csscore" class="input141" />
                         <select id="scharea" class="select79">
                             <option value="">所在地 </option>
                         </select>
@@ -152,7 +144,7 @@ $(function(){
                             <option value="">查询中 </option>
                         </select>
                         <select id="spschid" class="select144">
-                            <option value="">高校名称 </option>
+                            <option value="高校名称" name="sname">高校名称 </option>
                         </select>
                         <input id="schpoint" type="button" value="搜索" class="inputImg" />
                     </li>
@@ -490,6 +482,27 @@ $(function(){
 
 </script>
     </div>
+</div>
+<!--底部-->
+<div id="ly_footer" class="ly_min">
+  <div class="ly_wrap">
+    <div class="divcss">
+    	<a href="<%=basePath %>">院校库</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">专业库</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">院校推荐</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">专业对比</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">招生计划</a><br>
+		<a href="<%=basePath %>">报考流程</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">历年分数线</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高考月历表</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高考须知</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高校选择</a><br>
+		<a href="<%=basePath %>">专业选择</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">报考误区</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">新闻资讯</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">最新热点</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高招动态</a><br>
+		<a href="<%=basePath %>">系统介绍</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">购卡详情</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">使用指南</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">成功案例</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">常见问题</a>
+    </div>
+    
+    <div class="divcss1">
+    	<a href="<%=basePath %>">关于我们&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;帮助中心&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;版权声明&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;合作伙伴</a>
+    </div>
+    
+    <div class="divcss2">
+    	&emsp;&emsp;地址：河北省石家庄市裕华区裕翔街道河北师范大学新校区软件学院 &emsp;&emsp;&emsp;&emsp; 官方QQ群：684033794 <br>
+    	@2017 &emsp; www.yixuanze.com All Rights Reserved.河北师范大学软件学院版权所有 &emsp;&emsp; 冀ICP备05060708号
+    </div>
+    
+  </div>
 </div>
 </body>
 </html>

@@ -28,7 +28,7 @@ public class School {
 	private String snet;
 	private String simg;
 //	private Address address;
-//	private Cscore cscore;
+	private Cscore cscore;
 //	private Set<Major> majorSet = new HashSet<Major>();
 //	private Collegenature collegenature;
 	private Collegetype collegetype;
@@ -96,14 +96,13 @@ public class School {
 //	public void setMajorSet(Set<Major> majorSet) {
 //		this.majorSet = majorSet;
 //	}
-//	@OneToOne(cascade=CascadeType.ALL)
-//	@JoinColumn(name="csid")
-//	public Cscore getCscore() {
-//		return cscore;
-//	}
-//	public void setCscore(Cscore cscore) {
-//		this.cscore = cscore;
-//	}
+	@OneToOne(mappedBy="school")
+	public Cscore getCscore() {
+		return cscore;
+	}
+	public void setCscore(Cscore cscore) {
+		this.cscore = cscore;
+	}
 	public String getSname() {
 		return sname;
 	}

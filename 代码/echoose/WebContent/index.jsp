@@ -78,12 +78,7 @@ $(function(){
     	欢迎您，${sname }&emsp;&emsp;<a href="" class="exitlogin" style="text-decoration:underline;">退出登录</a>
       </div><br>
       <div class="div5"><a href="<%=basePath %>">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;登录&nbsp;&nbsp;</a><a href="<%=basePath %>">&nbsp;&nbsp;</a>
-<<<<<<< HEAD
       &emsp;&emsp;<a href="<%=basePath %>adminLogin.jsp">管理员登录</a></div>
-=======
-      &emsp;&emsp;<a href="<%=basePath %>">管理员登录</a></div>
-
->>>>>>> cfae6b240ff3414eae5c37833180a2b3381f711f
     </div>
     <div class="lyg_clear"></div>
   </div>
@@ -92,21 +87,15 @@ $(function(){
 <div id="ly_menu">
   <div class="ly_wrap">
     <div class="lyg_fir lyg_current"><a href="<%=basePath %>index.jsp">网站首页</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>school.jsp">院校库</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>">专业库</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>school/list1">院校库</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>school.jsp">专业库</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>news.jsp">新闻中心</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>school/list1">院校推荐</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>score1.jsp">院校推荐</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">在线咨询</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">我的收藏</a></div>
-<<<<<<< HEAD
     <div class="lyg_fir"><a href="<%=basePath %>">高考须知</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>score1.jsp">分数查询</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">关于我们</a></div>
-=======
-    <div class="lyg_fir"><a href="<%=basePath %>notice.jsp">高考须知</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>">常见问题</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>significance.jsp">关于我们</a></div>
->>>>>>> e3436312d2bec3b95582e5c7aba6632c3e04d20e
     <div class="lyg_clear"></div>
   </div>
 </div>
@@ -273,13 +262,7 @@ $(function(){
             <div class="ly_absolute">
             <c:forEach var="school" items="${schoolList }">
               <div class="ly_item">
-<<<<<<< HEAD
                 <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>${school.simg}" width="196" height="196" /></a></div>
-=======
-
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>${school.simg}" width="196" height="196" /></a></div>
-
->>>>>>> cfae6b240ff3414eae5c37833180a2b3381f711f
                 <div class="ly_pro_box">
                   <h3><a href="" >${school.sname }</a></h3>
                   <div class="ly_intro"></div>
