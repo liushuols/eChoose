@@ -87,15 +87,15 @@ $(function(){
 <div id="ly_menu">
   <div class="ly_wrap">
     <div class="lyg_fir lyg_current"><a href="<%=basePath %>index.jsp">网站首页</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>school.jsp">院校库</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>">专业库</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>school/list1">院校库</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>school.jsp">专业库</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>news.jsp">新闻中心</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>school/list1">院校推荐</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>score1.jsp">院校推荐</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">在线咨询</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">我的收藏</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>notice.jsp">高考须知</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>">常见问题</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>significance.jsp">关于我们</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>">高考须知</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>score1.jsp">分数查询</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>">关于我们</a></div>
     <div class="lyg_clear"></div>
   </div>
 </div>
