@@ -142,7 +142,7 @@ $(function(){
             <div id="lyg_news_0">
               <div class="lyg_item lyg_top">
               <c:forEach var="news" items="${newsList1 }">
-                            <h1><span style="color:DC143C;font-size:40px;font-family:'黑体';font-weight:bolder">&nbsp;&nbsp;&nbsp;${news.ntitle }</span></h1>
+                            <h1><span style="color:DC143C;font-size:40px;font-family:'黑体';font-weight:bolder">&nbsp;&nbsp;&nbsp;${news.ntitle }/span></h1>
 							<div class="lyg_para">
 								<div class="lyg_date"><span style="padding-left:300px;">作者：66次 | 更新时间：2016.06.15</span></div>
 								<div class="lyg_clear"></div>
