@@ -8,7 +8,8 @@ import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.stereotype.Repository;
 
-
+import com.bear.echoose.entity.News;
+import com.bear.echoose.entity.Question;
 import com.bear.echoose.entity.School;
 
 @Repository
@@ -21,6 +22,15 @@ public class SchoolDaoImpl {
 		return q.list();
 	}
 	
+	public List<News> findAllNews(){
+		Query q = this.sessionFactory.getCurrentSession().createQuery("from News");
+		return q.list();
+	}
+	
+	public List<Question> findAllQuestion(){
+		Query q = this.sessionFactory.getCurrentSession().createQuery("from Question");
+		return q.list();
+	}
 	
 	
 }

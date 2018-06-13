@@ -8,6 +8,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.bear.echoose.entity.News;
+import com.bear.echoose.entity.Question;
 import com.bear.echoose.entity.School;
 import com.bear.echoose.school.service.SchoolServiceImpl;
 
@@ -22,6 +25,11 @@ public class SchoolController {
 		List<School> schoolList = this.schoolServiceImpl.listAll();
 		session.setAttribute("schoolList", schoolList);
 		
+		List<News> newsList = this.schoolServiceImpl.listAllNews();
+		session.setAttribute("newsList", newsList);
+		
+		List<Question> questionList = this.schoolServiceImpl.listAllQuestion();
+		session.setAttribute("questionList", questionList);
 		return "index";
 	}
 	
