@@ -19,7 +19,14 @@ public class ScoreServiceImpl {
 	private ScoreDaoImpl scoreDaoImpl;
 
 	
+<<<<<<< HEAD
 	public List<School> findByScore(String cscore){
 		return this.scoreDaoImpl.findByScore(cscore);
 	}
 }
+=======
+	public List<School> findScore(String cscore){
+		return this.scoreDaoImpl.findScore(cscore);
+	}
+}
+>>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835

@@ -142,13 +142,9 @@ $(function(){
             <div id="lyg_news_0">
               <div class="lyg_item lyg_top">
               <c:forEach var="news" items="${newsList1 }">
-                            <h1><span style="color:DC143C;font-size:40px;font-family:'黑体';font-weight:bolder">&nbsp;&nbsp;&nbsp;${news.ntitle }</span></h1>
+                            <h1><span style="color:DC143C;font-size:40px;font-family:'黑体';font-weight:bolder">&nbsp;&nbsp;&nbsp;${news.ntitle }/span></h1>
 							<div class="lyg_para">
-<<<<<<< HEAD
-								<div class="lyg_date"><span style="padding-left:300px;">作者：${news.nauthor } | 更新时间：${news.ndate }</span></div>
-=======
 								<div class="lyg_date"><span style="padding-left:300px;">作者：66次 | 更新时间：2016.06.15</span></div>
->>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
 								<div class="lyg_clear"></div>
 							</div>
 							<div class="lyg_content">
@@ -174,17 +170,10 @@ $(function(){
 <div id="ly_footer" class="ly_min">
   <div class="ly_wrap">
     <div class="divcss">
-<<<<<<< HEAD
-    	<a href="<%=basePath %>school/list1">院校库</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>major.jsp">专业库</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>score1.jsp">院校推荐</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>school.jsp">专业对比</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">招生计划</a><br>
-		<a href="<%=basePath %>">报考流程</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">历年分数线</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高考月历表</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>notice.jsp">高考须知</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>significance.jsp">高校选择</a><br>
-		<a href="<%=basePath %>">专业选择</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">报考误区</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">新闻资讯</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">最新热点</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高招动态</a><br>
-		<a href="<%=basePath %>introduce.jsp">系统介绍</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">购卡详情</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">使用指南</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">成功案例</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">常见问题</a>
-=======
     	<a href="<%=basePath %>">院校库</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">专业库</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">院校推荐</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">专业对比</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">招生计划</a><br>
 		<a href="<%=basePath %>">报考流程</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">历年分数线</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高考月历表</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高考须知</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高校选择</a><br>
 		<a href="<%=basePath %>">专业选择</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">报考误区</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">新闻资讯</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">最新热点</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高招动态</a><br>
 		<a href="<%=basePath %>">系统介绍</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">购卡详情</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">使用指南</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">成功案例</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">常见问题</a>
->>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
     </div>
     
     <div class="divcss1">

@@ -58,7 +58,11 @@ $(function(){
 	<div id="ly_header" class="ly_min">
   <div class="ly_wrap">
     <div class="ly_lbar ly_fl">
+<<<<<<< HEAD
       <div id="ly_logo"><a href="<%=basePath %>index.jsp"> <img src="<%=basePath%>images/logo(2).png" /> <span></span> </a></div>
+=======
+      <div id="ly_logo"><a href="<%=basePath %>default.html"> <img src="<%=basePath%>images/logo(2).png" /> <span></span> </a></div>
+>>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
     </div>
     
     <div class="div1">
@@ -71,13 +75,22 @@ $(function(){
         </div>
       </div>
       <div class="div3">
+<<<<<<< HEAD
        <div class="ly_hot"> 热门搜索： <a href="<%=basePath %>major.jsp">热门专业&emsp;</a><a href="<%=basePath %>school/list1">高校分数线&emsp;</a><a href="<%=basePath %>score1.jsp">高校推荐</a></div>
+=======
+        <div class="ly_hot"> 热门搜索： <a href="<%=basePath %>#">热门专业&emsp;</a><a href="<%=basePath %>#">高校分数线&emsp;</a><a href="<%=basePath %>#">高校推荐</a></div>
+>>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
       </div>
     </div>
     
     <div class="div2">
+<<<<<<< HEAD
       <div class="div5"><a href="<%=basePath %>regist.jsp">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath %>login.jsp">&nbsp;&nbsp;登录&nbsp;&nbsp;</a><a href="<%=basePath %>">&nbsp;&nbsp;</a>
       &emsp;&emsp;<a href="<%=basePath %>adminLogin.jsp">管理员登录</a></div>
+=======
+      <div class="div5"><a href="<%=basePath %>">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;登录&nbsp;&nbsp;</a><a href="<%=basePath %>">&nbsp;&nbsp;</a>
+      &emsp;&emsp;<a href="<%=basePath %>">管理员登录</a></div>
+>>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
 
     </div>
     <div class="lyg_clear"></div>
@@ -86,6 +99,7 @@ $(function(){
 <!--导航-->
 <div id="ly_menu">
   <div class="ly_wrap">
+<<<<<<< HEAD
 <div class="lyg_fir lyg_current"><a href="<%=basePath %>index.jsp">网站首页</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>school.jsp">院校库</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">专业库</a></div>
@@ -96,6 +110,18 @@ $(function(){
     <div class="lyg_fir"><a href="<%=basePath %>notice.jsp">高考须知</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">常见问题</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>significance.jsp">关于我们</a></div>
+=======
+    <div class="lyg_fir lyg_current"><a href="<%=basePath %>index.jsp">网站首页</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>school/list1">院校库</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>school.jsp">专业库</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>news.jsp">新闻中心</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>score1.jsp">院校推荐</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>">在线咨询</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>">我的收藏</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>">高考须知</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>">分数查询</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>">关于我们</a></div>
+>>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
     <div class="lyg_clear"></div>
   </div>
 </div>
@@ -105,7 +131,11 @@ $(function(){
         <div class="ind_fom bk_ind">
             <div class="main mainc1">
               <ul class="newsSearch clearfix">
+<<<<<<< HEAD
               	<form action="<%=basePath %>score/list" method="post">
+=======
+              	<form  action="score/list" method="post">
+>>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
                     <li id="schsli">
                         <b>高校搜索</b>
                         <input id="schname" type="text" onfocus="this.value=''" onblur="if(!this.value) this.value='请输入高校名称'" value="请输入分数" name="csscore" class="input141" />
@@ -120,7 +150,11 @@ $(function(){
                         </select>
                         <input id="schselect" type="submit" value="搜索" class="inputImg" />
                     </li>
+<<<<<<< HEAD
                 </form> 
+=======
+                   </form>
+>>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
                     <li  id="spesli">
                         <b>专业搜索</b>
                         <input id="spename" type="text" onfocus="this.value=''" onblur="if(!this.value) this.value='请输入专业名称'" value="请输入专业名称" class="input141" />
@@ -487,10 +521,17 @@ $(function(){
 <div id="ly_footer" class="ly_min">
   <div class="ly_wrap">
     <div class="divcss">
+<<<<<<< HEAD
     	<a href="<%=basePath %>school/list1">院校库</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>major.jsp">专业库</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>score1.jsp">院校推荐</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>school.jsp">专业对比</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">招生计划</a><br>
 		<a href="<%=basePath %>">报考流程</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">历年分数线</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高考月历表</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>notice.jsp">高考须知</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>significance.jsp">高校选择</a><br>
 		<a href="<%=basePath %>">专业选择</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">报考误区</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">新闻资讯</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">最新热点</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高招动态</a><br>
 		<a href="<%=basePath %>introduce.jsp">系统介绍</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">购卡详情</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">使用指南</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">成功案例</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">常见问题</a>
+=======
+    	<a href="<%=basePath %>">院校库</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">专业库</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">院校推荐</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">专业对比</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">招生计划</a><br>
+		<a href="<%=basePath %>">报考流程</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">历年分数线</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高考月历表</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高考须知</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高校选择</a><br>
+		<a href="<%=basePath %>">专业选择</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">报考误区</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">新闻资讯</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">最新热点</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高招动态</a><br>
+		<a href="<%=basePath %>">系统介绍</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">购卡详情</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">使用指南</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">成功案例</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">常见问题</a>
+>>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
     </div>
     
     <div class="divcss1">

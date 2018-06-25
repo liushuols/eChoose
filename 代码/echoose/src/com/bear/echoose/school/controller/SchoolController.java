@@ -8,7 +8,10 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+<<<<<<< HEAD
 import org.springframework.web.bind.annotation.RequestParam;
+=======
+>>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
 
 import com.bear.echoose.entity.News;
 import com.bear.echoose.entity.Question;

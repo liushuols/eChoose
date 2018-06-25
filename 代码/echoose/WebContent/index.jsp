@@ -77,7 +77,11 @@ $(function(){
       <div class="div4">
     	欢迎您，${sname }&emsp;&emsp;<a href="<%=basePath %>admin/adminoff" class="exitlogin" style="text-decoration:underline;">退出登录</a>
       </div><br>
+<<<<<<< HEAD
       <div class="div5"><a href="<%=basePath %>regist.jsp">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath %>login.jsp">&nbsp;&nbsp;登录&nbsp;&nbsp;</a><a href="<%=basePath %>">&nbsp;&nbsp;</a>
+=======
+      <div class="div5"><a href="<%=basePath %>">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;登录&nbsp;&nbsp;</a><a href="<%=basePath %>">&nbsp;&nbsp;</a>
+>>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
       &emsp;&emsp;<a href="<%=basePath %>adminLogin.jsp">管理员登录</a></div>
     </div>
     <div class="lyg_clear"></div>
@@ -93,9 +97,15 @@ $(function(){
     <div class="lyg_fir"><a href="<%=basePath %>score1.jsp">院校推荐</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">在线咨询</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">我的收藏</a></div>
+<<<<<<< HEAD
     <div class="lyg_fir"><a href="<%=basePath %>notice.jsp">高考须知</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>school/list1">分数查询</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>significance.jsp">关于我们</a></div>
+=======
+    <div class="lyg_fir"><a href="<%=basePath %>">高考须知</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>score1.jsp">分数查询</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>">关于我们</a></div>
+>>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
     <div class="lyg_clear"></div>
   </div>
 </div>
@@ -262,7 +272,11 @@ $(function(){
             <div class="ly_absolute">
             <c:forEach var="school" items="${schoolList }">
               <div class="ly_item">
+<<<<<<< HEAD
                 <div class="ly_pic"><a href="${school.snet }" > <img src="<%=basePath %>${school.simg}" width="196" height="196" /></a></div>
+=======
+                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>${school.simg}" width="196" height="196" /></a></div>
+>>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
                 <div class="ly_pro_box">
                   <h3><a href="${school.snet }" >${school.sname }</a></h3>
                   <div class="ly_intro"></div>
@@ -294,8 +308,12 @@ $(function(){
               <div class="con_l"> <a href="<%=basePath %>"><img src="<%=basePath%>images/7.jpg" width="320" height="230"></a> </div>
               <div class="con_r">
                <c:forEach var="news" items="${newsList }">
+<<<<<<< HEAD
               	 <li><strong><a href="<%=basePath %>
               	 news/list?nid=${news.nid}">${news.ntitle}</a></strong> <span><a href="<%=basePath %>news/list?nid=${news.nid}">${news.ncontent}</a></span></li>	
+=======
+              	 <li><strong><a href="<%=basePath %>news/list?nid=${news.nid}">${news.ntitle}</a></strong> <span><a href="<%=basePath %>news/list?nid=${news.nid}">${news.ncontent}</a></span></li>	
+>>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
                </c:forEach>
               </div>
             </div>

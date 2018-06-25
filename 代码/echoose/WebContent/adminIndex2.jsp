@@ -45,7 +45,11 @@
                         		<th>${school.sbelong}</th>
                         		<th>${school.sscore }</th>
                         		<th class="intro">${school.snet}</th>
+<<<<<<< HEAD
                         		<th style="font-size:25px"><a href="<%=basePath %>adminschool/list2?id=${school.sid }">修改</a>&emsp;|&emsp;<a href="<%=basePath %>adminschool/removeschool?id=${school.sid}">删除</a></th>  
+=======
+                        		<th style="font-size:25px"><a href="<%=basePath %>adminschool/alterschool?id=${school.sid }">修改</a>&emsp;|&emsp;<a href="<%=basePath %>adminschool/removeschool?id=${school.sid}">删除</a></th>  
+>>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
                         		<tr>                           
                         	</tbody>
                         </c:forEach>
@@ -78,6 +82,7 @@
                         <div class="control-group">
                             <label class="control-label" for="Math">隶属</label>
                             <div class="controls">
+<<<<<<< HEAD
                                 <input type="text" name="belong" placeholder="隶属">
                             </div>
                         </div>
@@ -85,6 +90,9 @@
                             <label class="control-label" for="Math">分数线</label>
                             <div class="controls">
                                 <input type="text" name="score" placeholder="分数线">
+=======
+                                <input type="text" name="type" placeholder="类别">
+>>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
                             </div>
                         </div>
                         <div class="control-group">

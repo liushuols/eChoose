@@ -23,8 +23,21 @@ public class ScoreController {
 	private ScoreServiceImpl scoreServiceImpl;
 	@RequestMapping("/list")
 	public String findScore(HttpSession session,@RequestParam ("csscore") String csscore) {
+<<<<<<< HEAD
 		List<School> subschoolList = this.scoreServiceImpl.findByScore(csscore);
 		session.setAttribute("subSchoolList",subschoolList);	
 		return "list1";
 	}
 }
+=======
+		List<School> schoolList = this.scoreServiceImpl.findScore(csscore);
+		for(int i=0;i<schoolList.size();i++) {
+			if(Integer.parseInt(((schoolList.get(i)).getCscore().getCsscore())) >= Integer.parseInt(csscore )){
+				session.setAttribute("schoolList",schoolList.get(i));
+			}
+			
+		}		
+		return "score1";
+	}
+}
+>>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835

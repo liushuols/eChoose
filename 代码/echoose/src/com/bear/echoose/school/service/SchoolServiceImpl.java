@@ -26,8 +26,12 @@ public class SchoolServiceImpl {
 	public List<Question> listAllQuestion(){
 		return this.schoolDaoImpl.findAllQuestion();
 	}
+<<<<<<< HEAD
 	
 	public List<School> findSchool(String sname){
 		return this.schoolDaoImpl.findSchool(sname);
 	}
+=======
+
+>>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
 }
