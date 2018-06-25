@@ -26,6 +26,16 @@
 		.css2{
 			float:left;
 		}
+		.form-data input,.find_password input{
+		    outline: none;
+		    border: none;
+		    z-index: 5;
+		    top: 13px;
+		    width: 340px;
+		    background-color: transparent;
+		    font-size: 20px;
+}
+		.css3{float:left;}
     </style>
 </head>
 <body>
@@ -61,7 +71,7 @@
                 <a href="<%=basePath %>getPassword.jsp" class="y">忘记密码</a>
             </div>
             <div class="lang-btn off log-btn">
-            	<input type="submit" value="登录">
+            	<div class="css3"><input type="submit" value="登录"></div>
             </div>
           </form>
             <div class="third-party">

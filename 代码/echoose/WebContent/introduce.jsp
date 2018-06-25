@@ -67,27 +67,27 @@
 <div id="ly_header" class="ly_min">
 	<div class="ly_wrap">
 		<div class="ly_lbar ly_fl">
-			<div id="ly_logo"><a href="default.htmll"> <img src=""/> <span></span> </a></div>
+			<div id="ly_logo"><a href="index.jsp"> <img src=""/> <span></span> </a></div>
 		</div>
 
 		<div class="div1">
 			<div class="ly_top">
 				<div id="ly_search">
-					<form action="/search.html" method="get">
-						<input class="ly_txt" type="text" name="keyword" placeholder="请输入搜索内容" value=""/>
-						<input class="ly_btn" type="submit" value="搜索"/>
-					</form>
+					<form action="<%=basePath %>school/findBySname" method="post">
+			            <input class="ly_txt" type="text" name="sname" placeholder="请输入搜索内容" value="" />
+			            <input class="ly_btn" type="submit" value="搜索" />
+         			</form>  
 				</div>
 			</div>
 			<div class="div3">
-				<div class="ly_hot"> 热门搜索： <a href="#">热门专业&emsp;</a><a href="#">高校分数线&emsp;</a><a href="#">高校推荐</a>
+				<div class="ly_hot"> 热门搜索： <a href="major.jsp">热门专业&emsp;</a><a href="score1.jsp">高校分数线&emsp;</a><a href="school.jsp">高校推荐</a>
 				</div>
 			</div>
 		</div>
 		<div class="div2">
-			<a href="">免费注册&nbsp;&nbsp;</a> | <a href="">&nbsp;&nbsp;登录&nbsp;&nbsp;</a> | <a
+			<a href="<%=basePath %>regist.jsp">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath %>login.jsp">&nbsp;&nbsp;登录&nbsp;&nbsp;</a> | <a
 				href="">&nbsp;&nbsp;个人中心</a>
-			&emsp;&emsp;<a href="">管理员登录</a>
+			&emsp;&emsp;<a href="adminLogin.jsp">管理员登录</a>
 		</div>
 		<div class="lyg_clear"></div>
 	</div>
@@ -134,7 +134,7 @@
 				<div id="lyg_left_bar">
 					<h2>关于我们</h2>
 					<dl>
-						<dt><a href="#">网站简介</a></dt>
+						<dt><a href="<%=basePath%>introduce.jsp">网站简介</a></dt>
 						<dt><a href="#">服务宗旨</a></dt>
 						<dt><a href="#">发展历程</a></dt>
 						<dt><a href="#">用户留言</a></dt>
@@ -147,7 +147,7 @@
 				<div class="lyg_rpage_bpx">
 					<div class="lyg_page_title">
 						<h2>网站简介</h2>
-						<div id="lyg_breadcrumb"><a class="ly_home" href="#">首页</a> <font>></font> <a href="#">关于我们</a>
+						<div id="lyg_breadcrumb"><a class="ly_home" href="<%=basePath %>index.jsp">首页</a> <font>></font> <a href="<%=basePath %>introduce.jsp">关于我们</a>
 							<font>></font> <span>网站简介</span></div>
 						<div class="lyg_clear"></div>
 					</div>
@@ -198,21 +198,14 @@
 <div id="ly_footer" class="ly_min">
 	<div class="ly_wrap">
 		<div class="divcss">
-			<a href="">院校库</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="">专业库</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a
-				href="">院校推荐</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="">专业对比</a>&emsp;&emsp;&emsp;&emsp;<a
-				href="">招生计划</a><br>
-			<a href="">报考流程</a>&emsp;&emsp;&emsp;&emsp;<a href="">历年分数线</a>&emsp;&emsp;&emsp;&emsp;<a href="">高考月历表</a>&emsp;&emsp;&emsp;&emsp;<a
-				href="">高考须知</a>&emsp;&emsp;&emsp;&emsp;<a href="">高校选择</a><br>
-			<a href="">专业选择</a>&emsp;&emsp;&emsp;&emsp;<a href="">报考误区</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a
-				href="">新闻资讯</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="">最新热点</a>&emsp;&emsp;&emsp;&emsp;<a
-				href="">高招动态</a><br>
-			<a href="">系统介绍</a>&emsp;&emsp;&emsp;&emsp;<a href="">购卡详情</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a
-				href="">使用指南</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="">成功案例</a>&emsp;&emsp;&emsp;&emsp;<a
-				href="">常见问题</a>
+			<a href="<%=basePath %>school/list1">院校库</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>major.jsp">专业库</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>score1.jsp">院校推荐</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>school.jsp">专业对比</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">招生计划</a><br>
+		<a href="<%=basePath %>">报考流程</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">历年分数线</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高考月历表</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>notice.jsp">高考须知</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>significance.jsp">高校选择</a><br>
+		<a href="<%=basePath %>">专业选择</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">报考误区</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">新闻资讯</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">最新热点</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高招动态</a><br>
+		<a href="<%=basePath %>introduce.jsp">系统介绍</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">购卡详情</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">使用指南</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">成功案例</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">常见问题</a>
 		</div>
 
 		<div class="divcss1">
-			<a href="">关于我们&nbsp;&nbsp;</a> | <a href="">&nbsp;&nbsp;帮助中心&nbsp;&nbsp;</a> | <a href="">&nbsp;&nbsp;版权声明&nbsp;&nbsp;</a>
+			<a href="<%=basePath%>introduce.jsp">关于我们&nbsp;&nbsp;</a> | <a href="">&nbsp;&nbsp;帮助中心&nbsp;&nbsp;</a> | <a href="">&nbsp;&nbsp;版权声明&nbsp;&nbsp;</a>
 			| <a href="">&nbsp;&nbsp;合作伙伴</a>
 		</div>
 

@@ -65,14 +65,14 @@ $(function(){
 <div id="ly_header" class="ly_min">
   <div class="ly_wrap">
     <div class="ly_lbar ly_fl">
-      <div id="ly_logo"><a href="<%=basePath%>default.htmll"> <img src="<%=basePath%>" /> <span></span> </a></div>
+      <div id="ly_logo"><a href="<%=basePath%>index.jsp"> <img src="<%=basePath%>" /> <span></span> </a></div>
     </div>
     
     <div class="div1">
       <div class="ly_top">
         <div id="ly_search">
-          <form action="/search.html" method="get">
-            <input class="ly_txt" type="text" name="keyword" placeholder="请输入搜索内容" value="" />
+          <form action="<%=basePath %>school/findBySname" method="post">
+            <input class="ly_txt" type="text" name="sname" placeholder="请输入搜索内容" value="" />
             <input class="ly_btn" type="submit" value="搜索" />
           </form>
         </div>
@@ -91,16 +91,16 @@ $(function(){
 <!--导航-->
 <div id="ly_menu">
   <div class="ly_wrap">
-    <div class="lyg_fir"><a href="<%=basePath%>index.jsp">网站首页</a></div>
-    <div class="lyg_fir"><a href="<%=basePath%>about.html">院校库</a></div>
-    <div class="lyg_fir"><a href="<%=basePath%>product.html">专业库</a></div>
-    <div class="lyg_fir"><a href="<%=basePath%>news.html">新闻中心</a></div>
-    <div class="lyg_fir lyg_current"><a href="<%=basePath%>">院校推荐</a></div>
-    <div class="lyg_fir"><a href="<%=basePath%>">在线咨询</a></div>
-    <div class="lyg_fir"><a href="<%=basePath%>">我的收藏</a></div>
-    <div class="lyg_fir"><a href="<%=basePath%>">高考须知</a></div>
-    <div class="lyg_fir"><a href="<%=basePath%>">常见问题</a></div>
-    <div class="lyg_fir"><a href="<%=basePath%>">关于我们</a></div>
+    <div class="lyg_fir lyg_current"><a href="<%=basePath %>index.jsp">网站首页</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>school/list1">院校库</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>school.jsp">专业库</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>news.jsp">新闻中心</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>score1.jsp">院校推荐</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>">在线咨询</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>">我的收藏</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>notice.jsp">高考须知</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>school/list1">分数查询</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>significance.jsp">关于我们</a></div>
     <div class="lyg_clear"></div>
   </div>
 </div>
@@ -151,9 +151,9 @@ $(function(){
           <div class="pro_list">
           <c:forEach var="school" items="${schoolTypeList}">
             <div class="ly_items">
-              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>${school.simg}" width="250" height="250" /></a> </div>
+              <div class="ly_pic"> <a href="<%=basePath%>school/findBySname?sname=${school.sname}" > <img src="<%=basePath%>${school.simg}" width="250" height="250" /></a> </div>
               <div class="ly_pro_box">
-                <h3> <a href="<%=basePath%>#" >${school.sname}</a> </h3>
+                <h3> <a href="<%=basePath%>school/findBySname?sname=${school.sname}" >${school.sname}</a>&emsp; | &emsp;${school.sscore } </h3>
               </div>
             </div>
            </c:forEach>

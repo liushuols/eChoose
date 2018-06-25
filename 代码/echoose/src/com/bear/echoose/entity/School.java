@@ -12,6 +12,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.MappedSuperclass;
 import javax.persistence.OneToOne;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
@@ -27,6 +28,9 @@ public class School {
 	private String sbelong;
 	private String snet;
 	private String simg;
+	private String sscore;
+	private String introduce1;
+	private String introduce2;
 //	private Address address;
 //	private Cscore cscore;
 //	private Set<Major> majorSet = new HashSet<Major>();
@@ -44,7 +48,7 @@ public class School {
 //		this.address = address;
 //	}
 //	
-	@ManyToOne
+	@ManyToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="ctid")
 	public Collegetype getCollegetype() {
 		return collegetype;
@@ -60,9 +64,9 @@ public class School {
 //	public void setCollegenature(Collegenature collegenature) {
 //		this.collegenature = collegenature;
 //	}
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	
 	public int getSid() {
 		return sid;
 	}
@@ -96,8 +100,8 @@ public class School {
 //	public void setMajorSet(Set<Major> majorSet) {
 //		this.majorSet = majorSet;
 //	}
-//	@OneToOne(cascade=CascadeType.ALL)
-//	@JoinColumn(name="csid")
+	
+//	@OneToOne(mappedBy="school")
 //	public Cscore getCscore() {
 //		return cscore;
 //	}
@@ -116,8 +120,23 @@ public class School {
 	public void setSimg(String simg) {
 		this.simg = simg;
 	}
-	
-	
-	
+	public String getSscore() {
+		return sscore;
+	}
+	public void setSscore(String sscore) {
+		this.sscore = sscore;
+	}
+	public String getIntroduce1() {
+		return introduce1;
+	}
+	public void setIntroduce1(String introduce1) {
+		this.introduce1 = introduce1;
+	}
+	public String getIntroduce2() {
+		return introduce2;
+	}
+	public void setIntroduce2(String introduce2) {
+		this.introduce2 = introduce2;
+	}
 
 }

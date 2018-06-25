@@ -3,6 +3,9 @@ import java.util.List;
 import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import com.bear.echoose.entity.News;
+import com.bear.echoose.entity.Question;
 import com.bear.echoose.entity.School;
 import com.bear.echoose.school.dao.SchoolDaoImpl;
 
@@ -14,5 +17,17 @@ public class SchoolServiceImpl {
 	private SchoolDaoImpl schoolDaoImpl;
 	public List<School> listAll(){
 		return this.schoolDaoImpl.findAll();
+	}
+	
+	public List<News> listAllNews(){
+		return this.schoolDaoImpl.findAllNews();
+	}
+	
+	public List<Question> listAllQuestion(){
+		return this.schoolDaoImpl.findAllQuestion();
+	}
+	
+	public List<School> findSchool(String sname){
+		return this.schoolDaoImpl.findSchool(sname);
 	}
 }

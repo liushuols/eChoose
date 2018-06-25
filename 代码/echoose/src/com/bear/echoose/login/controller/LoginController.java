@@ -36,5 +36,5 @@ public class LoginController {
 		session.setAttribute("error", "您还未注册，请先注册！");
 		return "regist";
 	}
-
+	
 }

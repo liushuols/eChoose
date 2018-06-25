@@ -101,7 +101,6 @@ body{
     outline: none;
     border: none;
     z-index: 5;
-    position: absolute;
     top: 13px;
     width: 340px;
     background-color: transparent;

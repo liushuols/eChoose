@@ -4,6 +4,10 @@
 <c:set var="ctx" value="${pageContext.request.contextPath}"/>
 
 <html>
+<%
+		String path = request.getContextPath();
+		String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+	%>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -35,56 +39,26 @@
 		<button type="button" class="navbar-toggle visible-xs-block js-show-menu">
 			<i class="icon-menu"></i>
 		</button>
-		<ul class="nav-item">
-			<li><a href="" target="_self">网站首页</a></li>
-			<li><a href="" target="_self">院校库</a></li>
-			<li><a href="" target="_self">专业库</a></li>
-			<li><a href="" target="_self">新闻中心</a></li>
-			<li><a href="" target="_self">院校推荐</a></li>
-			<li><a href="" target="_self">在线咨询</a></li>
-			<li><a href="" target="_self">我的收藏</a></li>
-			<li><a href="" target="_self">高考须知</a></li>
-			<li><a href="" target="_self">常见问题</a></li>
-			<li><a href="" target="_self">关于我们</a></li>
-
-		</ul>
-
-		<div id="login-area">
-			<ul class="header-unlogin clearfix">
-				<li class="header-signin">
-					<a href="" id="js-signin-btn">登录</a> /
-					<a href="" id="js-signup-btn">注册</a>
-				</li>
-			</ul>
-		</div>
-
-
-		<div class="search-warp clearfix" style="min-width: 32px; height: 72px;">
-			<div class="pa searchTags">
-				<a href="" target="_blank">2018年分数线</a>
-			</div>
-
-			<div class="search-area" data-search="top-banner">
-				<input class="search-input" data-suggest-trigger="suggest-trigger" type="text" autocomplete="off">
-				<input type="hidden" class="btn_search" data-search-btn="search-btn">
-				<ul class="search-area-result" data-suggest-result="suggest-result">
-				</ul>
-			</div>
-			<div class="showhide-search" data-show="no"><i class="icon-search"></i></div>
-		</div>
+		<div id="ly_menu">
+ 		 <div class="ly_wrap">
+   			<div class="lyg_fir lyg_current"><a href="<%=basePath %>index.jsp">网站首页</a></div>
+    		<div class="lyg_fir"><a href="<%=basePath %>school.jsp">院校库</a></div>
+    		<div class="lyg_fir"><a href="<%=basePath %>">专业库</a></div>
+    		<div class="lyg_fir"><a href="<%=basePath %>news.jsp">新闻中心</a></div>
+   			<div class="lyg_fir"><a href="<%=basePath %>school/list1">院校推荐</a></div>
+    		<div class="lyg_fir"><a href="<%=basePath %>">在线咨询</a></div>
+    		<div class="lyg_fir"><a href="<%=basePath %>">我的收藏</a></div>
+    		<div class="lyg_fir"><a href="<%=basePath %>notice.jsp">高考须知</a></div>
+   			<div class="lyg_fir"><a href="<%=basePath %>">常见问题</a></div>
+    		<div class="lyg_fir"><a href="<%=basePath %>significance.jsp">关于我们</a></div>
+    		<div class="lyg_clear"></div>
+  </div>
+</div>
 	</div>
 </div>
 
 <div id="main">
 	<div class="">
-		<!-- 图片轮播位置 -->
-		<div class="banner">
-			<ul class="slides">
-				<li style="background:url(images/4.jpg) 50% 0 no-repeat;"></li>
-				<li style="background:url(images/5.jpg) 50% 0 no-repeat;"></li>
-				<li style="background:url(images/4.jpg) 50% 0 no-repeat;"></li>
-			</ul>
-		</div>
 		<script>
 			$(function(){
 				$('.banner').flexslider({
@@ -95,43 +69,7 @@
 		</script>
 	</div>
 	<div class="wrap">
-
-		<div class="slider">
-			<ul>
-
-				<li>
-					<a href="" class="active"><i class="icon-home"></i><span>网站首页</span><b class="icon-drop_right"></b></a>
-				</li>
-				<li>
-					<a href=""><i class="icon-tick"></i><span>院校库</span><b class="icon-drop_right"></b></a>
-				</li>
-				<li>
-					<a href=""><i class="imv2-path"></i><span>专业库</span><b class="icon-drop_right"></b></a>
-				</li>
-				<li>
-					<a href=""><i class="icon-yuanwen"></i><span>新闻中心</span><b class="icon-drop_right"></b></a>
-				</li>
-				<li>
-					<a href=""><i class="icon-blog"></i><span>院校推荐</span><b class="icon-drop_right"></b></a>
-				</li>
-				<li>
-					<a href=""><i class="icon-wiki"></i><span>在线咨询</span><b class="icon-drop_right"></b></a>
-				</li>
-				<li>
-					<a href=""><i class="icon-wiki"></i><span>我的收藏</span><b class="icon-drop_right"></b></a>
-				</li>
-				<li>
-					<a href=""><i class="icon-wiki"></i><span>高考须知</span><b class="icon-drop_right"></b></a>
-				</li>
-				<li>
-					<a href=""><i class="icon-wiki"></i><span>常见问题</span><b class="icon-drop_right"></b></a>
-				</li>
-				<li>
-					<a href=""><i class="icon-wiki"></i><span>关于我们</span><b class="icon-drop_right"></b></a>
-				</li>
-
-			</ul>
-		</div><!-- .slider end -->
+		
 		<div class="u-container">
 
 			<div class="page-home js-usercard-box" id="notices">
@@ -261,18 +199,18 @@
 				<div class="footer-nav">
 					<table>
 						<tr>
-							<td width="20%"><a href="">院校库</a></td>
-							<td width="20%"><a href="">专业库</a></td>
-							<td width="20%"><a href="">院校推荐</a></td>
-							<td width="20%"><a href="">专业对比</a></td>
+							<td width="20%"><a href="<%=basePath %>school/list1">院校库</a></td>
+							<td width="20%"><a href="<%=basePath %>major.jsp">专业库</a></td>
+							<td width="20%"><a href="<%=basePath %>score1.jsp">院校推荐</a></td>
+							<td width="20%"><a href="<%=basePath %>school.jsp">专业对比</a></td>
 							<td width="20%"><a href="">招生计划</a></td>
 						</tr>
 						<tr>
 							<td><a href="">报考流程</a></td>
 							<td><a href="">历年分数线</a></td>
 							<td><a href="">高考月历表</a></td>
-							<td><a href="">高考须知</a></td>
-							<td><a href="">高校选择</a></td>
+							<td><a href="<%=basePath %>notice.jsp">高考须知</a></td>
+							<td><a href="<%=basePath %>significance.jsp">高校选择</a></td>
 						</tr>
 						<tr>
 							<td><a href="">专业选择</a></td>

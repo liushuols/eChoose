@@ -42,9 +42,9 @@ public class AdminLoginController {
 	 * @param session
 	 * @return
 	 */
-	@RequestMapping("adminoff")
+	@RequestMapping("/adminoff")
 	public String adminoff(HttpSession session) {
 		session.invalidate();
-		return "adminLogin";
+		return "login";
 	}
 }

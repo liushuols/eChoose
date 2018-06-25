@@ -46,6 +46,7 @@ $(function(){
 	.fenye input{background-color:#66c245;width:70px;}
 	#ly_footer a:hover{color:#ff6600;}
 	.ly_wrap{color:black;}
+	.ly_pro_box{width:200px;}
 </style>
 <!--[if IE 6]>
 <script type='text/javascript' src='<%=basePath%>js/dd_belatedpng.js' ></script>
@@ -58,25 +59,25 @@ $(function(){
 <div id="ly_header" class="ly_min">
   <div class="ly_wrap">
     <div class="ly_lbar ly_fl">
-      <div id="ly_logo"><a href="<%=basePath%>default.htmll"> <img src="<%=basePath%>" /> <span></span> </a></div>
+      <div id="ly_logo"><a href="<%=basePath%>"> <img src="<%=basePath%>" /> <span></span> </a></div>
     </div>
     
     <div class="div1">
       <div class="ly_top">
         <div id="ly_search">
-          <form action="/search.html" method="get">
-            <input class="ly_txt" type="text" name="keyword" placeholder="请输入搜索内容" value="" />
+          <form action="<%=basePath %>school/findBySname" method="post">
+            <input class="ly_txt" type="text" name="sname" placeholder="请输入搜索内容" value="" />
             <input class="ly_btn" type="submit" value="搜索" />
-          </form>
+          </form>        
         </div>
       </div>
       <div class="div3">
-        <div class="ly_hot"> 热门搜索： <a href="<%=basePath%>#">热门专业&emsp;</a><a href="<%=basePath%>#">高校分数线&emsp;</a><a href="<%=basePath%>#">高校推荐</a></div>
+        <div class="ly_hot"> 热门搜索： <a href="<%=basePath%>major.jsp">热门专业&emsp;</a><a href="<%=basePath%>score1.jsp">高校分数线&emsp;</a><a href="<%=basePath%>school.jsp">高校推荐</a></div>
       </div>
     </div>
     <div class="div2">
       <a href="<%=basePath%>">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath%>">&nbsp;&nbsp;登录&nbsp;&nbsp;</a> | <a href="<%=basePath%>">&nbsp;&nbsp;个人中心</a>
-      &emsp;&emsp;<a href="<%=basePath%>">管理员登录</a>
+      &emsp;&emsp;<a href="<%=basePath%>adminLogin.jsp">管理员登录</a>
     </div>
     <div class="lyg_clear"></div>
   </div>
@@ -85,7 +86,7 @@ $(function(){
 <div id="ly_menu">
   <div class="ly_wrap">
     <div class="lyg_fir lyg_current"><a href="<%=basePath %>index.jsp">网站首页</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>school.jsp">院校库</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>school/list1">院校库</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">专业库</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>news.jsp">新闻中心</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>school/list1">院校推荐</a></div>
@@ -98,15 +99,7 @@ $(function(){
   </div>
 </div>
 <!-- banner -->
-<div class="banner">
-  <ul class="slides">
-       <li style="background:url(<%=basePath %>images/zhiyuan3.jpg) 50% 0 no-repeat;"></li>
-    <li style="background:url(<%=basePath %>images/gaokao1.jpg) 50% 0 no-repeat;"></li>
-    <li style="background:url(<%=basePath %>images/4.jpg) 50% 0 no-repeat;"></li>
-    <li style="background:url(<%=basePath %>images/remen1.png) 50% 0 no-repeat;"></li>
-    <li style="background:url(<%=basePath %>images/kefu1.jpg) 50% 0 no-repeat;"></li>
-  </ul>
-</div>
+
 <script src="<%=basePath%>js/jquery.flexslider-min.js"></script>
 <script>
     $(function(){
@@ -125,7 +118,6 @@ $(function(){
           <dl>
           <c:forEach var="type" items="${typeList }">
              <dt> <a href="<%=basePath %>collegetype/schooltype?ctid=${type.ctid}" >${type.ctname }</a> </dt>
-           
             </c:forEach>
           </dl>
           
@@ -136,16 +128,16 @@ $(function(){
           <div class="lyg_page_title">
 
             <h2>热门大学</h2>
-            <div id="lyg_breadcrumb"> <a class="ly_home" href="<%=basePath%>#">首页</a> <font>></font> <span class="lyg_current">热门大学</span> </div>
+            <div id="lyg_breadcrumb"> <a class="ly_home" href="<%=basePath%>index.jsp">首页</a> <font>></font> <span class="lyg_current">热门大学</span> </div>
             <div class="lyg_clear"></div>
 
           </div>
           <div class="pro_list">
           <c:forEach var="school" items="${schoolList}">
             <div class="ly_items">
-              <div class="ly_pic"> <a href="<%=basePath%>#" > <img src="<%=basePath%>${school.simg}" width="250" height="250" /></a> </div>
+              <div class="ly_pic"> <a href="<%=basePath%>school/findBySname?sname=${school.sname}" > <img src="<%=basePath%>${school.simg}" width="250" height="250" /></a> </div>
               <div class="ly_pro_box">
-                <h3> <a href="<%=basePath%>#" >${school.sname}</a> </h3>
+                <h3> <a href="<%=basePath%>school/findBySname?sname=${school.sname}" >${school.sname}</a>&emsp; | &emsp;${school.sscore } </h3>
               </div>
             </div>
            </c:forEach>
@@ -196,7 +188,7 @@ $(function(){
     </div>
     
     <div class="divcss1">
-    	<a href="<%=basePath%>">关于我们&nbsp;&nbsp;</a> | <a href="<%=basePath%>">&nbsp;&nbsp;帮助中心&nbsp;&nbsp;</a> | <a href="<%=basePath%>">&nbsp;&nbsp;版权声明&nbsp;&nbsp;</a> | <a href="<%=basePath%>">&nbsp;&nbsp;合作伙伴</a>
+    	<a href="<%=basePath%>introduce.jsp">关于我们&nbsp;&nbsp;</a> | <a href="<%=basePath%>">&nbsp;&nbsp;帮助中心&nbsp;&nbsp;</a> | <a href="<%=basePath%>">&nbsp;&nbsp;版权声明&nbsp;&nbsp;</a> | <a href="<%=basePath%>">&nbsp;&nbsp;合作伙伴</a>
     </div>
     
     <div class="divcss2">

@@ -20,7 +20,7 @@ import com.sun.jndi.cosnaming.IiopUrl.Address;
 public class Collegetype {
 	private int ctid;
 	private String ctname;
-	private Set<School> schoolSet = new HashSet<School>();
+	
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -39,14 +39,7 @@ public class Collegetype {
 		this.ctname = ctname;
 	}
 	
-	@OneToMany(mappedBy="collegetype", targetEntity=School.class,  cascade=CascadeType.ALL,fetch=FetchType.EAGER)
 	
-	public Set<School> getSchoolSet() {
-		return schoolSet;
-	}
-	public void setSchoolSet(Set<School> schoolSet) {
-		this.schoolSet = schoolSet;
-	}
 
 	
 

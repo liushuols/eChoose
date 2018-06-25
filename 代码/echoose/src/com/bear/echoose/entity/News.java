@@ -11,6 +11,8 @@ import javax.persistence.Table;
 public class News {
 	private int nid;
 	private String ntitle;
+	private String nauthor;
+	private String ndate;
 	private String ncontent;
 	
 	@Id
@@ -34,6 +36,17 @@ public class News {
 	public void setNcontent(String ncontent) {
 		this.ncontent = ncontent;
 	}
-	
+	public String getNauthor() {
+		return nauthor;
+	}
+	public void setNauthor(String nauthor) {
+		this.nauthor = nauthor;
+	}
+	public String getNdate() {
+		return ndate;
+	}
+	public void setNdate(String ndate) {
+		this.ndate = ndate;
+	}
 	
 }

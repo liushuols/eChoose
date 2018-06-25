@@ -26,6 +26,7 @@
 		.css2{
 			float:left;
 		}
+		.css3{float:left;}
     </style>
 </head>
 <body>
@@ -58,7 +59,7 @@
                 <a href="<%=basePath %>getPassword.jsp" class="y">忘记密码</a>
             </div>
             <div class="lang-btn off log-btn">
-            	<input type="submit" value="登录">
+            	<div class="css3"><input type="submit" value="登录"></div>
             </div>
           </form>
             <p class="right">Powered by  2018</p>

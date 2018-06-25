@@ -31,10 +31,10 @@ $(function(){
 	.divcss1{padding-left:450px;margin-top:20px;}
 	.divcss2{padding-left:280px;margin-top:15px;}
 	.div1{float:left;padding-left:350px;}
-	.div2{margin-top:45px;float:left;}
+	.div2{margin-top:60px;}
 	.div3{color:#8e8e8e; margin-top:10px;}
-	.div4{margin-top:-30px;margin-left:140px;}
-	.div5{height:20px;}
+	.div4{margin-top:-30px;margin-left:160px;}
+	.div5{height:20px;margin-top:15px;}
 	.exitlogin{font-size:15px;font-weight:bold;}
 </style>
 <!--[if IE 6]>
@@ -56,34 +56,29 @@ $(function(){
 <div id="ly_header" class="ly_min">
   <div class="ly_wrap">
     <div class="ly_lbar ly_fl">
-      <div id="ly_logo"><a href="<%=basePath %>default.html"> <img src="<%=basePath%>" /> <span></span> </a></div>
+      <div id="ly_logo"><a href="<%=basePath %>index.jsp"> <img src="<%=basePath%>images/logo.jpg" /> <span></span> </a></div>
     </div>
     
     <div class="div1">
       <div class="ly_top">
         <div id="ly_search">
-          <form action="school/list" method="post">
-            <input class="ly_txt" type="text" name="keyword" placeholder="请输入搜索内容" value="" />
+          <form action="<%=basePath %>school/findBySname" method="post">
+            <input class="ly_txt" type="text" name="sname" placeholder="请输入搜索内容" value="" />
             <input class="ly_btn" type="submit" value="搜索" />
           </form>
         </div>
       </div>
       <div class="div3">
-        <div class="ly_hot"> 热门搜索： <a href="<%=basePath %>#">热门专业&emsp;</a><a href="<%=basePath %>#">高校分数线&emsp;</a><a href="<%=basePath %>#">高校推荐</a></div>
+        <div class="ly_hot"> 热门搜索： <a href="<%=basePath %>major.jsp">热门专业&emsp;</a><a href="<%=basePath %>school/list1">高校分数线&emsp;</a><a href="<%=basePath %>score1.jsp">高校推荐</a></div>
       </div>
     </div>
     
     <div class="div2">
       <div class="div4">
-    	欢迎您，${sname }&emsp;&emsp;<a href="" class="exitlogin" style="text-decoration:underline;">退出登录</a>
+    	欢迎您，${sname }&emsp;&emsp;<a href="<%=basePath %>admin/adminoff" class="exitlogin" style="text-decoration:underline;">退出登录</a>
       </div><br>
-      <div class="div5"><a href="<%=basePath %>">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;登录&nbsp;&nbsp;</a><a href="<%=basePath %>">&nbsp;&nbsp;</a>
-<<<<<<< HEAD
+      <div class="div5"><a href="<%=basePath %>regist.jsp">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath %>login.jsp">&nbsp;&nbsp;登录&nbsp;&nbsp;</a><a href="<%=basePath %>">&nbsp;&nbsp;</a>
       &emsp;&emsp;<a href="<%=basePath %>adminLogin.jsp">管理员登录</a></div>
-=======
-      &emsp;&emsp;<a href="<%=basePath %>">管理员登录</a></div>
-
->>>>>>> cfae6b240ff3414eae5c37833180a2b3381f711f
     </div>
     <div class="lyg_clear"></div>
   </div>
@@ -92,14 +87,14 @@ $(function(){
 <div id="ly_menu">
   <div class="ly_wrap">
     <div class="lyg_fir lyg_current"><a href="<%=basePath %>index.jsp">网站首页</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>school.jsp">院校库</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>">专业库</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>school/list1">院校库</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>school.jsp">专业库</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>news.jsp">新闻中心</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>school/list1">院校推荐</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>score1.jsp">院校推荐</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">在线咨询</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>">我的收藏</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>notice.jsp">高考须知</a></div>
-    <div class="lyg_fir"><a href="<%=basePath %>">常见问题</a></div>
+    <div class="lyg_fir"><a href="<%=basePath %>school/list1">分数查询</a></div>
     <div class="lyg_fir"><a href="<%=basePath %>significance.jsp">关于我们</a></div>
     <div class="lyg_clear"></div>
   </div>
@@ -135,21 +130,21 @@ $(function(){
           <div class="ly_relative">
             <div class="product_list">
               <div class="ly_items">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/gx.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>school/list1" > <img src="<%=basePath%>images/gx.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
-                  <h3><a href="<%=basePath %>#" >院校查询</a></h3>
+                  <h3><a href="<%=basePath %>school/list1" >院校查询</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/zy.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>major.jsp" > <img src="<%=basePath%>images/zy.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
-                  <h3><a href="<%=basePath %>#" >专业汇总</a></h3>
+                  <h3><a href="<%=basePath %>major.jsp" >专业汇总</a></h3>
                 </div>
               </div>
               <div class="ly_items">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/yx.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>school/list1" > <img src="<%=basePath%>images/yx.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
-                  <h3><a href="<%=basePath %>#" >院校汇总</a></h3>
+                  <h3><a href="<%=basePath %>school/list1" >院校汇总</a></h3>
                 </div>
               </div>
               <div class="ly_items">
@@ -189,9 +184,9 @@ $(function(){
                 </div>
               </div>
               <div class="ly_items mar_l0">
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>images/1.jpg" width="218" height="218" /></a></div>
+                <div class="ly_pic"><a href="<%=basePath %>introduce.jsp" > <img src="<%=basePath%>images/1.jpg" width="218" height="218" /></a></div>
                 <div class="ly_pro_box">
-                  <h3><a href="<%=basePath %>#" >关于我们</a></h3>
+                  <h3><a href="<%=basePath %>introduce.jsp" >关于我们</a></h3>
                 </div>
               </div>
             </div>
@@ -244,7 +239,7 @@ $(function(){
               </div>
               <div class="ly_n_rbar ly_fr">
                 <h3><a href="<%=basePath %>#" ></a></h3>
-                <div class="ly_date">&nbsp;&nbsp;我成绩不错，根据易选泽的推荐，报考了清华大学高分子材料与工程专业，被录取后，发现自己很适合学习这个专业，而且这个专业市场需求量大，就业后工资高，易选择真的为我提供了最适合我的专业！<br><br>2017/12/10</div>
+                <div class="ly_date">&nbsp;&nbsp;我成绩不错，根据易选择的推荐，报考了清华大学高分子材料与工程专业，被录取后，发现自己很适合学习这个专业，而且这个专业市场需求量大，就业后工资高，易选择真的为我提供了最适合我的专业！<br><br>2017/12/10</div>
                 <div class="ly_intro"> </div>
               </div>
               <div class="lyg_clear"></div>
@@ -267,15 +262,9 @@ $(function(){
             <div class="ly_absolute">
             <c:forEach var="school" items="${schoolList }">
               <div class="ly_item">
-<<<<<<< HEAD
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>${school.simg}" width="196" height="196" /></a></div>
-=======
-
-                <div class="ly_pic"><a href="<%=basePath %>#" > <img src="<%=basePath%>${school.simg}" width="196" height="196" /></a></div>
-
->>>>>>> cfae6b240ff3414eae5c37833180a2b3381f711f
+                <div class="ly_pic"><a href="${school.snet }" > <img src="<%=basePath %>${school.simg}" width="196" height="196" /></a></div>
                 <div class="ly_pro_box">
-                  <h3><a href="" >${school.sname }</a></h3>
+                  <h3><a href="${school.snet }" >${school.sname }</a></h3>
                   <div class="ly_intro"></div>
                 </div>
               </div>
@@ -296,7 +285,7 @@ $(function(){
             <ul>
               <li id="one1" onMouseOver="setTab('one',1,4)" class="hover"><a href="<%=basePath %>">新闻资讯</a></li>
               <li id="one2" onMouseOver="setTab('one',2,4)" class=""><a href="<%=basePath %>">高招动态</a></li>
-              <li id="one3" onMouseOver="setTab('one',3,4)" class=""><a href="<%=basePath %>">专业解读</a></li>
+              <li id="one3" onMouseOver="setTab('one',3,4)" class=""><a href="<%=basePath %>major.jsp">专业解读</a></li>
               <li id="one4" onMouseOver="setTab('one',4,4)" class=""><a href="<%=basePath %>">常见问题</a></li>
             </ul>
           </div>
@@ -304,20 +293,19 @@ $(function(){
             <div id="con_one_1" style="display: block;">
               <div class="con_l"> <a href="<%=basePath %>"><img src="<%=basePath%>images/7.jpg" width="320" height="230"></a> </div>
               <div class="con_r">
-                <ul>
-                  <li><strong><a href="<%=basePath %>">胶黏剂可不是小玩意 打造环保家居绝不能忽视</a></strong> <span><a href="<%=basePath %>">胶黏剂是装修时十分重要的辅材,它的选购可是十分重要的...</a></span></li>
-                  <li><strong><a href="<%=basePath %>">绿色环保材料 让装修不再受污染_装修建材知识</a></strong> <span><a href="<%=basePath %>">近年,人们对装修材料的环保要求越来越高,同时由于装修材料对环境的污染也是相当严重的,因此装修环保材料就应运而生了...</a></span></li>
-                  <li><strong><a href="<%=basePath %>">如何做到绿色环保家装呢?</a></strong> <span><a href="<%=basePath %>">色环保家装是社会的提倡,人们的追求,究竟该如何做到绿色环保家装呢?在装修时应把住三关...</a></span></li>
-                </ul>
+               <c:forEach var="news" items="${newsList }">
+              	 <li><strong><a href="<%=basePath %>
+              	 news/list?nid=${news.nid}">${news.ntitle}</a></strong> <span><a href="<%=basePath %>news/list?nid=${news.nid}">${news.ncontent}</a></span></li>	
+               </c:forEach>
               </div>
             </div>
             <div id="con_one_2" style="display: none;">
               <div class="con_l"> <a href="<%=basePath %>b"><img src="<%=basePath%>images/4.jpg" width="320" height="230"></a> </div>
               <div class="con_r">
                 <ul>
-                  <li><strong><a href="<%=basePath %>">2016年中国家居行业环保程度调查 </a></strong> <span> <a href="<%=basePath %>">目前国内的大家居品牌早在“十三五”之前就已把握住了风向,以绿色环保作为重要的企业理念。在小家居品牌跟随风向开始宣扬环保的时候,环保理念早已在一线 家居品牌的...</a></span></li>
-                  <li><strong><a href="<%=basePath %>">欧洲家居市场年增长率3.5%,多功能环保家具受“青睐”</a></strong> <span> <a href="<%=basePath %>">家居市场另一个积极趋势是,人们对环保家具的需求增加。环保意识的提高、以及对健康绿色环境的追求</a></span></li>
-                  <li><strong><a href="<%=basePath %>">欧洲家居市场不断扩大,多功能家具和环保家具受“青睐”!</a></strong> <span> <a href="<%=basePath %>">比如,制造商提供大量以毛竹为原材料的绿色环保家具,比橡木家具更加坚实耐用</a></span></li>
+                  <li><strong><a href="<%=basePath %>">高考录取率保持高位 自主招生竞争激烈 全面取消“五项加分”</a></strong> <span> <a href="<%=basePath %>">备受瞩目的高考即将开锣。全国高考报名人数在经历4年稳定之后，今年迎来拐点，教育部相关负责人在2018年全国普通高。。。</a></span></li>
+                  <li><strong><a href="<%=basePath %>">新高考平稳落地 选考物理优势明显</a></strong> <span> <a href="<%=basePath %>">2017年，新高考改革在浙江、上海落地，打破了以前只有文科、理科两种选择的限制，扩大了学生选择权。。。</a></span></li>
+                  <li><strong><a href="<%=basePath %>">部分地区录取率突破90%</a></strong> <span> <a href="<%=basePath %>">虽然今年高考报名人数大涨，但从长远看，高考生源基础并没有根本性变化。2014年与2015年普通高中招生均保持在797万人左右。。。</a></span></li>
                 </ul>
               </div>
             </div>
@@ -325,20 +313,18 @@ $(function(){
               <div class="con_l"> <a href="<%=basePath %>"><img src="<%=basePath%>images/timg.jpg" width="320" height="230"></a> </div>
               <div class="con_r">
                 <ul>
-                  <li><strong><a href="<%=basePath %>">定制家具进家 室内甲醛超标该怪谁?</a></strong> <span><a href="<%=basePath %>">越来越多的消费者在装修过程中选择可以随心定制的家具,但无一例外,都会用到大量板材。卖家都说自己板材环保,可安装完家具后...</a></span></li>
-                  <li><strong><a href="<%=basePath %>">环保先锋惠民典范 城外诚携千家品牌再惠京城</a></strong> <span><a href="<%=basePath %>">“我们愿做――中国家居行业的绿色先锋、环保榜样、以为消费者打造绿色健康家居生活为己任,为家居行业的可持续发展而努力奋斗...</a></span></li>
-                  <li><strong><a href="<%=basePath %>">“绿色家具产业联盟”成立 贯彻绿色家居理念</a></strong> <span><a href="<%=basePath %>">现代人都提倡绿色环保家居,因为这样不仅体现了居住者的生活品位,而且还不会造成我们身体的伤害...</a></span></li>
+                  <li><strong><a href="<%=basePath %>major.jsp">医学</a></strong> <span><a href="<%=basePath %>">　业务培养目标：本专业培养具备自然科学、生命科学和医学科学基本理论知识和实验技能，能够在高等医学院校和医学科研机构等部门从事基础医学。。。</a></span></li>
+                  <li><strong><a href="<%=basePath %>major.jsp">软件工程</a></strong> <span><a href="<%=basePath %>">培养目标:培养适应计算机应用学科的发展，特别是软件产业的发展，具备计算机软件的基础理论、基本知识和基本技能，具有用软件工程的思想、方法和技术来分析。。。</a></span></li>
+                  <li><strong><a href="<%=basePath %>major.jsp">数学与应用数学</a></strong> <span><a href="<%=basePath %>">业务培养目标：本专业培养掌握数学科学的基本理论与基本方法，具备运用数学知识、使用计算机解决实际问题的能力，受到科学研究的初步训练。。。</a></span></li>
                 </ul>
               </div>
             </div>
             <div id="con_one_4" style="display: none;">
               <div class="con_l"> <a href="<%=basePath %>"><img src="<%=basePath%>images/6.jpg" width="320" height="230"></a> </div>
               <div class="con_r">
-                <ul>
-                  <li><strong><a href="<%=basePath %>">“绿色认证”成商家噱头 环保家具真假难辨</a></strong> <span><a href="<%=basePath %>">市场上的“甲醛”家具泛滥,消费者对家具健康环保的意识愈发增强,使得绿色环保家具愈发成为市场上的宠儿...</a></span></li>
-                  <li><strong><a href="<%=basePath %>">家具绿色标识认证满天飞 “甲醛”家具泛滥真假难辨</a></strong> <span><a href="<%=basePath %>">市场上的“甲醛”家具泛滥,消费者对家具健康环保的意识愈发增强,使得绿色环保家具愈发...</a></span></li>
-                  <li><strong><a href="<%=basePath %>">“环保板材”不环保,警惕家具商家“环保”陷阱</a></strong> <span><a href="<%=basePath %>">“环保板材”不环保,警惕家具商家“环保”陷阱 随着生活品质的提升,绿色消费观念如今已渗透到人们日常生活的方方面面...</a></span></li>
-                </ul>
+               <c:forEach var="question" items="${questionList }">
+              	 <li><strong><a href="<%=basePath %>">${question.qname}</a></strong> <span><a href="<%=basePath %>">${question.qanswer}</a></span></li>	
+               </c:forEach>
               </div>
             </div>
           </div>
@@ -356,14 +342,14 @@ $(function(){
 <div id="ly_footer" class="ly_min">
   <div class="ly_wrap">
     <div class="divcss">
-    	<a href="<%=basePath %>">院校库</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">专业库</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">院校推荐</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">专业对比</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">招生计划</a><br>
-		<a href="<%=basePath %>">报考流程</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">历年分数线</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高考月历表</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高考须知</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高校选择</a><br>
+    	<a href="<%=basePath %>school/list1">院校库</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>major.jsp">专业库</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>score1.jsp">院校推荐</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>school.jsp">专业对比</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">招生计划</a><br>
+		<a href="<%=basePath %>">报考流程</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">历年分数线</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高考月历表</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>notice.jsp">高考须知</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>significance.jsp">高校选择</a><br>
 		<a href="<%=basePath %>">专业选择</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">报考误区</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">新闻资讯</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">最新热点</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">高招动态</a><br>
-		<a href="<%=basePath %>">系统介绍</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">购卡详情</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">使用指南</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">成功案例</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">常见问题</a>
+		<a href="<%=basePath %>introduce.jsp">系统介绍</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">购卡详情</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">使用指南</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">成功案例</a>&emsp;&emsp;&emsp;&emsp;<a href="<%=basePath %>">常见问题</a>
     </div>
     
     <div class="divcss1">
-    	<a href="<%=basePath %>">关于我们&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;帮助中心&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;版权声明&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;合作伙伴</a>
+    	<a href="<%=basePath %>introduce.jsp">关于我们&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;帮助中心&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;版权声明&nbsp;&nbsp;</a> | <a href="<%=basePath %>">&nbsp;&nbsp;合作伙伴</a>
     </div>
     
     <div class="divcss2">

@@ -23,7 +23,7 @@
     <div class="container-fluid">
         <div class="row-fluid">
             <h4>数据列表</h4>
-            <div class="add"><a class="btn btn-success" onclick="openadd();">新增学校</a></div>
+            <div class="add"><a class="btn btn-success" onclick="openadd();">添加学校</a></div>
             <div class="w">
                 <div class="span12">
                     <table class="table table-condensed table-bordered table-hover tab">
@@ -31,7 +31,8 @@
                             <tr>
                                 <th>学校名称</th>
                                 <th>图片</th>
-                                <th>类别</th>
+                                <th>隶属</th>
+                                <th>分数线</th>
                                 <th>网址</th>
                                 <th>操作</th>
                             </tr>
@@ -41,9 +42,10 @@
                         		<tr align="center" class="change">
                         		<th>${school.sname }</th>
                         		<th><img src="<%=basePath %>${school.simg }" alt="无法显示该图片" width="100px" height="150px"/></th>
-                        		<th>${school.collegetype.ctname }</th>
+                        		<th>${school.sbelong}</th>
+                        		<th>${school.sscore }</th>
                         		<th class="intro">${school.snet}</th>
-                        		<th style="font-size:25px"><a href="<%=basePath %>book/list2?bookid=${book.bookid }">修改</a>&emsp;|&emsp;<a href="<%=basePath %>book/adminDelete?bookid=${book.bookid }">删除</a></th>  
+                        		<th style="font-size:25px"><a href="<%=basePath %>adminschool/list2?id=${school.sid }">修改</a>&emsp;|&emsp;<a href="<%=basePath %>adminschool/removeschool?id=${school.sid}">删除</a></th>  
                         		<tr>                           
                         	</tbody>
                         </c:forEach>
@@ -57,41 +59,48 @@
             <div id="addModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h3 id="myModalLabel">添加学校</h3>
+                    <h3>添加学校</h3>
                 </div>
+                <form class="form-horizontal" action="<%=basePath %>adminschool/addschool">
                 <div class="modal-body">
-                    <form class="form-horizontal">
                         <div class="control-group">
                             <label class="control-label" for="userName">名称</label>
                             <div class="controls">
-                                <input type="text" id="userName" placeholder="学校名称">
+                                <input type="text" name="name" placeholder="学校名称">
                             </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label" for="Chinese">图片</label>
                             <div class="controls">
-                                <input type="text" id="Chinese" placeholder="图片">
+                                <input type="text" name="img" placeholder="图片">
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label" for="Math">类别</label>
+                            <label class="control-label" for="Math">隶属</label>
                             <div class="controls">
-                                <input type="text" id="Math" placeholder="类别">
+                                <input type="text" name="belong" placeholder="隶属">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="Math">分数线</label>
+                            <div class="controls">
+                                <input type="text" name="score" placeholder="分数线">
                             </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label" for="English">网址</label>
                             <div class="controls">
-                                <input type="text" id="English" placeholder="网址">
+                                <input type="text" name="net" placeholder="网址">
                             </div>
                         </div>
-                    </form>
+                    
                 </div>
                 <div class="modal-footer">
                     <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
                     <button class="btn btn-primary" id="add" onclick="add();">保存</button>
                     <button class="btn btn-primary" id="edt" onclick="edt();">保存</button>
                 </div>
+                </form>
             </div>
         </div>
     </div>
