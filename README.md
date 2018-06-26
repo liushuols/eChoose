@@ -7,31 +7,31 @@
 ## 项目成员
 * 刘硕（项目经理，UI设计，代码开发）
 	 * Email:1332494613@qq.com
-	 * Github:
+	 * Github:https://github.com/liushuols
 * 王玉苗（代码开发，数据库设计，文档编写）
 	 * Email:1252224324@qq.com
-	 * Github:
+	 * Github:https://github.com/wangyumia
 * 陈兵（UI设计，代码开发）
 	 * Email:1301035209@qq.com
-	 * Github:
+	 * Github:https://github.com/chenblingbling
 * 田梦伟（UI设计，代码开发）
 	 * Email:2359078560@qq.com
-	 * Github:
+	 * Github:https://github.com/tianmengwei
 * 马佳（UI设计，代码开发）
 	 * Email:2643530660@qq.com
-	 * Github:
+	 * Github:https://github.com/lelechengcheng
 * 石崇（UI设计，代码开发）
 	 * Email:358751396@qq.com
-	 * Github:
+	 * Github:https://github.com/ahichang
 * 陈立风（UI设计，代码开发）
 	 * Email:710262007@qq.com
-	 * Github:
+	 * Github:https://github.com/chenlifeng123
 * 孙杨天一（UI设计，代码开发）
 	 * Email:970356158@qq.com
-	 * Github:
+	 * Github:https://github.com/SYTY
 * 韩竞锐（测试）
 	 * Email:2307458419@qq.com
-	 * Github:
+	 * Github:https://github.com/CholeHan
 ## 项目截图
 ![注册](https://github.com/liushuols/eChoose/blob/master/img/%E6%B3%A8%E5%86%8C.png)<br/>
 ![](https://github.com/liushuols/eChoose/blob/master/img/%E7%99%BB%E5%BD%95.png)<br/>
