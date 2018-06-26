@@ -1,5 +1,6 @@
 # eChoose<br/>
 * [[Github地址]](https://github.com/liushuols/eChoose)
+* [[Redmine地址]](http://10.7.1.5/projects/bigdata_echoose)
 ## 项目简介
 
   易选择网，我们的项目除了能帮助考生更好的选择大学和专业，还能帮助高中的学生和家长提前了解相关的大学和专业，以及近几年来热门专业的对比和前景等。
