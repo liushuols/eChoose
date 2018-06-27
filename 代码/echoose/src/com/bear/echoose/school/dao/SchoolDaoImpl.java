@@ -27,14 +27,6 @@ public class SchoolDaoImpl {
 		Query q = this.sessionFactory.getCurrentSession().createQuery("from News");
 		return q.list();
 	}
-<<<<<<< HEAD
-=======
-	
-	public List<Question> findAllQuestion(){
-		Query q = this.sessionFactory.getCurrentSession().createQuery("from Question");
-		return q.list();
-	}
->>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
 	
 	public List<Question> findAllQuestion(){
 		Query q = this.sessionFactory.getCurrentSession().createQuery("from Question");

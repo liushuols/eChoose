@@ -51,7 +51,7 @@
             <li>
                 <img src="<%=basePath%>images/32/5025_networking.png" />
             </li>
-            <li><a href="<%=basePath%>#">首页</a> <span class="divider">>></span></li>
+            <li><a href="<%=basePath%>index.jsp">首页</a> <span class="divider">>></span></li>
             <li class="active"></li>
         </ul>
     </div>

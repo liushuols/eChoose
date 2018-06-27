@@ -7,16 +7,16 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.bear.echoose.collegetype.dao.CollegeTypeDaoImpl;
+import com.bear.echoose.collegetype.dao.CollegetypeDaoImpl;
 import com.bear.echoose.entity.Collegetype;
 import com.bear.echoose.entity.School;
 
 @Service
 @Transactional
-public class CollegeTypeServiceImpl {
+public class CollegetypeServiceImpl {
 	
 	@Resource
-	private CollegeTypeDaoImpl collegetypeDaoImpl;
+	private CollegetypeDaoImpl collegetypeDaoImpl;
 	public List<School> findSchoolByType(int ctid){
 		return this.collegetypeDaoImpl.findSchoolByType(ctid);
 	}

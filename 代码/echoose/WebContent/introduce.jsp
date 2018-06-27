@@ -67,7 +67,7 @@
 <div id="ly_header" class="ly_min">
 	<div class="ly_wrap">
 		<div class="ly_lbar ly_fl">
-			<div id="ly_logo"><a href="index.jsp"> <img src=""/> <span></span> </a></div>
+			<div id="ly_logo"><a href="index.jsp"> <img src="<%=basePath%>images/tubiao.png"/> <span></span> </a></div>
 		</div>
 
 		<div class="div1">

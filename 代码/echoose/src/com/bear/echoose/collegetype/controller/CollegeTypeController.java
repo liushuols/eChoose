@@ -9,16 +9,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.bear.echoose.collegetype.service.CollegeTypeServiceImpl;
+import com.bear.echoose.collegetype.service.CollegetypeServiceImpl;
 import com.bear.echoose.entity.Collegetype;
 import com.bear.echoose.entity.School;
 
 @Controller
 @RequestMapping("collegetype")
-public class CollegeTypeController {
+public class CollegetypeController {
 	
 	@Resource
-	private CollegeTypeServiceImpl collegetypeServiceImpl;
+	private CollegetypeServiceImpl collegetypeServiceImpl;
 	
 	@RequestMapping("/schooltype")
 	public String findSchoolByType(HttpSession session,@RequestParam("ctid") int ctid) {

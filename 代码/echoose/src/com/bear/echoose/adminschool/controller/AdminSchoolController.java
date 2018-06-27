@@ -27,7 +27,6 @@ public class AdminSchoolController {
 		return "adminIndex";
 	}
 	
-<<<<<<< HEAD
 	@RequestMapping("/list2")
 	public String findSchoolById(HttpSession session,@RequestParam("id") int scid) {
 		School school = this.adminschoolServiceImpl.findSchoolById(scid);
@@ -46,17 +45,6 @@ public class AdminSchoolController {
 		school.setSscore(sscore);
 		school.setSnet(snet);
 		this.adminschoolServiceImpl.saveSchool(school);
-=======
-	//添加学校
-	@RequestMapping("/addschool")
-	public String addSchool(HttpSession session,@RequestParam("name") String sname,@RequestParam("img") String simg,
-			@RequestParam("net") String snet,@RequestParam("type") String ctname) {
-		School school = new School();
-		school.setSname(sname);
-		school.setSimg(simg);
-		school.setSnet(snet);
-		this.adminschoolServiceImpl.saveSchool(school, ctname);
->>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
 		session.setAttribute("school", school);
 		List<School> adminschoolList = this.adminschoolServiceImpl.listAll();
 		session.setAttribute("adminschoolList", adminschoolList);
@@ -72,25 +60,16 @@ public class AdminSchoolController {
 	}
 	//修改学校
 	@RequestMapping("/alterschool")
-<<<<<<< HEAD
 	public String alterSchool(HttpSession session,@RequestParam("schoolName") String sname,@RequestParam("schoolImg") String simg,
 			@RequestParam("schoolNet") String snet,@RequestParam("schoolBelong") String sbelong,@RequestParam("schoolScore") String sscore,
 			@RequestParam("id") int id) {
-=======
-	public String alterSchool(HttpSession session,@RequestParam("name") String sname,@RequestParam("img") String simg,
-			@RequestParam("net") String snet,@RequestParam("type") int ctid,@RequestParam("type") Collegetype ct) {
->>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
 		School school=(School) session.getAttribute("school");
 		school.setSname(sname);
 		school.setSimg(simg);
 		school.setSnet(snet);
-<<<<<<< HEAD
 		school.setSbelong(sbelong);
 		school.setSscore(sscore);
 		this.adminschoolServiceImpl.updateSchool(school,id);
-=======
-		this.adminschoolServiceImpl.updateSchool(school,ct,ctid);
->>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
 		session.setAttribute("school", school);
 		List<School> adminschoolList = this.adminschoolServiceImpl.listAll();
 		session.setAttribute("adminschoolList", adminschoolList);
@@ -98,8 +77,4 @@ public class AdminSchoolController {
 		
 		
 	}
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835

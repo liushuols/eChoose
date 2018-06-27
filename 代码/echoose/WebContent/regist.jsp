@@ -65,15 +65,7 @@
 						<div class="vali">
 								<input type="text"  name="tel" placeholder="请输入11位手机号" id="telenum" class="input_class" onblur="checkTelenum(this)" /><span id="telenum_span">请输入11位手机号</span>
 							</div>
-						<div class="marb0">
-							<div class="vali pho">
-								<input type="text" name="" value="" placeholder="请输入验证码">
-							</div>
-							<div class="vali pcd">
-								<input type="button"  value="获取验证码" class="css1"  onclick="send();">
-							</div>
-							<div class="cl1"></div>
-						</div>
+						
 						<div class="vali">
 							<input type="password"  name="password" placeholder="请填写长度至少为8个字符的密码" id="password" class="input_class" onblur="checkPassword(this)" /><span id="password_span">请输入8-12位密码</span>
 						</div>

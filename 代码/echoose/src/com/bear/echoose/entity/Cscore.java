@@ -17,11 +17,7 @@ public class Cscore {
 	private int csid;
 	private Date cyear;
 	private String csscore;
-<<<<<<< HEAD
 //	private School school;
-=======
-	private School school;
->>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -35,28 +31,12 @@ public class Cscore {
 	public Date getCyear() {
 		return cyear;
 	}
-<<<<<<< HEAD
-=======
-	
-	public void setCyear(Date cyear) {
-		this.cyear = cyear;
-	}
-	@OneToOne(cascade=CascadeType.ALL)
-	@JoinColumn(name="sid")
-	public School getSchool() {
-		return school;
-	}
-	public void setSchool(School school) {
-		this.school = school;
-	}
->>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
 	public String getCsscore() {
 		return csscore;
 	}
 	public void setCsscore(String csscore) {
 		this.csscore = csscore;
 	}
-<<<<<<< HEAD
 	public void setCyear(Date cyear) {
 		this.cyear = cyear;
 	}
@@ -70,8 +50,6 @@ public class Cscore {
 //	public void setSchool(School school) {
 //		this.school = school;
 //	}
-=======
->>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
 	
 	
 }

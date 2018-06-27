@@ -12,7 +12,7 @@ import com.bear.echoose.entity.Collegetype;
 import com.bear.echoose.entity.School;
 
 @Repository
-public class CollegeTypeDaoImpl {
+public class CollegetypeDaoImpl {
 	
 	@Resource
 	private SessionFactory sessionFactory;

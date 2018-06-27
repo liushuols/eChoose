@@ -35,9 +35,11 @@ $(function(){
 	.divcss{padding-left:280px;font-size:15px;}
 	.divcss1{padding-left:450px;margin-top:20px;}
 	.divcss2{padding-left:280px;margin-top:15px;}
-	.div1{float:left;padding-left:350px;}
-	.div2{margin-top:45px;float:left;}
+	.div1{padding-left:400px;float:left;margin-top:-100px;}
+	.div2{margin-top:-60px;float:left;}
 	.div3{color:#8e8e8e; margin-top:10px;}
+	.div4{margin-top:-30px;margin-left:160px;padding-left:900px;}
+	.div5{height:20px;margin-top:5px;padding-left:1000px;}
 	.ly_pic{margin:0 50px;}
 	.ly_pro_box{margin:0 50px;}
 	table{  border-collapse:collapse;  }
@@ -46,6 +48,7 @@ $(function(){
 	.fenye input{background-color:#66c245;width:70px;}
 	#ly_footer a:hover{color:#ff6600;}
 	.ly_wrap{color:black;}
+	.ly_pro_box{width:200px;}
 	.css1{font-size:40px;text-align:center;font-family:'楷体';font-weight:bold;}
 	.css2{font-size:20px;font-family:'楷体';}
 </style>
@@ -60,7 +63,7 @@ $(function(){
 <div id="ly_header" class="ly_min">
   <div class="ly_wrap">
     <div class="ly_lbar ly_fl">
-      <div id="ly_logo"><a href="<%=basePath%>default.htmll"> <img src="<%=basePath%>" /> <span></span> </a></div>
+      <div id="ly_logo"><a href="<%=basePath%>default.htmll"> <img src="<%=basePath%>images/tubiao.png" /> <span></span> </a></div>
     </div>
     
     <div class="div1">

@@ -32,7 +32,7 @@
 
 <div id="header">
 	<div class="page-container" id="nav">
-		<div id="logo" class="logo"><a target="_self" title="首页">[这里放logo]</a>
+		<div id="logo" class="logo"><a target="_self" title="首页"><img src="<%=basePath%>images/tubiao.png" /> </a>
 		</div>
 
 

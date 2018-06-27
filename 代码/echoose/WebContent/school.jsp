@@ -72,7 +72,7 @@ $(function(){
 <div id="ly_header" class="ly_min">
   <div class="ly_wrap">
     <div class="ly_lbar ly_fl">
-      <div id="ly_logo"><a href="default.htmll"> <img src="" /> <span></span> </a></div>
+      <div id="ly_logo"><a href="default.htmll"> <img src="<%=basePath%>images/tubiao.png" /> <span></span> </a></div>
     </div>
     
     <div class="div1">
@@ -89,7 +89,7 @@ $(function(){
       </div>
     </div>
     <div class="div2">
-      <a href="regist.jsp">免费注册&nbsp;&nbsp;</a> | <a href="login.jsp">&nbsp;&nbsp;登录&nbsp;&nbsp;</a> | <a href="">&nbsp;&nbsp;个人中心</a>
+      <a href="regist.jsp">免费注册&nbsp;&nbsp;</a> | <a href="login.jsp">&nbsp;&nbsp;登录&nbsp;&nbsp;</a>
       &emsp;&emsp;<a href="adminlogin.jsp">管理员登录</a>
     </div>
     <div class="lyg_clear"></div>

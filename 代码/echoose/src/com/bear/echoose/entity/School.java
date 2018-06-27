@@ -32,7 +32,7 @@ public class School {
 	private String introduce1;
 	private String introduce2;
 //	private Address address;
-	private Cscore cscore;
+//	private Cscore cscore;
 //	private Set<Major> majorSet = new HashSet<Major>();
 //	private Collegenature collegenature;
 	private Collegetype collegetype;
@@ -100,7 +100,6 @@ public class School {
 //	public void setMajorSet(Set<Major> majorSet) {
 //		this.majorSet = majorSet;
 //	}
-<<<<<<< HEAD
 	
 //	@OneToOne(mappedBy="school")
 //	public Cscore getCscore() {
@@ -109,15 +108,6 @@ public class School {
 //	public void setCscore(Cscore cscore) {
 //		this.cscore = cscore;
 //	}
-=======
-	@OneToOne(mappedBy="school")
-	public Cscore getCscore() {
-		return cscore;
-	}
-	public void setCscore(Cscore cscore) {
-		this.cscore = cscore;
-	}
->>>>>>> 5c9cc95d28c9b586e334d7f843f200b2984f7835
 	public String getSname() {
 		return sname;
 	}

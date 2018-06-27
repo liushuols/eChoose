@@ -35,9 +35,11 @@ $(function(){
 	.divcss{padding-left:280px;font-size:15px;}
 	.divcss1{padding-left:450px;margin-top:20px;}
 	.divcss2{padding-left:280px;margin-top:15px;}
-	.div1{float:left;padding-left:350px;}
-	.div2{margin-top:45px;float:left;}
+	.div1{padding-left:400px;float:left;margin-top:-100px;}
+	.div2{margin-top:-60px;float:left;}
 	.div3{color:#8e8e8e; margin-top:10px;}
+	.div4{margin-top:-30px;margin-left:160px;padding-left:900px;}
+	.div5{height:20px;margin-top:5px;padding-left:1000px;}
 	.ly_pic{margin:0 50px;}
 	.ly_pro_box{margin:0 50px;}
 	table{  border-collapse:collapse;  }
@@ -59,7 +61,7 @@ $(function(){
 <div id="ly_header" class="ly_min">
   <div class="ly_wrap">
     <div class="ly_lbar ly_fl">
-      <div id="ly_logo"><a href="<%=basePath%>"> <img src="<%=basePath%>" /> <span></span> </a></div>
+      <div id="ly_logo"><a href="<%=basePath %>index.jsp"> <img src="<%=basePath%>images/tubiao.png" /> <span></span> </a></div>
     </div>
     
     <div class="div1">
@@ -68,20 +70,25 @@ $(function(){
           <form action="<%=basePath %>school/findBySname" method="post">
             <input class="ly_txt" type="text" name="sname" placeholder="请输入搜索内容" value="" />
             <input class="ly_btn" type="submit" value="搜索" />
-          </form> 
+          </form>
         </div>
       </div>
       <div class="div3">
-        <div class="ly_hot"> 热门搜索： <a href="<%=basePath%>major.jsp">热门专业&emsp;</a><a href="<%=basePath%>score1.jsp">高校分数线&emsp;</a><a href="<%=basePath%>school.jsp">高校推荐</a></div>
+        <div class="ly_hot"> 热门搜索： <a href="<%=basePath %>major.jsp">热门专业&emsp;</a><a href="<%=basePath %>school/list1">高校分数线&emsp;</a><a href="<%=basePath %>score1.jsp">高校推荐</a></div>
       </div>
     </div>
+    
     <div class="div2">
-      <a href="<%=basePath%>regist.jsp">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath%>login.jsp">&nbsp;&nbsp;登录&nbsp;&nbsp;</a> | <a href="<%=basePath%>">&nbsp;&nbsp;个人中心</a>
-      &emsp;&emsp;<a href="<%=basePath%>adminLogin.jsp">管理员登录</a>
+      <div class="div4">
+    	欢迎您，${sname }&emsp;&emsp;<a href="<%=basePath %>admin/adminoff" class="exitlogin" style="text-decoration:underline;">退出登录</a>
+      </div><br>
+      <div class="div5"><a href="<%=basePath %>regist.jsp">免费注册&nbsp;&nbsp;</a> | <a href="<%=basePath %>login.jsp">&nbsp;&nbsp;登录&nbsp;&nbsp;</a><a href="<%=basePath %>">&nbsp;&nbsp;</a>
+      &emsp;&emsp;<a href="<%=basePath %>adminLogin.jsp">管理员登录</a></div>
     </div>
     <div class="lyg_clear"></div>
   </div>
 </div>
+
 <!--导航-->
 <div id="ly_menu">
   <div class="ly_wrap">
